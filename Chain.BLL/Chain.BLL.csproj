@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{F6F8FCE9-036D-4AE8-995A-B79B30254683}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Chain.BLL</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <OutputPath>..\WebUI\bin\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Chain.Model">
+      <HintPath>..\Chain.Model\bin\Debug\Chain.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chain.BLL\Album.cs" />
+    <Compile Include="Chain.BLL\Coupon.cs" />
+    <Compile Include="Chain.BLL\CouponList.cs" />
+    <Compile Include="Chain.BLL\EmailLog.cs" />
+    <Compile Include="Chain.BLL\GiftClass.cs" />
+    <Compile Include="Chain.BLL\GiftExchange.cs" />
+    <Compile Include="Chain.BLL\GiftExchangeDetail.cs" />
+    <Compile Include="Chain.BLL\Goods.cs" />
+    <Compile Include="Chain.BLL\GoodsAllot.cs" />
+    <Compile Include="Chain.BLL\GoodsAllotDetail.cs" />
+    <Compile Include="Chain.BLL\GoodsClass.cs" />
+    <Compile Include="Chain.BLL\GoodsClassAuthority.cs" />
+    <Compile Include="Chain.BLL\GoodsClassDiscount.cs" />
+    <Compile Include="Chain.BLL\GoodsLog.cs" />
+    <Compile Include="Chain.BLL\GoodsLogDetail.cs" />
+    <Compile Include="Chain.BLL\GoodsNumber.cs" />
+    <Compile Include="Chain.BLL\Mem.cs" />
+    <Compile Include="Chain.BLL\MemAddress.cs" />
+    <Compile Include="Chain.BLL\MemberExplanation.cs" />
+    <Compile Include="Chain.BLL\MemberSMSRemindLog.cs" />
+    <Compile Include="Chain.BLL\MemChild.cs" />
+    <Compile Include="Chain.BLL\MemCount.cs" />
+    <Compile Include="Chain.BLL\MemCountDetail.cs" />
+    <Compile Include="Chain.BLL\MemCustomField.cs" />
+    <Compile Include="Chain.BLL\MemDrawMoney.cs" />
+    <Compile Include="Chain.BLL\MemLevel.cs" />
+    <Compile Include="Chain.BLL\MemRecharge.cs" />
+    <Compile Include="Chain.BLL\MemSign.cs" />
+    <Compile Include="Chain.BLL\MemStorageTiming.cs" />
+    <Compile Include="Chain.BLL\MemTransferLog.cs" />
+    <Compile Include="Chain.BLL\MerchantSite.cs" />
+    <Compile Include="Chain.BLL\Message.cs" />
+    <Compile Include="Chain.BLL\MicroWebsiteGiftExchange.cs" />
+    <Compile Include="Chain.BLL\MicroWebsiteGiftExchangeDetail.cs" />
+    <Compile Include="Chain.BLL\MicroWebsiteGoods.cs" />
+    <Compile Include="Chain.BLL\MicroWebsiteGoodsClass.cs" />
+    <Compile Include="Chain.BLL\MicroWebsiteOrderLog.cs" />
+    <Compile Include="Chain.BLL\MicroWebsiteOrderLogDetail.cs" />
+    <Compile Include="Chain.BLL\MicroWebsiteSceneStr.cs" />
+    <Compile Include="Chain.BLL\MoneyChangeLog.cs" />
+    <Compile Include="Chain.BLL\News.cs" />
+    <Compile Include="Chain.BLL\OnlineMessage.cs" />
+    <Compile Include="Chain.BLL\OrderDetail.cs" />
+    <Compile Include="Chain.BLL\OrderLog.cs" />
+    <Compile Include="Chain.BLL\OrderTime.cs" />
+    <Compile Include="Chain.BLL\Photo.cs" />
+    <Compile Include="Chain.BLL\PointDraw.cs" />
+    <Compile Include="Chain.BLL\PointExchange.cs" />
+    <Compile Include="Chain.BLL\PointGift.cs" />
+    <Compile Include="Chain.BLL\PointLog.cs" />
+    <Compile Include="Chain.BLL\PointLogType.cs" />
+    <Compile Include="Chain.BLL\PointRate.cs" />
+    <Compile Include="Chain.BLL\ProductCenter.cs" />
+    <Compile Include="Chain.BLL\ProductClass.cs" />
+    <Compile Include="Chain.BLL\Promotions.cs" />
+    <Compile Include="Chain.BLL\PromotionsShop.cs" />
+    <Compile Include="Chain.BLL\Proposal.cs" />
+    <Compile Include="Chain.BLL\RechargeRule.cs" />
+    <Compile Include="Chain.BLL\RegisterShop.cs" />
+    <Compile Include="Chain.BLL\ReturnPointLog.cs" />
+    <Compile Include="Chain.BLL\ScreenPopUp.cs" />
+    <Compile Include="Chain.BLL\SmsLog.cs" />
+    <Compile Include="Chain.BLL\SmsTemplate.cs" />
+    <Compile Include="Chain.BLL\Special.cs" />
+    <Compile Include="Chain.BLL\Staff.cs" />
+    <Compile Include="Chain.BLL\StaffClass.cs" />
+    <Compile Include="Chain.BLL\StaffMoney.cs" />
+    <Compile Include="Chain.BLL\SubMem.cs" />
+    <Compile Include="Chain.BLL\SymbolShow.cs" />
+    <Compile Include="Chain.BLL\SysArea.cs" />
+    <Compile Include="Chain.BLL\SysCustomRemind.cs" />
+    <Compile Include="Chain.BLL\SysError.cs" />
+    <Compile Include="Chain.BLL\SysGroup.cs" />
+    <Compile Include="Chain.BLL\SysGroupAuthority.cs" />
+    <Compile Include="Chain.BLL\SysLog.cs" />
+    <Compile Include="Chain.BLL\SysModule.cs" />
+    <Compile Include="Chain.BLL\SysModuleAction.cs" />
+    <Compile Include="Chain.BLL\SysNotice.cs" />
+    <Compile Include="Chain.BLL\SysParameter.cs" />
+    <Compile Include="Chain.BLL\SysRotate.cs" />
+    <Compile Include="Chain.BLL\SysRotateCount.cs" />
+    <Compile Include="Chain.BLL\SysRotatePrizeLog.cs" />
+    <Compile Include="Chain.BLL\SysSerialNumber.cs" />
+    <Compile Include="Chain.BLL\SysShop.cs" />
+    <Compile Include="Chain.BLL\SysShopAuthority.cs" />
+    <Compile Include="Chain.BLL\SysShopBuyCard.cs" />
+    <Compile Include="Chain.BLL\SysShopCmsLog.cs" />
+    <Compile Include="Chain.BLL\SysShopMemLevel.cs" />
+    <Compile Include="Chain.BLL\SysShopPointLog.cs" />
+    <Compile Include="Chain.BLL\SysShopPointSettlement.cs" />
+    <Compile Include="Chain.BLL\SysShopSettlement.cs" />
+    <Compile Include="Chain.BLL\SysUser.cs" />
+    <Compile Include="Chain.BLL\SysUserWork.cs" />
+    <Compile Include="Chain.BLL\TimingCategory.cs" />
+    <Compile Include="Chain.BLL\TimingProject.cs" />
+    <Compile Include="Chain.BLL\Timingrules.cs" />
+    <Compile Include="Chain.BLL\WeiXinGiveMoney.cs" />
+    <Compile Include="Chain.BLL\WeiXinLog.cs" />
+    <Compile Include="Chain.BLL\WeiXinMenu.cs" />
+    <Compile Include="Chain.BLL\WeiXinMoney.cs" />
+    <Compile Include="Chain.BLL\WeiXinMoneyMem.cs" />
+    <Compile Include="Chain.BLL\WeiXinNews.cs" />
+    <Compile Include="Chain.BLL\WeiXinRule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Chain.Common\Chain.Common.csproj">
+      <Project>{090104c1-9f6a-465f-b786-5c855c712f96}</Project>
+      <Name>Chain.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chain.IDAL\Chain.IDAL.csproj">
+      <Project>{0a3605c2-b0e0-4d9f-947c-6358ca447783}</Project>
+      <Name>Chain.IDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

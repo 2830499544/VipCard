@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{0FB85452-7506-46A7-9491-0997823482D0}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Chain.Model</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="Chain.Model\Album.cs" />
+    <Compile Include="Chain.Model\Coupon.cs" />
+    <Compile Include="Chain.Model\CouponList.cs" />
+    <Compile Include="Chain.Model\EmailLog.cs" />
+    <Compile Include="Chain.Model\GiftClass.cs" />
+    <Compile Include="Chain.Model\GiftExchange.cs" />
+    <Compile Include="Chain.Model\GiftExchangeDetail.cs" />
+    <Compile Include="Chain.Model\Goods.cs" />
+    <Compile Include="Chain.Model\GoodsAllot.cs" />
+    <Compile Include="Chain.Model\GoodsAllotDetail.cs" />
+    <Compile Include="Chain.Model\GoodsClass.cs" />
+    <Compile Include="Chain.Model\GoodsClassAuthority.cs" />
+    <Compile Include="Chain.Model\GoodsClassDiscount.cs" />
+    <Compile Include="Chain.Model\GoodsLog.cs" />
+    <Compile Include="Chain.Model\GoodsLogDetail.cs" />
+    <Compile Include="Chain.Model\GoodsNumber.cs" />
+    <Compile Include="Chain.Model\MapAddressInfo.cs" />
+    <Compile Include="Chain.Model\MapAddress_componentsInfo.cs" />
+    <Compile Include="Chain.Model\MapLocationInfo.cs" />
+    <Compile Include="Chain.Model\MapResultInfo.cs" />
+    <Compile Include="Chain.Model\Mem.cs" />
+    <Compile Include="Chain.Model\MemAddress.cs" />
+    <Compile Include="Chain.Model\MemberExplanation.cs" />
+    <Compile Include="Chain.Model\MemberSMSRemindLog.cs" />
+    <Compile Include="Chain.Model\MemChild.cs" />
+    <Compile Include="Chain.Model\MemCount.cs" />
+    <Compile Include="Chain.Model\MemCountDetail.cs" />
+    <Compile Include="Chain.Model\MemCustomField.cs" />
+    <Compile Include="Chain.Model\MemDrawMoney.cs" />
+    <Compile Include="Chain.Model\MemLevel.cs" />
+    <Compile Include="Chain.Model\MemRecharge.cs" />
+    <Compile Include="Chain.Model\MemSign.cs" />
+    <Compile Include="Chain.Model\MemStorageTiming.cs" />
+    <Compile Include="Chain.Model\MemTransferLog.cs" />
+    <Compile Include="Chain.Model\MerchantSite.cs" />
+    <Compile Include="Chain.Model\Message.cs" />
+    <Compile Include="Chain.Model\MicroWebsiteGiftExchange.cs" />
+    <Compile Include="Chain.Model\MicroWebsiteGiftExchangeDetail.cs" />
+    <Compile Include="Chain.Model\MicroWebsiteGoods.cs" />
+    <Compile Include="Chain.Model\MicroWebsiteGoodsClass.cs" />
+    <Compile Include="Chain.Model\MicroWebsiteOrderLog.cs" />
+    <Compile Include="Chain.Model\MicroWebsiteOrderLogDetail.cs" />
+    <Compile Include="Chain.Model\MicroWebsiteSceneStr.cs" />
+    <Compile Include="Chain.Model\MoneyChangeLog.cs" />
+    <Compile Include="Chain.Model\News.cs" />
+    <Compile Include="Chain.Model\OnlineMessage.cs" />
+    <Compile Include="Chain.Model\OrderDetail.cs" />
+    <Compile Include="Chain.Model\OrderLog.cs" />
+    <Compile Include="Chain.Model\OrderTime.cs" />
+    <Compile Include="Chain.Model\Photo.cs" />
+    <Compile Include="Chain.Model\PointDraw.cs" />
+    <Compile Include="Chain.Model\PointExchange.cs" />
+    <Compile Include="Chain.Model\PointGift.cs" />
+    <Compile Include="Chain.Model\PointLog.cs" />
+    <Compile Include="Chain.Model\PointRate.cs" />
+    <Compile Include="Chain.Model\ProductCenter.cs" />
+    <Compile Include="Chain.Model\ProductClass.cs" />
+    <Compile Include="Chain.Model\Promotions.cs" />
+    <Compile Include="Chain.Model\PromotionsShop.cs" />
+    <Compile Include="Chain.Model\Proposal.cs" />
+    <Compile Include="Chain.Model\RechargeRule.cs" />
+    <Compile Include="Chain.Model\ReturnPointLog.cs" />
+    <Compile Include="Chain.Model\ScreenPopUp.cs" />
+    <Compile Include="Chain.Model\SmsLog.cs" />
+    <Compile Include="Chain.Model\SmsTemplate.cs" />
+    <Compile Include="Chain.Model\Special.cs" />
+    <Compile Include="Chain.Model\Staff.cs" />
+    <Compile Include="Chain.Model\StaffClass.cs" />
+    <Compile Include="Chain.Model\StaffMoney.cs" />
+    <Compile Include="Chain.Model\SubMem.cs" />
+    <Compile Include="Chain.Model\SymbolShow.cs" />
+    <Compile Include="Chain.Model\SysArea.cs" />
+    <Compile Include="Chain.Model\SysCustomRemind.cs" />
+    <Compile Include="Chain.Model\SysError.cs" />
+    <Compile Include="Chain.Model\SysGroup.cs" />
+    <Compile Include="Chain.Model\SysGroupAuthority.cs" />
+    <Compile Include="Chain.Model\SysLog.cs" />
+    <Compile Include="Chain.Model\SysModule.cs" />
+    <Compile Include="Chain.Model\SysModuleAction.cs" />
+    <Compile Include="Chain.Model\SysNotice.cs" />
+    <Compile Include="Chain.Model\SysParameter.cs" />
+    <Compile Include="Chain.Model\SysRotate.cs" />
+    <Compile Include="Chain.Model\SysRotateCount.cs" />
+    <Compile Include="Chain.Model\SysRotatePrizeLog.cs" />
+    <Compile Include="Chain.Model\SysShop.cs" />
+    <Compile Include="Chain.Model\SysShopAuthority.cs" />
+    <Compile Include="Chain.Model\SysShopBuyCard.cs" />
+    <Compile Include="Chain.Model\SysShopCmsLog.cs" />
+    <Compile Include="Chain.Model\SysShopMemLevel.cs" />
+    <Compile Include="Chain.Model\SysShopPointLog.cs" />
+    <Compile Include="Chain.Model\SysShopPointSettlement.cs" />
+    <Compile Include="Chain.Model\SysShopSettlement.cs" />
+    <Compile Include="Chain.Model\SysUser.cs" />
+    <Compile Include="Chain.Model\SysUserWork.cs" />
+    <Compile Include="Chain.Model\TimingCategory.cs" />
+    <Compile Include="Chain.Model\TimingProject.cs" />
+    <Compile Include="Chain.Model\Timingrules.cs" />
+    <Compile Include="Chain.Model\WeiXinGiveMoney.cs" />
+    <Compile Include="Chain.Model\WeiXinLog.cs" />
+    <Compile Include="Chain.Model\WeiXinMenu.cs" />
+    <Compile Include="Chain.Model\WeiXinMoney.cs" />
+    <Compile Include="Chain.Model\WeiXinMoneyMem.cs" />
+    <Compile Include="Chain.Model\WeiXinNews.cs" />
+    <Compile Include="Chain.Model\WeiXinRule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

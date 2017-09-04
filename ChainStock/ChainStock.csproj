@@ -1,0 +1,3126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F9356FC2-D525-49D3-8AB7-CBDFE5557389}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChainStock</RootNamespace>
+    <AssemblyName>ChainStock</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AopSdk, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\源码仓库\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\AopSdk.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNetPager, Version=7.4.2.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="F2FPayDll, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\源码仓库\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\F2FPayDll.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJson">
+      <HintPath>D:\snk\LitJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NickLee.Common, Version=2006.1.1283.1, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\NickLee.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=1.2.5.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="QRCode, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="ThoughtWorks.QRCode">
+      <HintPath>E:\alipay\Bin\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Web.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Web.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="WxPay, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WxPay.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoBackupDatabaseTask.cs" />
+    <Compile Include="AutoSendSMSByMemBirthday.cs" />
+    <Compile Include="AutoSendSMSByMemPast.cs" />
+    <Compile Include="Controls\FindMember.ascx.cs">
+      <DependentUpon>FindMember.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemExpense\ConsumeMemCount.aspx.cs">
+      <DependentUpon>ConsumeMemCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemExpense\Expense.aspx.cs">
+      <DependentUpon>Expense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemExpense\ExpenseHistory.aspx.cs">
+      <DependentUpon>ExpenseHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemExpense\TimeExpense.aspx.cs">
+      <DependentUpon>TimeExpense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemExpense\TimeList.aspx.cs">
+      <DependentUpon>TimeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MerchantLogin.aspx.cs">
+      <DependentUpon>MerchantLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MerchantLogin.aspx.designer.cs">
+      <DependentUpon>MerchantLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MicroWebsite\SysRotate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\business\bossCenter.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\business\fastConsumption.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\business\goodsConsumption.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\business\index.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\business\login.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\business\memberCard.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\business\timesConsumption.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\bill.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\billDetail.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\binding.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\bindingSuccess.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\cancelBindingSuccess.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\coupon.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\editMemberData.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\getCoupon.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\getmoney.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\givemoney.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\index.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\login.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\memAddressInfo.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\memAddressList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\memAddressManage.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\memberMoney.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\memExpenseRecord.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\memsign.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\modifyPassword.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\modifyPasswordSuccess.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\moneyregion.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\myMember.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\pointExchange.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\pointExchangeRecord.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\pointExchangeSuccess.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\pointExchangeSure.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\RechargeJsApiPayPage.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\rechargeOnline.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\rechargeOnlineOld.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\rechargeOnlineSure.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\RechargeResultNotifyPage.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\rechargereturn_url.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\rechargeSuccess.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\register.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\registerSuccess.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\ResultNotifyPage.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\rotate.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\rotateregion.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\test.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\member\uploadImage.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\website\active.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\website\activeDetail.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\website\index.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\website\map.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\website\news.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\website\newsDetail.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\website\onlineAsk.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\website\photos.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\website\photosDetail.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\website\productDetail.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\website\productShow.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\website\queryStore.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayApi\alipay\Alipay.cs" />
+    <Compile Include="PayApi\alipay\Config.cs" />
+    <Compile Include="PayApi\alipay\LogHelper.cs" />
+    <Compile Include="PayApi\weixin\Data.cs" />
+    <Compile Include="PayApi\weixin\Exception.cs" />
+    <Compile Include="PayApi\weixin\HttpService.cs" />
+    <Compile Include="PayApi\weixin\JsApiPay.cs" />
+    <Compile Include="PayApi\weixin\Log.cs" />
+    <Compile Include="PayApi\weixin\micropay.cs" />
+    <Compile Include="PayApi\weixin\Notify.cs" />
+    <Compile Include="PointManage\ExchangeVerify.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PointManage\GiftExchange.aspx.cs">
+      <DependentUpon>GiftExchange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PointManage\GiftInfo.aspx.cs">
+      <DependentUpon>GiftInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PointManage\GiftList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PointManage\PointChange.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PointManage\PointDraw.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PointManage\PointDrawVerify.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PointManage\PointRate.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PointManage\RptCustomerRecommend.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PointManage\SetGiftLevel.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptAllianceTotal.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RptExpense.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RptGoodsExpense.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RptMem.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RptMemCount.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RptMemDrain.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RptMemDrawMoney.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RptMemExpense.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\rptMemPay.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RptMemRecharge.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\rptMemRecommend.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RptMemStorageTiming.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RptMemTransferMoney.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RptMoneyExchange.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RptPointChange.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RptPointExchange.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RptPointRankList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RptPointRate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RptShop.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RptShopTotal.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RptStaffMoney.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RptTotal.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RptUserWork.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\Album.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\BackgroundSet.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\ExchangeAudit.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\ExchangeStatistics.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\GoodsAudit.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\MemberExplanation.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\MicroExpenseHistory.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\MicroGoodsClass.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\MicroGoodsInfo.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\MicroGoodsList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\MicroWebsiteIndex.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\News.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\NewsInfo.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\Opinion.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\Photo.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\ProductCenter.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\ProductCenterInfo.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\ProductClass.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\Promotions.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\PromotionsInfo.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\RechargeRule.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\SymbolShow.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\SysRotateList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\SysRotatePrizeLog.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\SysRotatePrizeSum.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\WeiXinGiveMoneyList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\WeiXinMoneyInfo.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\WeiXinMoneyList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroWebsite\WeiXinMoneySum.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\AddSubMem.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\EditLevel.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\MemberRegister.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\MemChangeCard.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\MemChangePwd.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\MemDelay.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\MemDrawMoney.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\MemExistCount.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\MemInfo.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\MemList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\MemLock.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\MemRechargeCount.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\MemRechargeMoney.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\MemSendCard.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\MemSpecial.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\MemStorageTiming.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\MemTransferMoney.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\SavePhoto.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\SetLevel.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\SpecialList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\TimingCategory.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\TimingProject.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\Timingrules.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockManage\EditGoodsLevel.aspx.cs">
+      <DependentUpon>EditGoodsLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockManage\GoodsAdd.aspx.cs">
+      <DependentUpon>GoodsAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockManage\GoodsAllot.aspx.cs">
+      <DependentUpon>GoodsAllot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockManage\GoodsAllotState.aspx.cs">
+      <DependentUpon>GoodsAllotState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockManage\GoodsClassDiscountList.aspx.cs">
+      <DependentUpon>GoodsClassDiscountList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockManage\GoodsExcelIn.aspx.cs">
+      <DependentUpon>GoodsExcelIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockManage\GoodsExpense.aspx.cs">
+      <DependentUpon>GoodsExpense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockManage\GoodsIn.aspx.cs">
+      <DependentUpon>GoodsIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockManage\GoodsList.aspx.cs">
+      <DependentUpon>GoodsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockManage\GoodsLog.aspx.cs">
+      <DependentUpon>GoodsLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockManage\GoodsStockTotal.aspx.cs">
+      <DependentUpon>GoodsStockTotal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockManage\RptEmptyBills.aspx.cs">
+      <DependentUpon>RptEmptyBills.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockManage\SetGoodsLevel.aspx.cs">
+      <DependentUpon>SetGoodsLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockManage\StockList.aspx.cs">
+      <DependentUpon>StockList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\AllianceGroupList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\AllianceList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\AlliancePointSettlement.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\AllianceSettlement.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\AllianceUserList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\CustomField.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\GroupAuthority.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\GroupInfo.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\GroupList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\MainGroupList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\MainInfo.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\MainList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\MainUserList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\Message.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ReplyMessage.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ReturnPointLog.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SerialNumberList.aspx.cs">
+      <DependentUpon>SerialNumberList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SerialNumberList.aspx.designer.cs">
+      <DependentUpon>SerialNumberList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\ShopAuthority.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ShopGroupList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ShopInfo.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ShopList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ShopPointSettlement.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ShopPointTransfer.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ShopSendCard.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ShopSettlement.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ShopSmsTransfer.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ShopUserList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\StaffClassList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\StaffList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SysCustomRemind.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SysDataBak.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SysErrorList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SysLogList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SysNotice.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SysNoticeList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SysNoticeShow.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SysNoticeShowList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SysParameter.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SysRotateCount.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\UserInfo.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\UserList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\WeiXinConfig.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\WeiXinMenuManager.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\WeiXinRule.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\CallerMemDisplay.aspx.cs">
+      <DependentUpon>CallerMemDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\DataExcelIn.aspx.cs">
+      <DependentUpon>DataExcelIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Error_TimeOut.aspx.cs">
+      <DependentUpon>Error_TimeOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Exec.aspx.cs">
+      <DependentUpon>Exec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\TodayRemind.aspx.cs">
+      <DependentUpon>TodayRemind.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\UserWork.aspx.cs">
+      <DependentUpon>UserWork.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AllianceQuickSearch.ascx.cs">
+      <DependentUpon>AllianceQuickSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\JQGridView.ascx.cs">
+      <DependentUpon>JQGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\MemberSearch.ascx.cs">
+      <DependentUpon>MemberSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Pay.ascx.cs">
+      <DependentUpon>Pay.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\QuickSearch.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SysArea.ascx.cs">
+      <DependentUpon>SysArea.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CurrentParameter.cs" />
+    <Compile Include="DataExcelInfo.cs" />
+    <Compile Include="DataExcelInOfNPOI.cs" />
+    <Compile Include="EmailAccount.cs" />
+    <Compile Include="ExtraService\ChooseMember.aspx.cs">
+      <DependentUpon>ChooseMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraService\CouponList.aspx.cs">
+      <DependentUpon>CouponList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraService\CouponManage.aspx.cs">
+      <DependentUpon>CouponManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraService\EmailList.aspx.cs">
+      <DependentUpon>EmailList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraService\ExtraParameter.aspx.cs">
+      <DependentUpon>ExtraParameter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraService\ScreenPopUp.aspx.cs">
+      <DependentUpon>ScreenPopUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraService\SendEmail.aspx.cs">
+      <DependentUpon>SendEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraService\SendList.aspx.cs">
+      <DependentUpon>SendList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraService\SendMessage.aspx.cs">
+      <DependentUpon>SendMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraService\SmsShopReport.aspx.cs">
+      <DependentUpon>SmsShopReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraService\SmsShopReportDetail.aspx.cs">
+      <DependentUpon>SmsShopReportDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraService\SmsTemplate.aspx.cs">
+      <DependentUpon>SmsTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FieldModel.cs" />
+    <Compile Include="FirstPage.aspx.cs">
+      <DependentUpon>FirstPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Foot.aspx.cs">
+      <DependentUpon>Foot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frame.aspx.cs">
+      <DependentUpon>Frame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index1.aspx.cs">
+      <DependentUpon>index1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeftMenu.aspx.cs">
+      <DependentUpon>LeftMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginLogic.cs" />
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MEMPointUpdate.cs" />
+    <Compile Include="MsgType.cs" />
+    <Compile Include="OnlineBiz.cs" />
+    <Compile Include="OnlineMember.cs" />
+    <Compile Include="PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="PubFunction.cs" />
+    <Compile Include="Resources\Resource.cs" />
+    <Compile Include="ResponseSendStr.cs" />
+    <Compile Include="SendQueuedMessagesTask.cs" />
+    <Compile Include="Service\AjaxCallback.ashx.cs" />
+    <Compile Include="Service\AjaxService.ashx.cs" />
+    <Compile Include="Service\ChainStockSelf.asmx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service\HardwareKey.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Service\MicroWebsiteUpload.ashx.cs" />
+    <Compile Include="Service\MySelfSoapHeader.cs" />
+    <Compile Include="Service\PDAService.ashx.cs" />
+    <Compile Include="Service\PhoneService.ashx.cs" />
+    <Compile Include="Service\WeixinApi.cs" />
+    <Compile Include="Service\WeiXinHandler.ashx.cs" />
+    <Compile Include="Service\WeiXinService.ashx.cs" />
+    <Compile Include="Service\xhEditorUpload.cs" />
+    <Compile Include="SMSInfo.cs" />
+    <Compile Include="SmsTemplateParameter.cs" />
+    <Compile Include="SqlMapModel.cs" />
+    <Compile Include="StartPage.aspx.cs">
+      <DependentUpon>StartPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysNumerical.cs" />
+    <Compile Include="SystemManage\WeiXinRuleList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Top.aspx.cs">
+      <DependentUpon>Top.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebReference\GetBalanceCompletedEventArgs.cs" />
+    <Compile Include="WebReference\GetBalanceCompletedEventHandler.cs" />
+    <Compile Include="WebReference\RegisterExCompletedEventArgs.cs" />
+    <Compile Include="WebReference\RegisterExCompletedEventHandler.cs" />
+    <Compile Include="WebReference\RegisterZsCompletedEventArgs.cs" />
+    <Compile Include="WebReference\RegisterZsCompletedEventHandler.cs" />
+    <Compile Include="WebReference\SendMessageCompletedEventArgs.cs" />
+    <Compile Include="WebReference\SendMessageCompletedEventHandler.cs" />
+    <Compile Include="WebReference\SmsService.cs" />
+    <Compile Include="WebTest\SendMessage.cs" />
+    <Compile Include="WeiXin\MemberManipulate.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\WeiXinConvertHistory.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\WeiXinCoupon.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\WeiXinExpense.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\WeiXinGiftConvertList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\WeiXinGiftExchangeDetail.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\WeiXinGiftShow.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\WeiXinNewsLink.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\WeiXinPointChange.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\WeiXinPointExchange.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\WeiXinRecharge.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\WeiXinUpdateInfo.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="aspnet_client\system_web\4_0_30319\" />
+    <Folder Include="assets\server\node\public\files\" />
+    <Folder Include="assets\server\node\tmp\" />
+    <Folder Include="PayApi\alipay\keys\" />
+    <Folder Include="PayApi\alipay\log\" />
+    <Folder Include="Upload\Goods\" />
+    <Folder Include="Upload\Log\" />
+    <Folder Include="Upload\Members\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AppData\Dll\ADOHelper.dll" />
+    <Content Include="AppData\Dll\AspNetPager.dll" />
+    <Content Include="AppData\Dll\ChainPoint.XmlSerializers.dll" />
+    <Content Include="AppData\Dll\ChainStock.XmlSerializers.dll" />
+    <Content Include="AppData\Dll\CompactFormatterPlus.dll" />
+    <Content Include="AppData\Dll\Interop.SQLDMO.dll" />
+    <Content Include="AppData\Dll\Ionic.Zip.dll" />
+    <Content Include="AppData\Dll\ISerial.dll" />
+    <Content Include="AppData\Dll\Newtonsoft.Json.dll" />
+    <Content Include="AppData\Dll\NickLee.Common.dll" />
+    <Content Include="AppData\Dll\NPOI.dll" />
+    <Content Include="AppData\Dll\QRCode.dll" />
+    <Content Include="AppData\Dll\System.Web.Extensions.Design.dll" />
+    <Content Include="AppData\Dll\System.Web.Extensions.dll" />
+    <Content Include="AppData\Dll\Web.Common.dll" />
+    <Content Include="AppData\Dll\zxing.dll" />
+    <Content Include="App_GlobalResources\ClearTable.sql" />
+    <Content Include="App_GlobalResources\TestData.sql" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\custom-landing.css" />
+    <Content Include="assets\css\custom.css" />
+    <Content Include="assets\css\icons.css" />
+    <Content Include="assets\css\landing.css" />
+    <Content Include="assets\css\main.css" />
+    <Content Include="assets\css\plugins.css" />
+    <Content Include="assets\css\sprflat-theme\images\animated-overlay.gif" />
+    <Content Include="assets\css\sprflat-theme\images\handle.png" />
+    <Content Include="assets\css\sprflat-theme\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="assets\css\sprflat-theme\images\ui-bg_flat_75_cccccc_40x100.png" />
+    <Content Include="assets\css\sprflat-theme\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="assets\css\sprflat-theme\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="assets\css\sprflat-theme\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="assets\css\sprflat-theme\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="assets\css\sprflat-theme\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="assets\css\sprflat-theme\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="assets\css\sprflat-theme\images\ui-icons_454545_256x240.png" />
+    <Content Include="assets\css\sprflat-theme\images\ui-icons_62aeef_256x240.png" />
+    <Content Include="assets\css\sprflat-theme\images\ui-icons_636363_256x240.png" />
+    <Content Include="assets\css\sprflat-theme\images\ui-icons_888888_256x240.png" />
+    <Content Include="assets\css\sprflat-theme\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="assets\css\sprflat-theme\jquery-ui.css" />
+    <Content Include="assets\css\sprflat-theme\jquery.ui.accordion.css" />
+    <Content Include="assets\css\sprflat-theme\jquery.ui.all.css" />
+    <Content Include="assets\css\sprflat-theme\jquery.ui.autocomplete.css" />
+    <Content Include="assets\css\sprflat-theme\jquery.ui.base.css" />
+    <Content Include="assets\css\sprflat-theme\jquery.ui.button.css" />
+    <Content Include="assets\css\sprflat-theme\jquery.ui.core.css" />
+    <Content Include="assets\css\sprflat-theme\jquery.ui.datepicker.css" />
+    <Content Include="assets\css\sprflat-theme\jquery.ui.dialog.css" />
+    <Content Include="assets\css\sprflat-theme\jquery.ui.menu.css" />
+    <Content Include="assets\css\sprflat-theme\jquery.ui.progressbar.css" />
+    <Content Include="assets\css\sprflat-theme\jquery.ui.resizable.css" />
+    <Content Include="assets\css\sprflat-theme\jquery.ui.selectable.css" />
+    <Content Include="assets\css\sprflat-theme\jquery.ui.slider.css" />
+    <Content Include="assets\css\sprflat-theme\jquery.ui.spinner.css" />
+    <Content Include="assets\css\sprflat-theme\jquery.ui.tabs.css" />
+    <Content Include="assets\css\sprflat-theme\jquery.ui.theme.css" />
+    <Content Include="assets\css\sprflat-theme\jquery.ui.tooltip.css" />
+    <Content Include="assets\fonts\brocolidry.svg" />
+    <Content Include="assets\fonts\ecoico.svg" />
+    <Content Include="assets\fonts\entypo.svg" />
+    <Content Include="assets\fonts\fontawesome.svg" />
+    <Content Include="assets\fonts\icomoon.svg" />
+    <Content Include="assets\fonts\steadysets.svg" />
+    <Content Include="assets\img\avatars\48.jpg" />
+    <Content Include="assets\server\gae-go\static\favicon.ico" />
+    <Content Include="assets\server\gae-go\static\robots.txt" />
+    <Content Include="assets\server\gae-python\static\favicon.ico" />
+    <Content Include="assets\server\gae-python\static\robots.txt" />
+    <Content Include="assets\server\node\server.js" />
+    <Content Include="bin\ADOHelper.dll" />
+    <Content Include="bin\AspNetPager.dll" />
+    <Content Include="bin\ChainPoint.XmlSerializers.dll" />
+    <Content Include="bin\ChainStock.XmlSerializers.dll" />
+    <Content Include="bin\CompactFormatterPlus.dll" />
+    <Content Include="bin\Interop.SQLDMO.dll" />
+    <Content Include="bin\Ionic.Zip.dll" />
+    <Content Include="bin\ISerial.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\NickLee.Common.dll" />
+    <Content Include="bin\NPOI.dll" />
+    <Content Include="bin\QRCode.dll" />
+    <Content Include="bin\Resources\ClearTable.sql" />
+    <Content Include="bin\Resources\TestData.sql" />
+    <Content Include="bin\System.Web.Extensions.Design.dll" />
+    <Content Include="bin\System.Web.Extensions.dll" />
+    <Content Include="bin\Web.Common.dll" />
+    <Content Include="bin\WxPay.dll" />
+    <Content Include="bin\zxing.dll" />
+    <Content Include="Common\CallerMemDisplay.aspx" />
+    <Content Include="Common\DataExcelIn.aspx" />
+    <Content Include="Common\Error_TimeOut.aspx" />
+    <Content Include="Common\Exec.aspx" />
+    <Content Include="Common\TodayRemind.aspx" />
+    <Content Include="Common\UserWork.aspx" />
+    <Content Include="Controls\AllianceQuickSearch.ascx" />
+    <Content Include="Controls\FindMember.ascx" />
+    <Content Include="Controls\JQGridView.ascx" />
+    <Content Include="Controls\MemberSearch.ascx" />
+    <Content Include="Controls\Pay.ascx" />
+    <Content Include="Controls\QuickSearch.ascx" />
+    <Content Include="Controls\SysArea.ascx" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\common.css" />
+    <Content Include="css\index.css" />
+    <Content Include="css\style.css" />
+    <Content Include="ExtraService\ChooseMember.aspx" />
+    <Content Include="ExtraService\CouponList.aspx" />
+    <Content Include="ExtraService\CouponManage.aspx" />
+    <Content Include="ExtraService\EmailList.aspx" />
+    <Content Include="ExtraService\ExtraParameter.aspx" />
+    <Content Include="ExtraService\ScreenPopUp.aspx" />
+    <Content Include="ExtraService\SendEmail.aspx" />
+    <Content Include="ExtraService\SendList.aspx" />
+    <Content Include="ExtraService\SendMessage.aspx" />
+    <Content Include="ExtraService\SmsShopReport.aspx" />
+    <Content Include="ExtraService\SmsShopReportDetail.aspx" />
+    <Content Include="ExtraService\SmsTemplate.aspx" />
+    <Content Include="favicon_zhiluo.ico" />
+    <Content Include="FirstPage.aspx" />
+    <Content Include="Foot.aspx" />
+    <Content Include="Frame.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="images\Error\img-01.png" />
+    <Content Include="images\Error\twitter.png" />
+    <Content Include="images\Gift\abolish.png" />
+    <Content Include="images\Gift\add.png" />
+    <Content Include="images\Gift\again.png" />
+    <Content Include="images\Gift\arrow-down.gif" />
+    <Content Include="images\Gift\arrow-up.gif" />
+    <Content Include="images\Gift\back.png" />
+    <Content Include="images\Gift\cancel.png" />
+    <Content Include="images\Gift\card.png" />
+    <Content Include="images\Gift\del.png" />
+    <Content Include="images\Gift\eit.png" />
+    <Content Include="images\Gift\goexpense.png" />
+    <Content Include="images\Gift\goodsBack.png" />
+    <Content Include="images\Gift\info.png" />
+    <Content Include="images\Gift\isok.png" />
+    <Content Include="images\Gift\manage.png" />
+    <Content Include="images\Gift\newmessage.gif" />
+    <Content Include="images\Gift\nogift.jpg" />
+    <Content Include="images\Gift\nophoto.gif" />
+    <Content Include="images\Gift\password.png" />
+    <Content Include="images\Gift\print.png" />
+    <Content Include="images\Gift\Reply.png" />
+    <Content Include="images\Gift\revoke.png" />
+    <Content Include="images\Gift\selectImg.jpg" />
+    <Content Include="images\Gift\settle.png" />
+    <Content Include="images\Gift\show.png" />
+    <Content Include="images\Gift\system.png" />
+    <Content Include="images\head.png" />
+    <Content Include="images\icon %281%29.png" />
+    <Content Include="images\icon %2810%29.png" />
+    <Content Include="images\icon %2811%29.png" />
+    <Content Include="images\icon %2812%29.png" />
+    <Content Include="images\icon %2813%29.png" />
+    <Content Include="images\icon %2814%29.png" />
+    <Content Include="images\icon %2815%29.png" />
+    <Content Include="images\icon %2816%29.png" />
+    <Content Include="images\icon %2817%29.png" />
+    <Content Include="images\icon %2818%29.png" />
+    <Content Include="images\icon %2819%29.png" />
+    <Content Include="images\icon %282%29.png" />
+    <Content Include="images\icon %2820%29.png" />
+    <Content Include="images\icon %2821%29.png" />
+    <Content Include="images\icon %2822%29.png" />
+    <Content Include="images\icon %2823%29.png" />
+    <Content Include="images\icon %2824%29.png" />
+    <Content Include="images\icon %2825%29.png" />
+    <Content Include="images\icon %283%29.png" />
+    <Content Include="images\icon %284%29.png" />
+    <Content Include="images\icon %285%29.png" />
+    <Content Include="images\icon %286%29.png" />
+    <Content Include="images\icon %287%29.png" />
+    <Content Include="images\icon %288%29.png" />
+    <Content Include="images\icon %289%29.png" />
+    <Content Include="images\ico\administrator.png" />
+    <Content Include="images\ico\alarm.png" />
+    <Content Include="images\ico\barcode.png" />
+    <Content Include="images\ico\basket.png" />
+    <Content Include="images\ico\book.png" />
+    <Content Include="images\ico\box.png" />
+    <Content Include="images\ico\cancel.png" />
+    <Content Include="images\ico\card_gift.png" />
+    <Content Include="images\ico\cart.png" />
+    <Content Include="images\ico\cart_go.png" />
+    <Content Include="images\ico\cart_w.png" />
+    <Content Include="images\ico\ceo.png" />
+    <Content Include="images\ico\changepoint.png" />
+    <Content Include="images\ico\changepwd.png" />
+    <Content Include="images\ico\charngecard.png" />
+    <Content Include="images\ico\chart_bar.png" />
+    <Content Include="images\ico\chart_pie.png" />
+    <Content Include="images\ico\chart_stock.png" />
+    <Content Include="images\ico\close.png" />
+    <Content Include="images\ico\coins.png" />
+    <Content Include="images\ico\coins_add.png" />
+    <Content Include="images\ico\cup.png" />
+    <Content Include="images\ico\date.png" />
+    <Content Include="images\ico\datelog.png" />
+    <Content Include="images\ico\dot.gif" />
+    <Content Include="images\ico\download.gif" />
+    <Content Include="images\ico\employee.png" />
+    <Content Include="images\ico\folder.gif" />
+    <Content Include="images\ico\folder_table.png" />
+    <Content Include="images\ico\gear.png" />
+    <Content Include="images\ico\group.png" />
+    <Content Include="images\ico\group_add.png" />
+    <Content Include="images\ico\group_edit.png" />
+    <Content Include="images\ico\heart.png" />
+    <Content Include="images\ico\house.png" />
+    <Content Include="images\ico\house_one.png" />
+    <Content Include="images\ico\key.png" />
+    <Content Include="images\ico\keyboard.png" />
+    <Content Include="images\ico\level.png" />
+    <Content Include="images\ico\list.png" />
+    <Content Include="images\ico\loading.gif" />
+    <Content Include="images\ico\lock.png" />
+    <Content Include="images\ico\lorry_add.png" />
+    <Content Include="images\ico\message.png" />
+    <Content Include="images\ico\minus.gif" />
+    <Content Include="images\ico\mobile.png" />
+    <Content Include="images\ico\money.png" />
+    <Content Include="images\ico\mouse.png" />
+    <Content Include="images\ico\news.png" />
+    <Content Include="images\ico\open.png" />
+    <Content Include="images\ico\pc.png" />
+    <Content Include="images\ico\plus.gif" />
+    <Content Include="images\ico\point.png" />
+    <Content Include="images\ico\printer.png" />
+    <Content Include="images\ico\privilege.png" />
+    <Content Include="images\ico\prod.png" />
+    <Content Include="images\ico\product.png" />
+    <Content Include="images\ico\report.png" />
+    <Content Include="images\ico\shop.png" />
+    <Content Include="images\ico\shopping.png" />
+    <Content Include="images\ico\skins.png" />
+    <Content Include="images\ico\sms.png" />
+    <Content Include="images\ico\smstmp.png" />
+    <Content Include="images\ico\system.png" />
+    <Content Include="images\ico\table.png" />
+    <Content Include="images\ico\table_excel.png" />
+    <Content Include="images\ico\telephone.png" />
+    <Content Include="images\ico\time.png" />
+    <Content Include="images\ico\trpoint.png" />
+    <Content Include="images\ico\vcard.png" />
+    <Content Include="images\ico\vcard_add.png" />
+    <Content Include="images\ico\weixin.png" />
+    <Content Include="images\ico\xtgg.png" />
+    <Content Include="images\ico\错误.txt" />
+    <Content Include="images\loading\pic1.jpg" />
+    <Content Include="images\loading\pic2.jpg" />
+    <Content Include="images\loading\pic3.jpg" />
+    <Content Include="images\loading\pic4.jpg" />
+    <Content Include="images\loading\pic5.jpg" />
+    <Content Include="images\login\Init_clip_image002_0000.jpg" />
+    <Content Include="images\login\logo.png" />
+    <Content Include="images\login\Trylogo.png" />
+    <Content Include="images\login\ZL_erweima.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\main\timeout.gif" />
+    <Content Include="images\main\toplogo.png" />
+    <Content Include="images\main\trytoplogo.png" />
+    <Content Include="images\member\cancel.png" />
+    <Content Include="images\member\nophoto.gif" />
+    <Content Include="images\member\selectCert.png" />
+    <Content Include="images\member\selectImg.jpg" />
+    <Content Include="images\member\zhiluo.png" />
+    <Content Include="images\qushi.png" />
+    <Content Include="images\swf\uploadify.swf" />
+    <Content Include="Inc\artDialogskins\aero.css" />
+    <Content Include="Inc\artDialogskins\aero\aero_s.png" />
+    <Content Include="Inc\artDialogskins\aero\aero_s2.png" />
+    <Content Include="Inc\artDialogskins\aero\ie6\aui_close.hover.png" />
+    <Content Include="Inc\artDialogskins\aero\ie6\aui_close.png" />
+    <Content Include="Inc\artDialogskins\aero\ie6\aui_e.png" />
+    <Content Include="Inc\artDialogskins\aero\ie6\aui_n.png" />
+    <Content Include="Inc\artDialogskins\aero\ie6\aui_ne.png" />
+    <Content Include="Inc\artDialogskins\aero\ie6\aui_nw.png" />
+    <Content Include="Inc\artDialogskins\aero\ie6\aui_s.png" />
+    <Content Include="Inc\artDialogskins\aero\ie6\aui_se.png" />
+    <Content Include="Inc\artDialogskins\aero\ie6\aui_sw.png" />
+    <Content Include="Inc\artDialogskins\aero\ie6\aui_title_icon.png" />
+    <Content Include="Inc\artDialogskins\aero\ie6\aui_w.png" />
+    <Content Include="Inc\artDialogskins\black.css" />
+    <Content Include="Inc\artDialogskins\black\bg.png" />
+    <Content Include="Inc\artDialogskins\black\bg2.png" />
+    <Content Include="Inc\artDialogskins\black\bg_css3.png" />
+    <Content Include="Inc\artDialogskins\black\bg_css3_2.png" />
+    <Content Include="Inc\artDialogskins\black\ie6\close.hover.png" />
+    <Content Include="Inc\artDialogskins\black\ie6\close.png" />
+    <Content Include="Inc\artDialogskins\black\ie6\e.png" />
+    <Content Include="Inc\artDialogskins\black\ie6\n.png" />
+    <Content Include="Inc\artDialogskins\black\ie6\ne.png" />
+    <Content Include="Inc\artDialogskins\black\ie6\nw.png" />
+    <Content Include="Inc\artDialogskins\black\ie6\s.png" />
+    <Content Include="Inc\artDialogskins\black\ie6\se.png" />
+    <Content Include="Inc\artDialogskins\black\ie6\sw.png" />
+    <Content Include="Inc\artDialogskins\black\ie6\w.png" />
+    <Content Include="Inc\artDialogskins\blue1.css" />
+    <Content Include="Inc\artDialogskins\blue.css" />
+    <Content Include="Inc\artDialogskins\blue\bg.png" />
+    <Content Include="Inc\artDialogskins\blue\bg2.png" />
+    <Content Include="Inc\artDialogskins\blue\bg_css3.png" />
+    <Content Include="Inc\artDialogskins\blue\bg_css3_2.png" />
+    <Content Include="Inc\artDialogskins\blue\ie6\close.hover.png" />
+    <Content Include="Inc\artDialogskins\blue\ie6\close.png" />
+    <Content Include="Inc\artDialogskins\blue\ie6\e.png" />
+    <Content Include="Inc\artDialogskins\blue\ie6\n.png" />
+    <Content Include="Inc\artDialogskins\blue\ie6\ne.png" />
+    <Content Include="Inc\artDialogskins\blue\ie6\nw.png" />
+    <Content Include="Inc\artDialogskins\blue\ie6\s.png" />
+    <Content Include="Inc\artDialogskins\blue\ie6\se.png" />
+    <Content Include="Inc\artDialogskins\blue\ie6\sw.png" />
+    <Content Include="Inc\artDialogskins\blue\ie6\w.png" />
+    <Content Include="Inc\artDialogskins\chrome.css" />
+    <Content Include="Inc\artDialogskins\chrome\border.png" />
+    <Content Include="Inc\artDialogskins\chrome\chrome_s.png" />
+    <Content Include="Inc\artDialogskins\default.css" />
+    <Content Include="Inc\artDialogskins\gray.css" />
+    <Content Include="Inc\artDialogskins\gray\ie6\aui_close.hover.png" />
+    <Content Include="Inc\artDialogskins\gray\ie6\aui_close.png" />
+    <Content Include="Inc\artDialogskins\gray\ie6\aui_e.png" />
+    <Content Include="Inc\artDialogskins\gray\ie6\aui_n.png" />
+    <Content Include="Inc\artDialogskins\gray\ie6\aui_ne.png" />
+    <Content Include="Inc\artDialogskins\gray\ie6\aui_nw.png" />
+    <Content Include="Inc\artDialogskins\gray\ie6\aui_s.png" />
+    <Content Include="Inc\artDialogskins\gray\ie6\aui_se.png" />
+    <Content Include="Inc\artDialogskins\gray\ie6\aui_sw.png" />
+    <Content Include="Inc\artDialogskins\gray\ie6\aui_w.png" />
+    <Content Include="Inc\artDialogskins\gray\s1.png" />
+    <Content Include="Inc\artDialogskins\gray\s2.png" />
+    <Content Include="Inc\artDialogskins\green.css" />
+    <Content Include="Inc\artDialogskins\green\bg.png" />
+    <Content Include="Inc\artDialogskins\green\bg2.png" />
+    <Content Include="Inc\artDialogskins\green\bg_css3.png" />
+    <Content Include="Inc\artDialogskins\green\bg_css3_2.png" />
+    <Content Include="Inc\artDialogskins\green\color_bg.png" />
+    <Content Include="Inc\artDialogskins\green\ie6\close.hover.png" />
+    <Content Include="Inc\artDialogskins\green\ie6\close.png" />
+    <Content Include="Inc\artDialogskins\green\ie6\e.png" />
+    <Content Include="Inc\artDialogskins\green\ie6\n.png" />
+    <Content Include="Inc\artDialogskins\green\ie6\ne.png" />
+    <Content Include="Inc\artDialogskins\green\ie6\nw.png" />
+    <Content Include="Inc\artDialogskins\green\ie6\s.png" />
+    <Content Include="Inc\artDialogskins\green\ie6\se.png" />
+    <Content Include="Inc\artDialogskins\green\ie6\sw.png" />
+    <Content Include="Inc\artDialogskins\green\ie6\w.png" />
+    <Content Include="Inc\artDialogskins\icons\error.png" />
+    <Content Include="Inc\artDialogskins\icons\face-sad.png" />
+    <Content Include="Inc\artDialogskins\icons\face-smile.png" />
+    <Content Include="Inc\artDialogskins\icons\loading.gif" />
+    <Content Include="Inc\artDialogskins\icons\login.png" />
+    <Content Include="Inc\artDialogskins\icons\mail.png" />
+    <Content Include="Inc\artDialogskins\icons\question.png" />
+    <Content Include="Inc\artDialogskins\icons\succeed.png" />
+    <Content Include="Inc\artDialogskins\icons\system.png" />
+    <Content Include="Inc\artDialogskins\icons\warning.png" />
+    <Content Include="Inc\artDialogskins\idialog.css" />
+    <Content Include="Inc\artDialogskins\idialog\idialog_s.png" />
+    <Content Include="Inc\artDialogskins\idialog\idialog_s2.png" />
+    <Content Include="Inc\artDialogskins\idialog\ie6\aui_close.hover.png" />
+    <Content Include="Inc\artDialogskins\idialog\ie6\aui_close.png" />
+    <Content Include="Inc\artDialogskins\idialog\ie6\aui_e.png" />
+    <Content Include="Inc\artDialogskins\idialog\ie6\aui_n.png" />
+    <Content Include="Inc\artDialogskins\idialog\ie6\aui_ne.png" />
+    <Content Include="Inc\artDialogskins\idialog\ie6\aui_nw.png" />
+    <Content Include="Inc\artDialogskins\idialog\ie6\aui_s.png" />
+    <Content Include="Inc\artDialogskins\idialog\ie6\aui_se.png" />
+    <Content Include="Inc\artDialogskins\idialog\ie6\aui_sw.png" />
+    <Content Include="Inc\artDialogskins\idialog\ie6\aui_w.png" />
+    <Content Include="Inc\artDialogskins\opera.css" />
+    <Content Include="Inc\artDialogskins\opera\ie6\aui_close.hover.png" />
+    <Content Include="Inc\artDialogskins\opera\ie6\aui_close.png" />
+    <Content Include="Inc\artDialogskins\opera\ie6\aui_e.png" />
+    <Content Include="Inc\artDialogskins\opera\ie6\aui_n.png" />
+    <Content Include="Inc\artDialogskins\opera\ie6\aui_ne.png" />
+    <Content Include="Inc\artDialogskins\opera\ie6\aui_nw.png" />
+    <Content Include="Inc\artDialogskins\opera\ie6\aui_s.png" />
+    <Content Include="Inc\artDialogskins\opera\ie6\aui_se.png" />
+    <Content Include="Inc\artDialogskins\opera\ie6\aui_sw.png" />
+    <Content Include="Inc\artDialogskins\opera\ie6\aui_w.png" />
+    <Content Include="Inc\artDialogskins\opera\s1.png" />
+    <Content Include="Inc\artDialogskins\opera\s2.png" />
+    <Content Include="Inc\artDialogskins\simple.css" />
+    <Content Include="Inc\artDialogskins\twitter.css" />
+    <Content Include="Inc\Style\calendar.css" />
+    <Content Include="Inc\Style\images\ajax-loader.gif" />
+    <Content Include="Inc\Style\images\all_Pic.png" />
+    <Content Include="Inc\Style\images\background.png" />
+    <Content Include="Inc\Style\images\bottom.png" />
+    <Content Include="Inc\Style\images\box_bg.png" />
+    <Content Include="Inc\Style\images\btnReset.png" />
+    <Content Include="Inc\Style\images\btnReset_hover.png" />
+    <Content Include="Inc\Style\images\btnSave.gif" />
+    <Content Include="Inc\Style\images\btnsumit.png" />
+    <Content Include="Inc\Style\images\btnsumit_hover.png" />
+    <Content Include="Inc\Style\images\bullet.gif" />
+    <Content Include="Inc\Style\images\card.png" />
+    <Content Include="Inc\Style\images\checkbox.gif" />
+    <Content Include="Inc\Style\images\close.png" />
+    <Content Include="Inc\Style\images\content_bg.png" />
+    <Content Include="Inc\Style\images\down.png" />
+    <Content Include="Inc\Style\images\favicon.ico" />
+    <Content Include="Inc\Style\images\flexigrid\bg.gif" />
+    <Content Include="Inc\Style\images\flexigrid\btn-sprite.gif" />
+    <Content Include="Inc\Style\images\flexigrid\ddn.png" />
+    <Content Include="Inc\Style\images\flexigrid\dn.png" />
+    <Content Include="Inc\Style\images\flexigrid\fhbg.gif" />
+    <Content Include="Inc\Style\images\flexigrid\first.gif" />
+    <Content Include="Inc\Style\images\flexigrid\hl.png" />
+    <Content Include="Inc\Style\images\flexigrid\last.gif" />
+    <Content Include="Inc\Style\images\flexigrid\line.gif" />
+    <Content Include="Inc\Style\images\flexigrid\load.gif" />
+    <Content Include="Inc\Style\images\flexigrid\load.png" />
+    <Content Include="Inc\Style\images\flexigrid\magnifier.png" />
+    <Content Include="Inc\Style\images\flexigrid\next.gif" />
+    <Content Include="Inc\Style\images\flexigrid\prev.gif" />
+    <Content Include="Inc\Style\images\flexigrid\up.png" />
+    <Content Include="Inc\Style\images\flexigrid\uup.png" />
+    <Content Include="Inc\Style\images\flexigrid\wbg.gif" />
+    <Content Include="Inc\Style\images\foot.png" />
+    <Content Include="Inc\Style\images\head_line.jpg" />
+    <Content Include="Inc\Style\images\head_menu_active.gif" />
+    <Content Include="Inc\Style\images\head_menu_active.png" />
+    <Content Include="Inc\Style\images\head_top.gif" />
+    <Content Include="Inc\Style\images\head_top.png" />
+    <Content Include="Inc\Style\images\head_top_bg.gif" />
+    <Content Include="Inc\Style\images\icons-18-black.png" />
+    <Content Include="Inc\Style\images\icons-18-white.png" />
+    <Content Include="Inc\Style\images\icons-36-black.png" />
+    <Content Include="Inc\Style\images\icons-36-white.png" />
+    <Content Include="Inc\Style\images\img-01.png" />
+    <Content Include="Inc\Style\images\line.png" />
+    <Content Include="Inc\Style\images\link_bg.jpg" />
+    <Content Include="Inc\Style\images\link_ng.png" />
+    <Content Include="Inc\Style\images\link_start.png" />
+    <Content Include="Inc\Style\images\list.gif" />
+    <Content Include="Inc\Style\images\list_backup.gif" />
+    <Content Include="Inc\Style\images\list_dot.gif" />
+    <Content Include="Inc\Style\images\list_fast.gif" />
+    <Content Include="Inc\Style\images\list_gift.gif" />
+    <Content Include="Inc\Style\images\list_head.gif" />
+    <Content Include="Inc\Style\images\list_home.gif" />
+    <Content Include="Inc\Style\images\list_mess.gif" />
+    <Content Include="Inc\Style\images\list_recharge.gif" />
+    <Content Include="Inc\Style\images\list_shoppping.gif" />
+    <Content Include="Inc\Style\images\list_swich.gif" />
+    <Content Include="Inc\Style\images\list_user.gif" />
+    <Content Include="Inc\Style\images\loading.gif" />
+    <Content Include="Inc\Style\images\logo.png" />
+    <Content Include="Inc\Style\images\main\alarm.png" />
+    <Content Include="Inc\Style\images\main\alert.png" />
+    <Content Include="Inc\Style\images\main\alert_hover.png" />
+    <Content Include="Inc\Style\images\main\footbg.png" />
+    <Content Include="Inc\Style\images\main\glyhb.png" />
+    <Content Include="Inc\Style\images\main\glyhbh.png" />
+    <Content Include="Inc\Style\images\main\help.jpg" />
+    <Content Include="Inc\Style\images\main\home.gif" />
+    <Content Include="Inc\Style\images\main\home.png" />
+    <Content Include="Inc\Style\images\main\home_hover.png" />
+    <Content Include="Inc\Style\images\main\kshop.png" />
+    <Content Include="Inc\Style\images\main\kshop_hover.png" />
+    <Content Include="Inc\Style\images\main\leftbg.jpg" />
+    <Content Include="Inc\Style\images\main\mcard.png" />
+    <Content Include="Inc\Style\images\main\mcard_mlist.png" />
+    <Content Include="Inc\Style\images\main\menuhide.png" />
+    <Content Include="Inc\Style\images\main\menuopen.png" />
+    <Content Include="Inc\Style\images\main\mlist.png" />
+    <Content Include="Inc\Style\images\main\mlist_hover.png" />
+    <Content Include="Inc\Style\images\main\no.gif" />
+    <Content Include="Inc\Style\images\main\skins.png" />
+    <Content Include="Inc\Style\images\main\telephone.png" />
+    <Content Include="Inc\Style\images\main\telephone_no.png" />
+    <Content Include="Inc\Style\images\main\topbar.png" />
+    <Content Include="Inc\Style\images\main\topbg.jpg" />
+    <Content Include="Inc\Style\images\main\topleft.jpg" />
+    <Content Include="Inc\Style\images\main\topright.jpg" />
+    <Content Include="Inc\Style\images\main\连锁内1_13.png" />
+    <Content Include="Inc\Style\images\main\连锁内1_15.png" />
+    <Content Include="Inc\Style\images\main\连锁内1_18.png" />
+    <Content Include="Inc\Style\images\main\连锁内1_26.png" />
+    <Content Include="Inc\Style\images\main\连锁内1_28.png" />
+    <Content Include="Inc\Style\images\main\连锁内1_31.png" />
+    <Content Include="Inc\Style\images\main\连锁内1_38.png" />
+    <Content Include="Inc\Style\images\main\连锁内1_39.png" />
+    <Content Include="Inc\Style\images\main\连锁内1_42.png" />
+    <Content Include="Inc\Style\images\main\连锁内1_46.png" />
+    <Content Include="Inc\Style\images\main\连锁内1_48.png" />
+    <Content Include="Inc\Style\images\main\连锁内1_50.png" />
+    <Content Include="Inc\Style\images\memcount.gif" />
+    <Content Include="Inc\Style\images\menuClose.png" />
+    <Content Include="Inc\Style\images\menuitem.png" />
+    <Content Include="Inc\Style\images\menuOpen.png" />
+    <Content Include="Inc\Style\images\menutop.png" />
+    <Content Include="Inc\Style\images\minus.gif" />
+    <Content Include="Inc\Style\images\more.gif" />
+    <Content Include="Inc\Style\images\nophoto.gif" />
+    <Content Include="Inc\Style\images\notice.gif" />
+    <Content Include="Inc\Style\images\number.png" />
+    <Content Include="Inc\Style\images\open.png" />
+    <Content Include="Inc\Style\images\plus.gif" />
+    <Content Include="Inc\Style\images\right_Arrow.gif" />
+    <Content Include="Inc\Style\images\searchfield_bg.png" />
+    <Content Include="Inc\Style\images\shadow.gif" />
+    <Content Include="Inc\Style\images\sky.jpg" />
+    <Content Include="Inc\Style\images\Small_Icons.gif" />
+    <Content Include="Inc\Style\images\t01de1a4a243be48a58.png" />
+    <Content Include="Inc\Style\images\tab-hd.gif" />
+    <Content Include="Inc\Style\images\tab-hd.png" />
+    <Content Include="Inc\Style\images\tab.png" />
+    <Content Include="Inc\Style\images\tab_head.gif" />
+    <Content Include="Inc\Style\images\tab_Right.gif" />
+    <Content Include="Inc\Style\images\tab_Right2.gif" />
+    <Content Include="Inc\Style\images\th_bg.jpg" />
+    <Content Include="Inc\Style\images\Tick.png" />
+    <Content Include="Inc\Style\images\titile_Arrow.gif" />
+    <Content Include="Inc\Style\images\title.png" />
+    <Content Include="Inc\Style\images\title_img.gif" />
+    <Content Include="Inc\Style\images\title_img.png" />
+    <Content Include="Inc\Style\images\title_sys.png" />
+    <Content Include="Inc\Style\images\title_talk.png" />
+    <Content Include="Inc\Style\images\title_trend.png" />
+    <Content Include="Inc\Style\images\top.png" />
+    <Content Include="Inc\Style\images\trend.jpg" />
+    <Content Include="Inc\Style\images\twitter.png" />
+    <Content Include="Inc\Style\images\ubox-select.gif" />
+    <Content Include="Inc\Style\images\ubox-select2.gif" />
+    <Content Include="Inc\Style\images\ubox-select3.gif" />
+    <Content Include="Inc\Style\images\x.gif" />
+    <Content Include="Inc\Style\images\下载.png" />
+    <Content Include="Inc\Style\jquery.mobile-1.2.0.min.css" />
+    <Content Include="Inc\Style\leftMenu.css" />
+    <Content Include="Inc\Style\mobiscroll.custom-2.5.0.min.css" />
+    <Content Include="Inc\Style\Style.css" />
+    <Content Include="Inc\Style\stylesheet.css" />
+    <Content Include="Inc\Style\uploadify.css" />
+    <Content Include="Inc\xheditor\common.css" />
+    <Content Include="Inc\xheditor\jquery\jquery-1.4.4.min.js" />
+    <Content Include="Inc\xheditor\jquery\jquery-1.4.4.src.js" />
+    <Content Include="Inc\xheditor\src\ubb.js" />
+    <Content Include="Inc\xheditor\src\xheditor-1.1.14-en.js" />
+    <Content Include="Inc\xheditor\src\xheditor-1.1.14-zh-cn.js" />
+    <Content Include="Inc\xheditor\src\xheditor-1.1.14-zh-tw.js" />
+    <Content Include="Inc\xheditor\xheditor-1.1.14-zh-cn.min.js" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\angry.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\awkward.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\bye.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\config.txt" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\crazy.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\cry.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\curse.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\cute.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\despise.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\doubt.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\envy.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\fastcry.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\knock.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\laugh.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\mad.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\ohmy.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\panic.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\proud.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\quiet.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\sad.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\shutup.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\shy.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\sleep.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\smile.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\struggle.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\titter.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\tongue.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\wail.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\default\wronged.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\alien.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\angel.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\angry.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\bandit.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\biglaugh.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\blink.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\blush.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\config.txt" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\cool.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\cry.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\depres.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\devil.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\glare.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\heart.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\joyful.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\kiss.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\laugh.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\magician.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\ninja.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\pinch.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\police.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\sad.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\sick.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\sideways.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\sleep.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\smile.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\surprised.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\tongue.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\unsure.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\w00t.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\whistling.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\wondering.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\ipb\wub.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\1.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\10.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\11.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\12.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\13.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\14.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\15.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\16.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\17.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\18.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\19.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\2.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\20.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\21.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\22.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\23.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\24.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\25.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\26.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\27.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\28.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\29.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\3.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\30.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\31.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\32.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\33.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\34.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\35.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\36.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\37.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\38.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\39.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\4.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\40.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\5.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\6.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\7.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\8.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\msn\9.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\angry.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\bad.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\blush.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\brokenheart.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\bye.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\coffee.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\config.txt" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\cool.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\cry.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\curse.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\cute.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\devil.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\envy.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\gift.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\good.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\kiss.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\laugh.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\love.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\music.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\question.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\rose.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\sad.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\shocked.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\shout.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\sick.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\sleepy.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\smile.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\soccer.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\sweat.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\tired.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\tongue.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\victory.gif" />
+    <Content Include="Inc\xheditor\xheditor_emot\pidgin\wink.gif" />
+    <Content Include="Inc\xheditor\xheditor_plugins\multiupload\img\add.gif" />
+    <Content Include="Inc\xheditor\xheditor_plugins\multiupload\img\bg1.gif" />
+    <Content Include="Inc\xheditor\xheditor_plugins\multiupload\img\bg2.gif" />
+    <Content Include="Inc\xheditor\xheditor_plugins\multiupload\img\btnbg.gif" />
+    <Content Include="Inc\xheditor\xheditor_plugins\multiupload\img\btnbgr.gif" />
+    <Content Include="Inc\xheditor\xheditor_plugins\multiupload\img\clear.gif" />
+    <Content Include="Inc\xheditor\xheditor_plugins\multiupload\img\progressbg.gif" />
+    <Content Include="Inc\xheditor\xheditor_plugins\multiupload\img\start.gif" />
+    <Content Include="Inc\xheditor\xheditor_plugins\multiupload\multiupload.css" />
+    <Content Include="Inc\xheditor\xheditor_plugins\multiupload\multiupload.html" />
+    <Content Include="Inc\xheditor\xheditor_plugins\multiupload\multiupload.js" />
+    <Content Include="Inc\xheditor\xheditor_plugins\multiupload\swfupload\swfupload.js" />
+    <Content Include="Inc\xheditor\xheditor_plugins\multiupload\swfupload\swfupload.swf" />
+    <Content Include="Inc\xheditor\xheditor_plugins\ubb.min.js" />
+    <Content Include="Inc\xheditor\xheditor_skin\blank.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\default\iframe.css" />
+    <Content Include="Inc\xheditor\xheditor_skin\default\img\anchor.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\default\img\close.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\default\img\flash.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\default\img\icons.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\default\img\loading.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\default\img\progress.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\default\img\progressbg.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\default\img\tag-address.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\default\img\tag-div.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\default\img\tag-h1.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\default\img\tag-h2.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\default\img\tag-h3.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\default\img\tag-h4.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\default\img\tag-h5.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\default\img\tag-h6.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\default\img\tag-p.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\default\img\tag-pre.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\default\img\waiting.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\default\img\wmp.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\default\img\wordimg.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\default\ui.css" />
+    <Content Include="Inc\xheditor\xheditor_skin\nostyle\iframe.css" />
+    <Content Include="Inc\xheditor\xheditor_skin\nostyle\img\anchor.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\nostyle\img\close.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\nostyle\img\flash.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\nostyle\img\icons.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\nostyle\img\loading.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\nostyle\img\progress.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\nostyle\img\progressbg.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\nostyle\img\tag-address.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\nostyle\img\tag-div.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\nostyle\img\tag-h1.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\nostyle\img\tag-h2.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\nostyle\img\tag-h3.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\nostyle\img\tag-h4.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\nostyle\img\tag-h5.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\nostyle\img\tag-h6.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\nostyle\img\tag-p.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\nostyle\img\tag-pre.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\nostyle\img\waiting.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\nostyle\img\wmp.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\nostyle\img\wordimg.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\nostyle\ui.css" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007blue\iframe.css" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007blue\img\anchor.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007blue\img\buttonbg.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007blue\img\close.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007blue\img\flash.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007blue\img\icons.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007blue\img\loading.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007blue\img\progress.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007blue\img\progressbg.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007blue\img\tag-address.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007blue\img\tag-div.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007blue\img\tag-h1.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007blue\img\tag-h2.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007blue\img\tag-h3.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007blue\img\tag-h4.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007blue\img\tag-h5.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007blue\img\tag-h6.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007blue\img\tag-p.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007blue\img\tag-pre.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007blue\img\waiting.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007blue\img\wmp.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007blue\img\wordimg.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007blue\ui.css" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007silver\iframe.css" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007silver\img\anchor.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007silver\img\buttonbg.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007silver\img\close.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007silver\img\flash.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007silver\img\icons.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007silver\img\loading.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007silver\img\progress.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007silver\img\progressbg.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007silver\img\tag-address.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007silver\img\tag-div.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007silver\img\tag-h1.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007silver\img\tag-h2.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007silver\img\tag-h3.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007silver\img\tag-h4.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007silver\img\tag-h5.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007silver\img\tag-h6.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007silver\img\tag-p.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007silver\img\tag-pre.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007silver\img\waiting.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007silver\img\wmp.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007silver\img\wordimg.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\o2007silver\ui.css" />
+    <Content Include="Inc\xheditor\xheditor_skin\vista\iframe.css" />
+    <Content Include="Inc\xheditor\xheditor_skin\vista\img\anchor.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\vista\img\buttonbg.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\vista\img\close.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\vista\img\flash.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\vista\img\icons.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\vista\img\loading.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\vista\img\progress.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\vista\img\progressbg.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\vista\img\tag-address.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\vista\img\tag-div.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\vista\img\tag-h1.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\vista\img\tag-h2.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\vista\img\tag-h3.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\vista\img\tag-h4.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\vista\img\tag-h5.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\vista\img\tag-h6.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\vista\img\tag-p.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\vista\img\tag-pre.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\vista\img\titlebg.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\vista\img\waiting.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\vista\img\wmp.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\vista\img\wordimg.gif" />
+    <Content Include="Inc\xheditor\xheditor_skin\vista\ui.css" />
+    <Content Include="index.aspx" />
+    <Content Include="index1.aspx" />
+    <Content Include="LeftMenu.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Main.aspx" />
+    <Content Include="Member\AddSubMem.aspx" />
+    <Content Include="Member\EditLevel.aspx" />
+    <Content Include="Member\Init.xml" />
+    <Content Include="Member\MemChangeCard.aspx" />
+    <Content Include="Member\MemChangePwd.aspx" />
+    <Content Include="Member\MemDelay.aspx" />
+    <Content Include="Member\MemDrawMoney.aspx" />
+    <Content Include="Member\MemExistCount.aspx" />
+    <Content Include="Member\MemInfo.aspx" />
+    <Content Include="Member\MemList.aspx" />
+    <Content Include="Member\MemLock.aspx" />
+    <Content Include="Member\MemRechargeCount.aspx" />
+    <Content Include="Member\MemRechargeMoney.aspx" />
+    <Content Include="Member\MemRegister.aspx" />
+    <Content Include="Member\MemSendCard.aspx" />
+    <Content Include="Member\MemStorageTiming.aspx" />
+    <Content Include="Member\MemTransferMoney.aspx" />
+    <Content Include="Member\OnlinePhoto.htm" />
+    <Content Include="Member\PhotoOnline.swf" />
+    <Content Include="Member\SavePhoto.aspx" />
+    <Content Include="Member\SetLevel.aspx" />
+    <Content Include="Member\TimingCategory.aspx" />
+    <Content Include="Member\TimingProject.aspx" />
+    <Content Include="Member\Timingrules.aspx" />
+    <Content Include="MemExpense\ConsumeMemCount.aspx" />
+    <Content Include="MemExpense\Expense.aspx" />
+    <Content Include="MemExpense\ExpenseHistory.aspx" />
+    <Content Include="MemExpense\TimeExpense.aspx" />
+    <Content Include="MemExpense\TimeList.aspx" />
+    <Content Include="MerchantLogin.aspx" />
+    <Content Include="MicroWebsite\Album.aspx" />
+    <Content Include="MicroWebsite\BackgroundSet.aspx" />
+    <Content Include="MicroWebsite\ExchangeAudit.aspx" />
+    <Content Include="MicroWebsite\ExchangeStatistics.aspx" />
+    <Content Include="MicroWebsite\GoodsAudit.aspx" />
+    <Content Include="MicroWebsite\MemberExplanation.aspx" />
+    <Content Include="MicroWebsite\MicroExpenseHistory.aspx" />
+    <Content Include="MicroWebsite\MicroGoodsClass.aspx" />
+    <Content Include="MicroWebsite\MicroGoodsInfo.aspx" />
+    <Content Include="MicroWebsite\MicroGoodsList.aspx" />
+    <Content Include="MicroWebsite\MicroWebsiteIndex.aspx" />
+    <Content Include="MicroWebsite\News.aspx" />
+    <Content Include="MicroWebsite\NewsInfo.aspx" />
+    <Content Include="MicroWebsite\Opinion.aspx" />
+    <Content Include="MicroWebsite\Photo.aspx" />
+    <Content Include="MicroWebsite\ProductCenter.aspx" />
+    <Content Include="MicroWebsite\ProductCenterInfo.aspx" />
+    <Content Include="MicroWebsite\ProductClass.aspx" />
+    <Content Include="MicroWebsite\Promotions.aspx" />
+    <Content Include="MicroWebsite\PromotionsInfo.aspx" />
+    <Content Include="MicroWebsite\RechargeRule.aspx" />
+    <Content Include="MicroWebsite\SymbolShow.aspx" />
+    <Content Include="MicroWebsite\SysRotateCount.aspx" />
+    <Content Include="MicroWebsite\SysRotateInfo.aspx" />
+    <Content Include="MicroWebsite\SysRotateList.aspx" />
+    <Content Include="MicroWebsite\SysRotatePrizeLog.aspx" />
+    <Content Include="MicroWebsite\SysRotatePrizeSum.aspx" />
+    <Content Include="MicroWebsite\WeiXinGiveMoneyList.aspx" />
+    <Content Include="MicroWebsite\WeiXinMoneyInfo.aspx" />
+    <Content Include="MicroWebsite\WeiXinMoneyList.aspx" />
+    <Content Include="MicroWebsite\WeiXinMoneySum.aspx" />
+    <Content Include="mobile\business\bossCenter.aspx" />
+    <Content Include="mobile\business\css\bootstrap.min.css" />
+    <Content Include="mobile\business\css\color.css" />
+    <Content Include="mobile\business\css\common.css" />
+    <Content Include="mobile\business\css\media.css" />
+    <Content Include="mobile\business\css\style.css" />
+    <Content Include="mobile\business\css\swipe.css" />
+    <Content Include="mobile\business\fastConsumption.aspx" />
+    <Content Include="mobile\business\goodsConsumption.aspx" />
+    <Content Include="mobile\business\images\2_5.png" />
+    <Content Include="mobile\business\images\2_6.png" />
+    <Content Include="mobile\business\images\3_1.png" />
+    <Content Include="mobile\business\images\3_2.png" />
+    <Content Include="mobile\business\images\close.png" />
+    <Content Include="mobile\business\images\code.png" />
+    <Content Include="mobile\business\images\edit.png" />
+    <Content Include="mobile\business\images\erweima.jpg" />
+    <Content Include="mobile\business\images\gift01.png" />
+    <Content Include="mobile\business\images\gift02.png" />
+    <Content Include="mobile\business\images\head.png" />
+    <Content Include="mobile\business\images\headimg.jpg" />
+    <Content Include="mobile\business\images\home.png" />
+    <Content Include="mobile\business\images\home_f.png" />
+    <Content Include="mobile\business\images\icon.png" />
+    <Content Include="mobile\business\images\lock.png" />
+    <Content Include="mobile\business\images\logo.png" />
+    <Content Include="mobile\business\images\logout.png" />
+    <Content Include="mobile\business\images\member01.png" />
+    <Content Include="mobile\business\images\member02.png" />
+    <Content Include="mobile\business\images\member03.png" />
+    <Content Include="mobile\business\images\member04.png" />
+    <Content Include="mobile\business\images\member05.png" />
+    <Content Include="mobile\business\images\member06.png" />
+    <Content Include="mobile\business\images\member10.png" />
+    <Content Include="mobile\business\images\member11.png" />
+    <Content Include="mobile\business\images\member12.png" />
+    <Content Include="mobile\business\images\member13.png" />
+    <Content Include="mobile\business\images\member14.png" />
+    <Content Include="mobile\business\images\member_bg.jpg" />
+    <Content Include="mobile\business\images\plus.png" />
+    <Content Include="mobile\business\images\plus1.png" />
+    <Content Include="mobile\business\images\prev.png" />
+    <Content Include="mobile\business\images\reduce.png" />
+    <Content Include="mobile\business\images\right_d.png" />
+    <Content Include="mobile\business\images\search.png" />
+    <Content Include="mobile\business\images\store.png" />
+    <Content Include="mobile\business\images\success.png" />
+    <Content Include="mobile\business\images\web.png" />
+    <Content Include="mobile\business\images\weixin.jpg" />
+    <Content Include="mobile\business\index.aspx" />
+    <Content Include="mobile\business\login.aspx" />
+    <Content Include="mobile\business\memberCard.aspx" />
+    <Content Include="mobile\business\memExpenseRecord.aspx" />
+    <Content Include="mobile\business\mobiscroll-v2.17\css\mobiscroll.custom-2.17.1.min.css" />
+    <Content Include="mobile\business\mobiscroll-v2.17\js\jquery-1.11.1.min.js" />
+    <Content Include="mobile\business\mobiscroll-v2.17\js\mobiscroll.custom-2.17.1.min.js" />
+    <Content Include="mobile\business\scripts\jquery-2.1.4.min.js" />
+    <Content Include="mobile\business\scripts\script.js" />
+    <Content Include="mobile\business\scripts\swipe.js" />
+    <Content Include="mobile\business\scripts\uploadPreview.min.js" />
+    <Content Include="mobile\business\timesConsumption.aspx" />
+    <Content Include="mobile\business\web\bossCenter.html" />
+    <Content Include="mobile\business\web\css\bootstrap.min.css" />
+    <Content Include="mobile\business\web\css\color.css" />
+    <Content Include="mobile\business\web\css\common.css" />
+    <Content Include="mobile\business\web\css\media.css" />
+    <Content Include="mobile\business\web\css\style.css" />
+    <Content Include="mobile\business\web\css\swipe.css" />
+    <Content Include="mobile\business\web\fastConsumption.html" />
+    <Content Include="mobile\business\web\goodsConsumption.html" />
+    <Content Include="mobile\business\web\images\2_5.png" />
+    <Content Include="mobile\business\web\images\2_6.png" />
+    <Content Include="mobile\business\web\images\3_1.png" />
+    <Content Include="mobile\business\web\images\3_2.png" />
+    <Content Include="mobile\business\web\images\close.png" />
+    <Content Include="mobile\business\web\images\code.png" />
+    <Content Include="mobile\business\web\images\edit.png" />
+    <Content Include="mobile\business\web\images\erweima.jpg" />
+    <Content Include="mobile\business\web\images\gift01.png" />
+    <Content Include="mobile\business\web\images\gift02.png" />
+    <Content Include="mobile\business\web\images\head.png" />
+    <Content Include="mobile\business\web\images\headimg.jpg" />
+    <Content Include="mobile\business\web\images\home.png" />
+    <Content Include="mobile\business\web\images\home_f.png" />
+    <Content Include="mobile\business\web\images\icon.png" />
+    <Content Include="mobile\business\web\images\lock.png" />
+    <Content Include="mobile\business\web\images\logo.png" />
+    <Content Include="mobile\business\web\images\logout.png" />
+    <Content Include="mobile\business\web\images\member01.png" />
+    <Content Include="mobile\business\web\images\member02.png" />
+    <Content Include="mobile\business\web\images\member03.png" />
+    <Content Include="mobile\business\web\images\member04.png" />
+    <Content Include="mobile\business\web\images\member05.png" />
+    <Content Include="mobile\business\web\images\member06.png" />
+    <Content Include="mobile\business\web\images\member10.png" />
+    <Content Include="mobile\business\web\images\member11.png" />
+    <Content Include="mobile\business\web\images\member12.png" />
+    <Content Include="mobile\business\web\images\member13.png" />
+    <Content Include="mobile\business\web\images\member14.png" />
+    <Content Include="mobile\business\web\images\member_bg.jpg" />
+    <Content Include="mobile\business\web\images\plus.png" />
+    <Content Include="mobile\business\web\images\plus1.png" />
+    <Content Include="mobile\business\web\images\prev.png" />
+    <Content Include="mobile\business\web\images\reduce.png" />
+    <Content Include="mobile\business\web\images\right_d.png" />
+    <Content Include="mobile\business\web\images\search.png" />
+    <Content Include="mobile\business\web\images\store.png" />
+    <Content Include="mobile\business\web\images\success.png" />
+    <Content Include="mobile\business\web\images\web.png" />
+    <Content Include="mobile\business\web\images\weixin.jpg" />
+    <Content Include="mobile\business\web\index.html" />
+    <Content Include="mobile\business\web\login.html" />
+    <Content Include="mobile\business\web\memberCard.html" />
+    <Content Include="mobile\business\web\scripts\jquery-2.1.4.min.js" />
+    <Content Include="mobile\business\web\scripts\script.js" />
+    <Content Include="mobile\business\web\scripts\swipe.js" />
+    <Content Include="mobile\business\web\scripts\uploadPreview.min.js" />
+    <Content Include="mobile\business\web\timesConsumption.html" />
+    <Content Include="mobile\member\bill.aspx" />
+    <Content Include="mobile\member\billDetail.aspx" />
+    <Content Include="mobile\member\binding.aspx" />
+    <Content Include="mobile\member\bindingSuccess.aspx" />
+    <Content Include="mobile\member\cancelBindingSuccess.aspx" />
+    <Content Include="mobile\member\coupon.aspx" />
+    <Content Include="mobile\member\css\bootstrap.min.css" />
+    <Content Include="mobile\member\css\color.css" />
+    <Content Include="mobile\member\css\common.css" />
+    <Content Include="mobile\member\css\media.css" />
+    <Content Include="mobile\member\css\mobiscroll.custom-2.5.0.min.css" />
+    <Content Include="mobile\member\css\style.css" />
+    <Content Include="mobile\member\css\swipe.css" />
+    <Content Include="mobile\member\css\uploadify.css" />
+    <Content Include="mobile\member\editMemberData.aspx" />
+    <Content Include="mobile\member\error.html" />
+    <Content Include="mobile\member\getCoupon.aspx" />
+    <Content Include="mobile\member\getmoney.aspx" />
+    <Content Include="mobile\member\givemoney.aspx" />
+    <Content Include="mobile\member\images\2_5.png" />
+    <Content Include="mobile\member\images\2_6.png" />
+    <Content Include="mobile\member\images\3_1.png" />
+    <Content Include="mobile\member\images\3_2.png" />
+    <Content Include="mobile\member\images\business-Logo.png" />
+    <Content Include="mobile\member\images\close.png" />
+    <Content Include="mobile\member\images\coin.png" />
+    <Content Include="mobile\member\images\edit.png" />
+    <Content Include="mobile\member\images\erweima.jpg" />
+    <Content Include="mobile\member\images\g7.png" />
+    <Content Include="mobile\member\images\gift01.png" />
+    <Content Include="mobile\member\images\gift02.png" />
+    <Content Include="mobile\member\images\head.png" />
+    <Content Include="mobile\member\images\headimg.jpg" />
+    <Content Include="mobile\member\images\home.png" />
+    <Content Include="mobile\member\images\icon.png" />
+    <Content Include="mobile\member\images\lock.png" />
+    <Content Include="mobile\member\images\logout.png" />
+    <Content Include="mobile\member\images\member01.png" />
+    <Content Include="mobile\member\images\member02.png" />
+    <Content Include="mobile\member\images\member03.png" />
+    <Content Include="mobile\member\images\member04.png" />
+    <Content Include="mobile\member\images\member05.png" />
+    <Content Include="mobile\member\images\member06.png" />
+    <Content Include="mobile\member\images\member07.png" />
+    <Content Include="mobile\member\images\member08.png" />
+    <Content Include="mobile\member\images\member09.png" />
+    <Content Include="mobile\member\images\member10.png" />
+    <Content Include="mobile\member\images\member_bg.jpg" />
+    <Content Include="mobile\member\images\middle.png" />
+    <Content Include="mobile\member\images\plus.png" />
+    <Content Include="mobile\member\images\plus1.png" />
+    <Content Include="mobile\member\images\prev.png" />
+    <Content Include="mobile\member\images\reduce.png" />
+    <Content Include="mobile\member\images\right_d.png" />
+    <Content Include="mobile\member\images\search.png" />
+    <Content Include="mobile\member\images\sign2.jpg" />
+    <Content Include="mobile\member\images\store.png" />
+    <Content Include="mobile\member\images\success.png" />
+    <Content Include="mobile\member\images\web.png" />
+    <Content Include="mobile\member\images\weixin.jpg" />
+    <Content Include="mobile\member\index.aspx" />
+    <Content Include="mobile\member\js\app.js" />
+    <Content Include="mobile\member\js\awardRotate.js" />
+    <Content Include="mobile\member\js\jquery-1.8.3.min.js" />
+    <Content Include="mobile\member\js\jquery.min.js" />
+    <Content Include="mobile\member\js\jquery.rotate.min.js" />
+    <Content Include="mobile\member\js\model\html5.js" />
+    <Content Include="mobile\member\js\model\jquery-1.8.0.min.js" />
+    <Content Include="mobile\member\js\model\jquery.SuperSlide.2.1.1.source.js" />
+    <Content Include="mobile\member\js\public.js" />
+    <Content Include="mobile\member\js\rotate.js" />
+    <Content Include="mobile\member\login.aspx" />
+    <Content Include="mobile\member\marketcss\demo.css" />
+    <Content Include="mobile\member\marketcss\public\font-awesome.css" />
+    <Content Include="mobile\member\marketcss\public\function.css" />
+    <Content Include="mobile\member\marketcss\public\reset.css" />
+    <Content Include="mobile\member\marketcss\rotate.css" />
+    <Content Include="mobile\member\marketcss\style.css" />
+    <Content Include="mobile\member\memAddressInfo.aspx" />
+    <Content Include="mobile\member\memAddressList.aspx" />
+    <Content Include="mobile\member\memAddressManage.aspx" />
+    <Content Include="mobile\member\memberMoney.aspx" />
+    <Content Include="mobile\member\memsign.aspx" />
+    <Content Include="mobile\member\modifyPassword.aspx" />
+    <Content Include="mobile\member\modifyPasswordSuccess.aspx" />
+    <Content Include="mobile\member\moneyregion.aspx" />
+    <Content Include="mobile\member\myMember.aspx" />
+    <Content Include="mobile\member\pointExchange.aspx" />
+    <Content Include="mobile\member\pointExchangeRecord.aspx" />
+    <Content Include="mobile\member\pointExchangeSuccess.aspx" />
+    <Content Include="mobile\member\pointExchangeSure.aspx" />
+    <Content Include="mobile\member\RechargeJsApiPayPage.aspx" />
+    <Content Include="mobile\member\rechargeOnline.aspx" />
+    <Content Include="mobile\member\rechargeOnlineOld.aspx" />
+    <Content Include="mobile\member\rechargeOnlineSure.aspx" />
+    <Content Include="mobile\member\RechargeResultNotifyPage.aspx" />
+    <Content Include="mobile\member\rechargereturn_url.aspx" />
+    <Content Include="mobile\member\rechargeSuccess.aspx" />
+    <Content Include="mobile\member\register.aspx" />
+    <Content Include="mobile\member\registerSuccess.aspx" />
+    <Content Include="mobile\member\ResultNotifyPage.aspx" />
+    <Content Include="mobile\member\rotate.aspx" />
+    <Content Include="mobile\member\rotateregion.aspx" />
+    <Content Include="mobile\member\scripts\jquery-2.1.4.min.js" />
+    <Content Include="mobile\member\scripts\script.js" />
+    <Content Include="mobile\member\scripts\swipe.js" />
+    <Content Include="mobile\member\test.aspx" />
+    <Content Include="mobile\member\upgrade.jpg" />
+    <Content Include="mobile\member\uploadImage.aspx" />
+    <Content Include="mobile\website\active.aspx" />
+    <Content Include="mobile\website\activeDetail.aspx" />
+    <Content Include="mobile\website\css\bootstrap.min.css" />
+    <Content Include="mobile\website\css\color.css" />
+    <Content Include="mobile\website\css\common.css" />
+    <Content Include="mobile\website\css\media.css" />
+    <Content Include="mobile\website\css\style.css" />
+    <Content Include="mobile\website\css\swipe.css" />
+    <Content Include="mobile\website\images\active.jpg" />
+    <Content Include="mobile\website\images\active01.jpg" />
+    <Content Include="mobile\website\images\active02.jpg" />
+    <Content Include="mobile\website\images\ad-c.png" />
+    <Content Include="mobile\website\images\ad.png" />
+    <Content Include="mobile\website\images\call_bg.jpg" />
+    <Content Include="mobile\website\images\call_bg.png" />
+    <Content Include="mobile\website\images\close.png" />
+    <Content Include="mobile\website\images\disc.png" />
+    <Content Include="mobile\website\images\head.png" />
+    <Content Include="mobile\website\images\head01.png" />
+    <Content Include="mobile\website\images\head02.png" />
+    <Content Include="mobile\website\images\home.png" />
+    <Content Include="mobile\website\images\icon.png" />
+    <Content Include="mobile\website\images\index01.png" />
+    <Content Include="mobile\website\images\index02.png" />
+    <Content Include="mobile\website\images\index03.png" />
+    <Content Include="mobile\website\images\index04.png" />
+    <Content Include="mobile\website\images\index05.png" />
+    <Content Include="mobile\website\images\index06.png" />
+    <Content Include="mobile\website\images\index_bg.jpg" />
+    <Content Include="mobile\website\images\left.png" />
+    <Content Include="mobile\website\images\member.png" />
+    <Content Include="mobile\website\images\news.jpg" />
+    <Content Include="mobile\website\images\phone-c.png" />
+    <Content Include="mobile\website\images\phone.png" />
+    <Content Include="mobile\website\images\photo.jpg" />
+    <Content Include="mobile\website\images\plus.png" />
+    <Content Include="mobile\website\images\prev.png" />
+    <Content Include="mobile\website\images\product.jpg" />
+    <Content Include="mobile\website\images\pro_01.jpg" />
+    <Content Include="mobile\website\images\pro_02.jpg" />
+    <Content Include="mobile\website\images\reduce.png" />
+    <Content Include="mobile\website\images\right.png" />
+    <Content Include="mobile\website\images\search.png" />
+    <Content Include="mobile\website\images\store.jpg" />
+    <Content Include="mobile\website\images\w-member.png" />
+    <Content Include="mobile\website\index.aspx" />
+    <Content Include="mobile\website\map.aspx" />
+    <Content Include="mobile\website\news.aspx" />
+    <Content Include="mobile\website\newsDetail.aspx" />
+    <Content Include="mobile\website\onlineAsk.aspx" />
+    <Content Include="mobile\website\photos.aspx" />
+    <Content Include="mobile\website\photosDetail.aspx" />
+    <Content Include="mobile\website\productDetail.aspx" />
+    <Content Include="mobile\website\productShow.aspx" />
+    <Content Include="mobile\website\productShow1.aspx" />
+    <Content Include="mobile\website\queryStore.aspx" />
+    <Content Include="mobile\website\scripts\jquery-2.1.4.min.js" />
+    <Content Include="mobile\website\scripts\jquery.provincesCity.js" />
+    <Content Include="mobile\website\scripts\provincesData.js" />
+    <Content Include="mobile\website\scripts\script.js" />
+    <Content Include="mobile\website\scripts\swipe.js" />
+    <Content Include="MP_verify_8xw3vk73g5DGIExt.txt" />
+    <Content Include="PointManage\ExchangeVerify.aspx" />
+    <Content Include="PointManage\GiftExchange.aspx" />
+    <Content Include="PointManage\GiftInfo.aspx" />
+    <Content Include="PointManage\GiftList.aspx" />
+    <Content Include="PointManage\GiftOnLinePhoto.htm" />
+    <Content Include="PointManage\PhotoOnline.swf" />
+    <Content Include="PointManage\PointChange.aspx" />
+    <Content Include="PointManage\PointDraw.aspx" />
+    <Content Include="PointManage\PointDrawVerify.aspx" />
+    <Content Include="PointManage\PointRate.aspx" />
+    <Content Include="PointManage\RptCustomerRecommend.aspx" />
+    <Content Include="PointManage\RptPointRate.aspx" />
+    <Content Include="PointManage\SetGiftLevel.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="Report\RptAllianceTotal.aspx" />
+    <Content Include="Report\RptExpense.aspx" />
+    <Content Include="Report\RptGoodsExpense.aspx" />
+    <Content Include="Report\RptMem.aspx" />
+    <Content Include="Report\RptMemCount.aspx" />
+    <Content Include="Report\RptMemDrain.aspx" />
+    <Content Include="Report\RptMemDrawMoney.aspx" />
+    <Content Include="Report\RptMemExpense.aspx" />
+    <Content Include="Report\rptMemPay.aspx" />
+    <Content Include="Report\RptMemRecharge.aspx" />
+    <Content Include="Report\rptMemRecommend.aspx" />
+    <Content Include="Report\RptMemStorageTiming.aspx" />
+    <Content Include="Report\RptMemTransferMoney.aspx" />
+    <Content Include="Report\RptMoneyExchange.aspx" />
+    <Content Include="Report\RptPointChange.aspx" />
+    <Content Include="Report\RptPointExchange.aspx" />
+    <Content Include="Report\RptPointRanklist.aspx" />
+    <Content Include="Report\RptShop.aspx" />
+    <Content Include="Report\RptShopTotal.aspx" />
+    <Content Include="Report\RptStaffMoney.aspx" />
+    <Content Include="Report\RptTotal.aspx" />
+    <Content Include="Report\RptUserWork.aspx" />
+    <Content Include="Scripts\artDialog.iframeTools.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\CallerMem\CallerMem.js" />
+    <Content Include="Scripts\CallerMem\qnvfunc.js" />
+    <Content Include="Scripts\CallerMem\qnviccub.js" />
+    <Content Include="Scripts\FusionCharts\FCF_Area2D.swf" />
+    <Content Include="Scripts\FusionCharts\FCF_Column2D.swf" />
+    <Content Include="Scripts\FusionCharts\FCF_Column3D.swf" />
+    <Content Include="Scripts\FusionCharts\FCF_Line.swf" />
+    <Content Include="Scripts\FusionCharts\FCF_MSColumn3D.swf" />
+    <Content Include="Scripts\FusionCharts\FCF_MSColumn3DLineDY.swf" />
+    <Content Include="Scripts\FusionCharts\FCF_Pie3D.swf" />
+    <Content Include="Scripts\FusionCharts\FCF_StackedColumn3D.swf" />
+    <Content Include="Scripts\FusionCharts\FusionCharts.js" />
+    <Content Include="Scripts\grid.js" />
+    <Content Include="Scripts\highcharts.js" />
+    <Content Include="Scripts\jqModal.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\jquery-common.js" />
+    <Content Include="Scripts\jquery.artDialog.basic.js" />
+    <Content Include="Scripts\jquery.artDialog.js" />
+    <Content Include="Scripts\jquery.SuperSlide.2.1.js" />
+    <Content Include="Scripts\jquery.uploadify.min.js" />
+    <Content Include="Scripts\jquery.uploadify.swfobject.js" />
+    <Content Include="Scripts\LodopFuncs.js" />
+    <Content Include="Scripts\Module\Common\Area.js" />
+    <Content Include="Scripts\Module\Common\Common.js" />
+    <Content Include="Scripts\Module\Common\FindMember.js" />
+    <Content Include="Scripts\Module\Common\MemberSearch.js" />
+    <Content Include="Scripts\Module\Common\mktree.js" />
+    <Content Include="Scripts\Module\Common\Pay.js" />
+    <Content Include="Scripts\Module\Common\Tab.js" />
+    <Content Include="Scripts\Module\Common\TodayRemind.js" />
+    <Content Include="Scripts\Module\Common\UserWork.js" />
+    <Content Include="Scripts\Module\ExtraService\ChooseMember.js" />
+    <Content Include="Scripts\Module\ExtraService\CouponManage.js" />
+    <Content Include="Scripts\Module\ExtraService\EmailList.js" />
+    <Content Include="Scripts\Module\ExtraService\ExtraParameter.js" />
+    <Content Include="Scripts\Module\ExtraService\SendEmail.js" />
+    <Content Include="Scripts\Module\ExtraService\SendMessage.js" />
+    <Content Include="Scripts\Module\ExtraService\SmsShopReportDetail.js" />
+    <Content Include="Scripts\Module\ExtraService\SmsTemplate.js" />
+    <Content Include="Scripts\Module\GoodsBuy\GoodsBuyApply.js" />
+    <Content Include="Scripts\Module\GoodsBuy\GoodsBuySure.js" />
+    <Content Include="Scripts\Module\MemExpense\ConsumeMemCount.js" />
+    <Content Include="Scripts\Module\MemExpense\ExpenseHistory.js" />
+    <Content Include="Scripts\Module\MemExpense\MemExpense.js" />
+    <Content Include="Scripts\Module\MemExpense\TimeExpense.js" />
+    <Content Include="Scripts\Module\MemExpense\TimeList.js" />
+    <Content Include="Scripts\Module\Mem\AddSubMem.js" />
+    <Content Include="Scripts\Module\Mem\EditLevel.js" />
+    <Content Include="Scripts\Module\Mem\MemBindCard.js" />
+    <Content Include="Scripts\Module\Mem\MemChangeCard.js" />
+    <Content Include="Scripts\Module\Mem\MemChangePwd.js" />
+    <Content Include="Scripts\Module\Mem\MemDelay.js" />
+    <Content Include="Scripts\Module\Mem\MemDrawMoney.js" />
+    <Content Include="Scripts\Module\Mem\MemInfo.js" />
+    <Content Include="Scripts\Module\Mem\MemList.js" />
+    <Content Include="Scripts\Module\Mem\MemLock.js" />
+    <Content Include="Scripts\Module\Mem\MemRechageMoney.js" />
+    <Content Include="Scripts\Module\Mem\MemRechargeCount.js" />
+    <Content Include="Scripts\Module\Mem\MemRegister.js" />
+    <Content Include="Scripts\Module\Mem\MemSendCard.js" />
+    <Content Include="Scripts\Module\Mem\MemStorageTiming.js" />
+    <Content Include="Scripts\Module\Mem\MemTransferMoney.js" />
+    <Content Include="Scripts\Module\Mem\SetLevel.js" />
+    <Content Include="Scripts\Module\Mem\TimingCategory.js" />
+    <Content Include="Scripts\Module\Mem\TimingProject.js" />
+    <Content Include="Scripts\Module\Mem\Timingrules.js" />
+    <Content Include="Scripts\Module\MicroWebsite\Album.js" />
+    <Content Include="Scripts\Module\MicroWebsite\Background.js" />
+    <Content Include="Scripts\Module\MicroWebsite\ExchangeAudit.js" />
+    <Content Include="Scripts\Module\MicroWebsite\GoodsAudit.js" />
+    <Content Include="Scripts\Module\MicroWebsite\MemberExplanation.js" />
+    <Content Include="Scripts\Module\MicroWebsite\MicroExpenseHistory.js" />
+    <Content Include="Scripts\Module\MicroWebsite\MicroGoodsClass.aspx.js" />
+    <Content Include="Scripts\Module\MicroWebsite\MicroGoodsInfo.js" />
+    <Content Include="Scripts\Module\MicroWebsite\MicroGoodsList.js" />
+    <Content Include="Scripts\Module\MicroWebsite\MicroWebsiteIndex.js" />
+    <Content Include="Scripts\Module\MicroWebsite\News.js" />
+    <Content Include="Scripts\Module\MicroWebsite\NewsInfo.js" />
+    <Content Include="Scripts\Module\MicroWebsite\Photo.js" />
+    <Content Include="Scripts\Module\MicroWebsite\ProductCenter.js" />
+    <Content Include="Scripts\Module\MicroWebsite\ProductCenterInfo.js" />
+    <Content Include="Scripts\Module\MicroWebsite\ProductClass.js" />
+    <Content Include="Scripts\Module\MicroWebsite\Promotions.js" />
+    <Content Include="Scripts\Module\MicroWebsite\PromotionsInfo.js" />
+    <Content Include="Scripts\Module\MicroWebsite\Proposal.js" />
+    <Content Include="Scripts\Module\MicroWebsite\RechargeRule.js" />
+    <Content Include="Scripts\Module\MicroWebsite\SymbolShow.js" />
+    <Content Include="Scripts\Module\MicroWebsite\SysRotate.js" />
+    <Content Include="Scripts\Module\MicroWebsite\SysRotateCount.js" />
+    <Content Include="Scripts\Module\MicroWebsite\SysRotateList.js" />
+    <Content Include="Scripts\Module\MicroWebsite\SysRotatePrizeLog.js" />
+    <Content Include="Scripts\Module\MicroWebsite\WeiXinMoneyInfo.js" />
+    <Content Include="Scripts\Module\MicroWebsite\WeiXinMoneyList.js" />
+    <Content Include="Scripts\Module\PointManage\ExchangeVerify.js" />
+    <Content Include="Scripts\Module\PointManage\GiftClass.js" />
+    <Content Include="Scripts\Module\PointManage\GiftExchange.js" />
+    <Content Include="Scripts\Module\PointManage\GiftInfo.js" />
+    <Content Include="Scripts\Module\PointManage\PointChange.js" />
+    <Content Include="Scripts\Module\PointManage\PointDraw.js" />
+    <Content Include="Scripts\Module\PointManage\PointDrawVerify.js" />
+    <Content Include="Scripts\Module\PointManage\PointRate.js" />
+    <Content Include="Scripts\Module\PointManage\RptPointRate.js" />
+    <Content Include="Scripts\Module\Report\Print.js" />
+    <Content Include="Scripts\Module\Report\Prints80.js" />
+    <Content Include="Scripts\Module\Report\PrintStylus.js" />
+    <Content Include="Scripts\Module\Report\Print_SanLian.js" />
+    <Content Include="Scripts\Module\Report\Report.js" />
+    <Content Include="Scripts\Module\Report\RptAttendenceRecord.js" />
+    <Content Include="Scripts\Module\Report\RptGoodsExpense.js" />
+    <Content Include="Scripts\Module\Report\RptMem.js" />
+    <Content Include="Scripts\Module\Report\RptMemCount.js" />
+    <Content Include="Scripts\Module\Report\RptMemDrain.js" />
+    <Content Include="Scripts\Module\Report\RptMemDrawMoney.js" />
+    <Content Include="Scripts\Module\Report\RptMemExpense.js" />
+    <Content Include="Scripts\Module\Report\RptMemRecharge.js" />
+    <Content Include="Scripts\Module\Report\RptMemTransferMoney.js" />
+    <Content Include="Scripts\Module\Report\RptPointChange.js" />
+    <Content Include="Scripts\Module\Report\RptPointExchange.js" />
+    <Content Include="Scripts\Module\Report\RptShop.js" />
+    <Content Include="Scripts\Module\Report\RptStaffMoney.js" />
+    <Content Include="Scripts\Module\Report\RptTotal.js" />
+    <Content Include="Scripts\Module\StockManage\EditGoodLevel.js" />
+    <Content Include="Scripts\Module\StockManage\GoodsAllot.js" />
+    <Content Include="Scripts\Module\StockManage\GoodsAllotState.js" />
+    <Content Include="Scripts\Module\StockManage\GoodsClass.js" />
+    <Content Include="Scripts\Module\StockManage\GoodsClassDiscountList.js" />
+    <Content Include="Scripts\Module\StockManage\GoodsEmptyBills.js" />
+    <Content Include="Scripts\Module\StockManage\GoodsExpense.js" />
+    <Content Include="Scripts\Module\StockManage\GoodsIn.js" />
+    <Content Include="Scripts\Module\StockManage\GoodsInfo.js" />
+    <Content Include="Scripts\Module\StockManage\GoodsList.js" />
+    <Content Include="Scripts\Module\StockManage\GoodsLog.js" />
+    <Content Include="Scripts\Module\StockManage\StockList.js" />
+    <Content Include="Scripts\Module\StockManage\StockListold.js" />
+    <Content Include="Scripts\Module\StockManage\StockTotal.js" />
+    <Content Include="Scripts\Module\SystemManage\Attendence.js" />
+    <Content Include="Scripts\Module\SystemManage\CustomField.js" />
+    <Content Include="Scripts\Module\SystemManage\CustomRemind.js" />
+    <Content Include="Scripts\Module\SystemManage\DataBakUp.js" />
+    <Content Include="Scripts\Module\SystemManage\GroupAuthority.js" />
+    <Content Include="Scripts\Module\SystemManage\MemSpecial.js" />
+    <Content Include="Scripts\Module\SystemManage\Message.js" />
+    <Content Include="Scripts\Module\SystemManage\ReplyMessage.js" />
+    <Content Include="Scripts\Module\SystemManage\SerialNumber.js" />
+    <Content Include="Scripts\Module\SystemManage\ShopAuthority.js" />
+    <Content Include="Scripts\Module\SystemManage\ShopInfo.js" />
+    <Content Include="Scripts\Module\SystemManage\ShopPointSettlement.js" />
+    <Content Include="Scripts\Module\SystemManage\ShopSendCard.js" />
+    <Content Include="Scripts\Module\SystemManage\ShopSettlement.js" />
+    <Content Include="Scripts\Module\SystemManage\SpecialList.js" />
+    <Content Include="Scripts\Module\SystemManage\StaffClassList.js" />
+    <Content Include="Scripts\Module\SystemManage\StaffList.js" />
+    <Content Include="Scripts\Module\SystemManage\StaffSalary.js" />
+    <Content Include="Scripts\Module\SystemManage\StaffTask.js" />
+    <Content Include="Scripts\Module\SystemManage\SysDataInit.js" />
+    <Content Include="Scripts\Module\SystemManage\SysError.js" />
+    <Content Include="Scripts\Module\SystemManage\SysLog.js" />
+    <Content Include="Scripts\Module\SystemManage\SysNotice.js" />
+    <Content Include="Scripts\Module\SystemManage\SysParameter.js" />
+    <Content Include="Scripts\Module\SystemManage\UserInfo.js" />
+    <Content Include="Scripts\Module\SystemManage\WeiXinConfig.js" />
+    <Content Include="Scripts\Module\SystemManage\WeiXinMenuManager.js" />
+    <Content Include="Scripts\Module\SystemManage\WeiXinRule.js" />
+    <Content Include="Scripts\Module\SystemManage\WeiXinRuleList.js" />
+    <Content Include="Scripts\Module\System\FirstPage.js" />
+    <Content Include="Scripts\Module\System\index.js" />
+    <Content Include="Scripts\Module\System\Login.js" />
+    <Content Include="Scripts\Module\System\LoginForm.js" />
+    <Content Include="Scripts\Module\System\MerchantLogin.js" />
+    <Content Include="Scripts\Module\System\StartPage.js" />
+    <Content Include="Scripts\Module\System\Top.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\adapters\jquery.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\ckeditor.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\config.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\contents.css" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\images\spacer.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\af.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\ar.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\bg.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\bn.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\bs.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\ca.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\cs.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\cy.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\da.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\de.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\el.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\en-au.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\en-ca.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\en-gb.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\en.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\eo.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\es.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\et.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\eu.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\fa.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\fi.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\fo.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\fr-ca.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\fr.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\gl.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\gu.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\he.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\hi.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\hr.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\hu.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\is.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\it.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\ja.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\km.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\ko.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\lt.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\lv.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\mn.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\ms.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\nb.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\nl.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\no.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\pl.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\pt-br.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\pt.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\ro.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\ru.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\sk.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\sl.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\sr-latn.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\sr.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\sv.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\th.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\tr.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\uk.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\vi.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\zh-cn.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\zh.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\_languages.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\lang\_translationstatus.txt" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\a11yhelp\lang\en.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\about\dialogs\about.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\about\dialogs\logo_ckeditor.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\clipboard\dialogs\paste.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\colordialog\dialogs\colordialog.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\div\dialogs\div.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\find\dialogs\find.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\flash\dialogs\flash.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\flash\images\placeholder.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\forms\dialogs\button.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\forms\dialogs\checkbox.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\forms\dialogs\form.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\forms\dialogs\hiddenfield.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\forms\dialogs\radio.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\forms\dialogs\select.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\forms\dialogs\textarea.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\forms\dialogs\textfield.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\iframedialog\plugin.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\image\dialogs\image.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\link\dialogs\anchor.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\link\dialogs\link.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\link\images\anchor.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\pagebreak\images\pagebreak.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\pastefromword\filter\default.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\pastetext\dialogs\pastetext.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\scayt\dialogs\options.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\showblocks\images\block_address.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\showblocks\images\block_blockquote.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\showblocks\images\block_div.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\showblocks\images\block_h1.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\showblocks\images\block_h2.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\showblocks\images\block_h3.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\showblocks\images\block_h4.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\showblocks\images\block_h5.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\showblocks\images\block_h6.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\showblocks\images\block_p.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\showblocks\images\block_pre.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\smiley\dialogs\smiley.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\smiley\images\angel_smile.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\smiley\images\angry_smile.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\smiley\images\broken_heart.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\smiley\images\confused_smile.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\smiley\images\cry_smile.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\smiley\images\devil_smile.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\smiley\images\embaressed_smile.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\smiley\images\envelope.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\smiley\images\heart.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\smiley\images\kiss.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\smiley\images\lightbulb.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\smiley\images\omg_smile.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\smiley\images\regular_smile.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\smiley\images\sad_smile.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\smiley\images\shades_smile.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\smiley\images\teeth_smile.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\smiley\images\thumbs_down.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\smiley\images\thumbs_up.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\smiley\images\tounge_smile.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\smiley\images\whatchutalkingabout_smile.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\smiley\images\wink_smile.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\stylescombo\styles\default.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\table\dialogs\table.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\templates\dialogs\templates.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\templates\templates\default.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\templates\templates\images\template1.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\templates\templates\images\template2.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\templates\templates\images\template3.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\uicolor\dialogs\uicolor.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\uicolor\lang\en.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\uicolor\plugin.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\uicolor\uicolor.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\uicolor\yui\assets\hue_bg.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\uicolor\yui\assets\hue_thumb.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\uicolor\yui\assets\picker_mask.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\uicolor\yui\assets\picker_thumb.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\uicolor\yui\assets\yui.css" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\uicolor\yui\yui.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\wsc\dialogs\ciframe.html" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\wsc\dialogs\tmpFrameset.html" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\wsc\dialogs\wsc.css" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\plugins\wsc\dialogs\wsc.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\kama\dialog.css" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\kama\editor.css" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\kama\icons.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\kama\images\dialog_sides.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\kama\images\dialog_sides.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\kama\images\dialog_sides_rtl.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\kama\images\mini.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\kama\images\noimage.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\kama\images\sprites.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\kama\images\sprites_ie6.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\kama\images\toolbar_start.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\kama\skin.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\kama\templates.css" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\office2003\dialog.css" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\office2003\editor.css" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\office2003\icons.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\office2003\images\dialog_sides.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\office2003\images\dialog_sides.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\office2003\images\dialog_sides_rtl.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\office2003\images\mini.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\office2003\images\noimage.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\office2003\images\sprites.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\office2003\images\sprites_ie6.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\office2003\skin.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\office2003\templates.css" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\v2\dialog.css" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\v2\editor.css" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\v2\icons.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\v2\images\dialog_sides.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\v2\images\dialog_sides.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\v2\images\dialog_sides_rtl.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\v2\images\mini.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\v2\images\noimage.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\v2\images\sprites.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\v2\images\sprites_ie6.png" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\v2\images\toolbar_start.gif" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\v2\skin.js" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\skins\v2\templates.css" />
+    <Content Include="Scripts\Module\WeiXin\ckeditor\themes\default\theme.js" />
+    <Content Include="Scripts\Module\WeiXin\jquery-1.8.0.min.js" />
+    <Content Include="Scripts\Module\WeiXin\jquery.mobile-1.2.0.min.js" />
+    <Content Include="Scripts\Module\WeiXin\mobiscroll.custom-2.5.0.min.js" />
+    <Content Include="Scripts\My97DatePicker\calendar.js" />
+    <Content Include="Scripts\My97DatePicker\config.js" />
+    <Content Include="Scripts\My97DatePicker\lang\en.js" />
+    <Content Include="Scripts\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="Scripts\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="Scripts\My97DatePicker\My97DatePicker.htm" />
+    <Content Include="Scripts\My97DatePicker\skin\blueFresh\datepicker.css" />
+    <Content Include="Scripts\My97DatePicker\skin\blueFresh\img.gif" />
+    <Content Include="Scripts\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="Scripts\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="Scripts\My97DatePicker\skin\default\img.gif" />
+    <Content Include="Scripts\My97DatePicker\skin\ext\datepicker.css" />
+    <Content Include="Scripts\My97DatePicker\skin\ext\dateselect.gif" />
+    <Content Include="Scripts\My97DatePicker\skin\ext\glass-bg.gif" />
+    <Content Include="Scripts\My97DatePicker\skin\ext\hd-sprite.gif" />
+    <Content Include="Scripts\My97DatePicker\skin\ext\img.gif" />
+    <Content Include="Scripts\My97DatePicker\skin\ext\left-btn.gif" />
+    <Content Include="Scripts\My97DatePicker\skin\ext\left-btn2.gif" />
+    <Content Include="Scripts\My97DatePicker\skin\ext\right-btn.gif" />
+    <Content Include="Scripts\My97DatePicker\skin\ext\right-btn2.gif" />
+    <Content Include="Scripts\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="Scripts\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="Scripts\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="Scripts\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="Scripts\My97DatePicker\WdatePicker.js" />
+    <Content Include="Scripts\PhotoOnline\Init.xml" />
+    <Content Include="Scripts\PhotoOnline\JsAndAs.js" />
+    <Content Include="Scripts\PhotoOnline\myCss.css" />
+    <Content Include="Scripts\PhotoOnline\PhotoOnline.html" />
+    <Content Include="Scripts\PhotoOnline\swfobject.js" />
+    <Content Include="Scripts\script.js" />
+    <Content Include="Service\ChainStockSelf.asmx" />
+    <Content Include="Service\HardwareKey.aspx" />
+    <Content Include="Service\Readme.txt" />
+    <Content Include="StartPage.aspx" />
+    <Content Include="StockManage\EditGoodsLevel.aspx" />
+    <Content Include="StockManage\GoodsAdd.aspx" />
+    <Content Include="StockManage\GoodsAllot.aspx" />
+    <Content Include="StockManage\GoodsAllotState.aspx" />
+    <Content Include="StockManage\GoodsClassDiscountList.aspx" />
+    <Content Include="StockManage\GoodsExcelIn.aspx" />
+    <Content Include="StockManage\GoodsExpense.aspx" />
+    <Content Include="StockManage\GoodsIn.aspx" />
+    <Content Include="StockManage\GoodsList.aspx" />
+    <Content Include="StockManage\GoodsLog.aspx" />
+    <Content Include="StockManage\GoodsStockTotal.aspx" />
+    <Content Include="StockManage\RptEmptyBills.aspx" />
+    <Content Include="StockManage\SetGoodsLevel.aspx" />
+    <Content Include="StockManage\StockList.aspx" />
+    <Content Include="SystemManage\AllianceGroupList.aspx" />
+    <Content Include="SystemManage\AllianceList.aspx" />
+    <Content Include="SystemManage\AlliancePointSettlement.aspx" />
+    <Content Include="SystemManage\AllianceSettlement.aspx" />
+    <Content Include="SystemManage\AllianceUserList.aspx" />
+    <Content Include="SystemManage\CustomField.aspx" />
+    <Content Include="SystemManage\GroupAuthority.aspx" />
+    <Content Include="SystemManage\GroupInfo.aspx" />
+    <Content Include="SystemManage\GroupList.aspx" />
+    <Content Include="SystemManage\MainGroupList.aspx" />
+    <Content Include="SystemManage\MainInfo.aspx" />
+    <Content Include="SystemManage\MainList.aspx" />
+    <Content Include="SystemManage\MainUserList.aspx" />
+    <Content Include="SystemManage\MemSpecial.aspx" />
+    <Content Include="SystemManage\Message.aspx" />
+    <Content Include="SystemManage\ReplyMessage.aspx" />
+    <Content Include="SystemManage\ReturnPointLog.aspx" />
+    <Content Include="SystemManage\SerialNumberList.aspx" />
+    <Content Include="SystemManage\ShopAuthority.aspx" />
+    <Content Include="SystemManage\ShopGroupList.aspx" />
+    <Content Include="SystemManage\ShopInfo.aspx" />
+    <Content Include="SystemManage\ShopList.aspx" />
+    <Content Include="SystemManage\ShopPointSettlement.aspx" />
+    <Content Include="SystemManage\ShopPointTransfer.aspx" />
+    <Content Include="SystemManage\ShopSendCard.aspx" />
+    <Content Include="SystemManage\ShopSettlement.aspx" />
+    <Content Include="SystemManage\ShopSmsTransfer.aspx" />
+    <Content Include="SystemManage\ShopUserList.aspx" />
+    <Content Include="SystemManage\SpecialList.aspx" />
+    <Content Include="SystemManage\StaffClassList.aspx" />
+    <Content Include="SystemManage\StaffList.aspx" />
+    <Content Include="SystemManage\SysCustomRemind.aspx" />
+    <Content Include="SystemManage\SysDataBak.aspx" />
+    <Content Include="SystemManage\SysErrorList.aspx" />
+    <Content Include="SystemManage\SysLogList.aspx" />
+    <Content Include="SystemManage\SysNotice.aspx" />
+    <Content Include="SystemManage\SysNoticeList.aspx" />
+    <Content Include="SystemManage\SysNoticeShow.aspx" />
+    <Content Include="SystemManage\SysNoticeShowList.aspx" />
+    <Content Include="SystemManage\SysParameter.aspx" />
+    <Content Include="SystemManage\UserInfo.aspx" />
+    <Content Include="SystemManage\UserList.aspx" />
+    <Content Include="SystemManage\WeiXinConfig.aspx" />
+    <Content Include="SystemManage\WeiXinMenuManager.aspx" />
+    <Content Include="SystemManage\WeiXinRule.aspx" />
+    <Content Include="SystemManage\WeiXinRuleList.aspx" />
+    <Content Include="Task.xml" />
+    <Content Include="test.aspx" />
+    <Content Include="themes\css\v3\public.css" />
+    <Content Include="themes\css\v3\register.css" />
+    <Content Include="themes\css\v3\reset.css" />
+    <Content Include="themes\images\oauth\csdn.png" />
+    <Content Include="themes\images\v3\aaa.png" />
+    <Content Include="themes\images\v3\btn.png" />
+    <Content Include="themes\images\v3\check1.png" />
+    <Content Include="themes\images\v3\check2.png" />
+    <Content Include="themes\images\v3\iphone.png" />
+    <Content Include="themes\images\v3\login_banner.png" />
+    <Content Include="themes\images\v3\logo.png" />
+    <Content Include="themes\images\v3\logo2.png" />
+    <Content Include="themes\images\v3\smile.png" />
+    <Content Include="themes\images\v3\success.png" />
+    <Content Include="themes\images\v3\text.png" />
+    <Content Include="themes\images\v3\weixin.jpg" />
+    <Content Include="themes\images\v3\weiyi_qr.png" />
+    <Content Include="themes\js\jquery.form.js" />
+    <Content Include="themes\js\jquery.min.js" />
+    <Content Include="themes\js\json.parse.js" />
+    <Content Include="Top.aspx" />
+    <Content Include="Upload\GiftPhoto\201611\291515560818.jpg" />
+    <Content Include="Upload\GiftPhoto\201611\s291515560818.jpg" />
+    <Content Include="Upload\GiftPhoto\nogift.jpg" />
+    <Content Include="Upload\MemPhoto\20161113023551821.jpeg" />
+    <Content Include="Upload\MemPhoto\20161113023604524.jpeg" />
+    <Content Include="Upload\MemPhoto\20161113043054987.jpeg" />
+    <Content Include="Upload\MemPhoto\201611\131622548779.jpg" />
+    <Content Include="Upload\MemPhoto\201611\211108147196.jpg" />
+    <Content Include="Upload\MemPhoto\201611\s131622548779.jpg" />
+    <Content Include="Upload\MemPhoto\20161203103528943.JPG" />
+    <Content Include="Upload\MemPhoto\20161203103538022.JPG" />
+    <Content Include="Upload\MemPhoto\20161219123747909.JPG" />
+    <Content Include="Upload\MemPhoto\20170104065434891.jpg" />
+    <Content Include="Upload\MemPhoto\201701\042042183357.jpg" />
+    <Content Include="Upload\MemPhoto\201701\042042242731.jpg" />
+    <Content Include="Upload\MemPhoto\201701\042042260543.jpg" />
+    <Content Include="Upload\MemPhoto\20170211112825545.jpg" />
+    <Content Include="Upload\MemPhoto\20170211113719239.jpg" />
+    <Content Include="Upload\MemPhoto\20170211114633574.jpg" />
+    <Content Include="Upload\MemPhoto\nophoto.gif" />
+    <Content Include="Upload\MicroWebsite\MicroGoods\readme.txt" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteAlbum\1610240216147866.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteAlbum\1610261045191003.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteAlbum\1612130306151185.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteAlbum\1612131129129312.png" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteIndex\about-Business.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteIndex\fenxiang.png" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteIndex\goodscard.png" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteIndex\image-Display.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteIndex\imagedisplay.png" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteIndex\lookpersonalinfo.png" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteIndex\memberexplanation.png" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteIndex\opinion.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteIndex\opinion.png" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteIndex\product-Center.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteIndex\productcenter.png" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteIndex\promotions.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteIndex\promotions.png" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteIndex\store-Inquiry.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteIndex\storeinquiry.png" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteIndex\wwz.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteNews\1610240215340433.png" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteNews\1610261047254441.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteNews\1703030240559328.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteNews\1703030240573547.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsitePhoto\1610240216314058.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsitePhoto\1610240216388823.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsitePhoto\1610240216556939.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsitePhoto\1610261045484128.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsitePhoto\1612070141170116.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsitePhoto\1612130307383211.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsitePhoto\1612130308031803.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsitePhoto\1612131134103394.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsitePhoto\1612131135051991.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteProductCenter\1403251104278750.png" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteProductCenter\1403251105027187.png" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteProductCenter\1403251105333281.png" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteProductCenter\1403260410586230.png" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteProductCenter\1403260411287168.png" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteProductCenter\1403260411596386.png" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteProductCenter\1610240223309500.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteProductCenter\1610240227171545.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteProductCenter\1610240232259748.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteProductCenter\1610240239572962.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteProductCenter\1610250726016430.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteProductCenter\1610260437356500.png" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteProductCenter\1610260438101813.png" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteProductCenter\1611190451090860.png" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteProductCenter\1612070125494045.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteProductCenter\1612070129369938.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteProductCenter\1612070135344245.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteProductCenter\1612100414067387.png" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteProductCenter\1612210512156894.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteProductCenter\1612211150006788.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteProductCenter\1612220957407437.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteProductCenter\1612220959189455.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteProductCenter\1612221002439898.png" />
+    <Content Include="Upload\MicroWebsite\MicroWebsitePromotions\1610240241399812.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsitePromotions\1610240244011106.png" />
+    <Content Include="Upload\MicroWebsite\MicroWebsitePromotions\1610250729088389.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsitePromotions\1610261053502097.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsitePromotions\1610261055476941.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsitePromotions\1702220958002227.jpg" />
+    <Content Include="Upload\MicroWebsite\MicroWebsiteSymbol\1507080310117466.jpg" />
+    <Content Include="Upload\MobileNumber\readme.txt" />
+    <Content Include="Upload\ShopPhoto\1610240324391214.jpg" />
+    <Content Include="Upload\ShopPhoto\1611040409227240.jpg" />
+    <Content Include="Upload\ShopPhoto\1611040449380434.jpg" />
+    <Content Include="Upload\ShopPhoto\1611040450529769.png" />
+    <Content Include="Upload\ShopPhoto\1611040457206876.jpg" />
+    <Content Include="Upload\ShopPhoto\1611071048018534.jpg" />
+    <Content Include="Upload\ShopPhoto\1611081115224948.jpg" />
+    <Content Include="Upload\ShopPhoto\1611130406225654.png" />
+    <Content Include="Upload\ShopPhoto\1611130446196436.png" />
+    <Content Include="Upload\ShopPhoto\1611141012146237.jpg" />
+    <Content Include="Upload\ShopPhoto\1611141120122874.jpg" />
+    <Content Include="Upload\ShopPhoto\1611141120168655.jpg" />
+    <Content Include="Upload\ShopPhoto\1611150302292426.jpg" />
+    <Content Include="Upload\ShopPhoto\1611150303256470.jpg" />
+    <Content Include="Upload\ShopPhoto\1611151005248241.jpg" />
+    <Content Include="Upload\ShopPhoto\1611180309252694.jpg" />
+    <Content Include="Upload\ShopPhoto\1611180327101776.jpg" />
+    <Content Include="Upload\ShopPhoto\1611180529593493.jpg" />
+    <Content Include="Upload\ShopPhoto\1611181027109947.jpg" />
+    <Content Include="Upload\ShopPhoto\1611181032305397.jpg" />
+    <Content Include="Upload\ShopPhoto\1611181041223767.jpg" />
+    <Content Include="Upload\ShopPhoto\1611190920589321.jpg" />
+    <Content Include="Upload\ShopPhoto\1611230251120573.jpg" />
+    <Content Include="Upload\ShopPhoto\1611231141292196.png" />
+    <Content Include="Upload\ShopPhoto\1611280514001072.jpg" />
+    <Content Include="Upload\ShopPhoto\1611290203580208.jpg" />
+    <Content Include="Upload\ShopPhoto\1611290246029115.jpg" />
+    <Content Include="Upload\ShopPhoto\1611290254029423.jpg" />
+    <Content Include="Upload\ShopPhoto\1611291021235509.jpg" />
+    <Content Include="Upload\ShopPhoto\1611300847382329.jpg" />
+    <Content Include="Upload\ShopPhoto\1612031003187910.jpg" />
+    <Content Include="Upload\ShopPhoto\1612040625136276.jpg" />
+    <Content Include="Upload\ShopPhoto\1612040628362083.jpg" />
+    <Content Include="Upload\ShopPhoto\1612041039255445.png" />
+    <Content Include="Upload\ShopPhoto\1612051056388387.jpg" />
+    <Content Include="Upload\ShopPhoto\1612051120337735.jpg" />
+    <Content Include="Upload\ShopPhoto\1612051144084272.jpg" />
+    <Content Include="Upload\ShopPhoto\1612061104173078.jpg" />
+    <Content Include="Upload\ShopPhoto\1612061134126924.jpg" />
+    <Content Include="Upload\ShopPhoto\1612061138488000.jpg" />
+    <Content Include="Upload\ShopPhoto\1612070130192587.jpg" />
+    <Content Include="Upload\ShopPhoto\1612070131437883.jpg" />
+    <Content Include="Upload\ShopPhoto\1612070205087498.jpg" />
+    <Content Include="Upload\ShopPhoto\1612070214147081.jpg" />
+    <Content Include="Upload\ShopPhoto\1612070214381451.jpg" />
+    <Content Include="Upload\ShopPhoto\1612070216594705.jpg" />
+    <Content Include="Upload\ShopPhoto\1612070243362055.png" />
+    <Content Include="Upload\ShopPhoto\1612070520143076.jpeg" />
+    <Content Include="Upload\ShopPhoto\1612071249557739.jpg" />
+    <Content Include="Upload\ShopPhoto\1612120224139656.png" />
+    <Content Include="Upload\ShopPhoto\1612120249031001.png" />
+    <Content Include="Upload\ShopPhoto\1612150327321284.png" />
+    <Content Include="Upload\ShopPhoto\1612150404033972.jpg" />
+    <Content Include="Upload\ShopPhoto\1612161056064939.jpg" />
+    <Content Include="Upload\ShopPhoto\1612180427439625.jpg" />
+    <Content Include="Upload\ShopPhoto\1612181147114511.jpg" />
+    <Content Include="Upload\ShopPhoto\1612200124444868.png" />
+    <Content Include="Upload\ShopPhoto\1612200124590495.jpg" />
+    <Content Include="Upload\ShopPhoto\1612200424170708.jpg" />
+    <Content Include="Upload\ShopPhoto\1612200959029123.jpg" />
+    <Content Include="Upload\ShopPhoto\1612201035294966.jpg" />
+    <Content Include="Upload\ShopPhoto\1612210259292862.png" />
+    <Content Include="Upload\ShopPhoto\1612240518405186.jpg" />
+    <Content Include="Upload\ShopPhoto\1612240522249230.jpg" />
+    <Content Include="Upload\ShopPhoto\1612240522455009.jpg" />
+    <Content Include="Upload\ShopPhoto\1612241001029385.jpg" />
+    <Content Include="Upload\ShopPhoto\1612250444556442.jpg" />
+    <Content Include="Upload\ShopPhoto\1612250834454190.png" />
+    <Content Include="Upload\ShopPhoto\1701170334190250.jpg" />
+    <Content Include="Upload\ShopPhoto\1701170409586360.jpg" />
+    <Content Include="Upload\ShopPhoto\1701170410596208.jpg" />
+    <Content Include="Upload\ShopPhoto\1701170414080126.jpg" />
+    <Content Include="Upload\ShopPhoto\1702221001200052.jpg" />
+    <Content Include="Upload\ShopPhoto\1702240140157332.jpg" />
+    <Content Include="Upload\ShopPhoto\1702241155074882.jpg" />
+    <Content Include="Upload\ShopPhoto\1703060300252805.jpg" />
+    <Content Include="Upload\ShopPhoto\1703090342426949.jpg" />
+    <Content Include="Upload\ShopPhoto\1703090351168355.jpg" />
+    <Content Include="Upload\ShopPhoto\1703090354161480.jpg" />
+    <Content Include="Upload\ShopPhoto\1703101046502790.jpg" />
+    <Content Include="Upload\Template\readme.txt" />
+    <Content Include="Upload\WebImage\main.png" />
+    <Content Include="Upload\WebImage\MainLogin.png" />
+    <Content Include="Upload\WebImage\self.png" />
+    <Content Include="Upload\WebImage\selfLogin.png" />
+    <Content Include="Upload\WeiXin\Images\00001-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\101336305026.jpg" />
+    <Content Include="Upload\WeiXin\Images\13008807157-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\13020201171-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\13061139779-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\13130630160-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\13199093918-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\13338273802-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\13359225911-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\13546252887-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\13688683361-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\13701205012-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\13710239381-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\13722654231-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\13760427556-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\13765940701-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\13804058174-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\13815868365-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\13927853733-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\15031400800-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\15108272584-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\15111111111-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\15124915152-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\15153515100-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\15208304101-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\15703691369-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\15756389211-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\15856811123-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\15915775707-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\17363608450-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\17780716425-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\18073717350-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\18111698030-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\18240118938-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\18283101540-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\18302401213-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\18382024221-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\18632325080-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\18688311353-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\18857730922-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\201408134404.jpg" />
+    <Content Include="Upload\WeiXin\Images\201408254872.jpg" />
+    <Content Include="Upload\WeiXin\Images\900000000000-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\999990034-MemCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\bg.jpg" />
+    <Content Include="Upload\WeiXin\Images\memCard.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s1055-WmxPkIIm6huOyyVI4.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s2NRE0tVHnzAIk4gQ8k5aIg.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s2oTPasPu2-GGniyMQPi-Ok.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s2qLicdqOy9CpRiXGMSScrg.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s3cVEpZ1k_HPRHxnx7uQNjg.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s3IYpz4nIqrEOXMojo_hKxM.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s3S6aCHotoUxLDi8rMxcgQg.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s3vKjHaELwEfzPbs4mKCJ0o.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s3_cJgaNrFDTeXhml8kegGw.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s44Qxk_f_vaV3ulxU9MkraE.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s44u5y7OX1WwaLkcLsm6lZM.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s4LtGcTCAlaa2aKD1UrQqus.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s4U0FsVj4ya1xKRjvWY_Liw.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s5nE0fjI_uRupfuDji0HEw8.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s6936LRDnZh5Gb6XD07OPgQ.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s774q6ytRavniG4xGMSlPw4.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s7HwvjTQbUPLn9CaJGFuoVQ.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s7NbM2HwXzVPm89bnBQ0kMo.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s7Qa3M0hleafzMp1KKuhJmw.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s7WxzTzg-j9JE9yhl1HEva0.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s7zGOSWt9S5Whr8IXmSKAkQ.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s7ZvetoQ2zuyjqhCVotRb4Q.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s804t5mBuaKhIjf70fw56k8.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s84u5l4qZkLmiC_0X3w29vM.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s8aMOVpsmoC0NVvPYPhu6vs.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s8aRcu1qAnV21DHMEqsiJLw.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s8VRRAI_4ToRvrBs4ArIh8g.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s8yWitUhe8Xz1DOrIHLJbaI.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s9cOy4UbkQuISnK_wUvqx9g.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s9J5ZmRtUN604ILbo4Ps8bU.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s9TsxR19pF9bWsB6rQsMbsQ.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6swAA8VA8UM_RAQkAUEXVh9c.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6swoR8efRAgWOOUV62L3Efzg.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6sxMcX0UFWndKCeSTUHlpFdM.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6sxRyBeB2lL8fzjHE-yI9qmI.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6sxz3sLjdxZvgDOcMHxTMUp4.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6sytWW6hqfIbiQ_L0a1ENv2I.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6szkQnzYH5Tp9x75BgBxGX6s.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6szLVsO6p-IHAeCBKHdvdhfM.jpg" />
+    <Content Include="Upload\WeiXin\Images\oV_w6s_LImKwdl-xv_lilsTCX-5o.jpg" />
+    <Content Include="Upload\WeiXin\Images\wwz.jpg" />
+    <Content Include="Upload\WeiXin\Images\wxindex_bg.png" />
+    <Content Include="Upload\WeiXin\Images\zwtp.jpg" />
+    <Content Include="Upload\xhUpload\month_1611\201611130218437279.png" />
+    <Content Include="Upload\xhUpload\month_1611\201611190451544563.png" />
+    <Content Include="Upload\xhUpload\month_1611\201611190452151706.png" />
+    <Content Include="Upload\xhUpload\month_1702\201702170934121639.jpg" />
+    <Content Include="Upload\xhUpload\readme.txt" />
+    <Content Include="WeiXin\MemberManipulate.aspx" />
+    <Content Include="WeiXin\WeiXinConvertHistory.aspx" />
+    <Content Include="WeiXin\WeiXinCoupon.aspx" />
+    <Content Include="WeiXin\WeiXinExpense.aspx" />
+    <Content Include="WeiXin\WeiXinGiftConvertList.aspx" />
+    <Content Include="WeiXin\WeiXinGiftExchangeDetail.aspx" />
+    <Content Include="WeiXin\WeiXinGiftShow.aspx" />
+    <Content Include="WeiXin\WeiXinNewsLink.aspx" />
+    <Content Include="WeiXin\WeiXinPointChange.aspx" />
+    <Content Include="WeiXin\WeiXinPointExchange.aspx" />
+    <Content Include="WeiXin\WeiXinRecharge.aspx" />
+    <Content Include="WeiXin\WeiXinUpdateInfo.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AppData\AutoDataBase\Aotoxsm_zhiluovip20170310163754.bak" />
+    <None Include="AppData\AutoDataBase\Aotozhiluovip20170512215602.bak" />
+    <None Include="AppData\AutoDataBase\Aotozhiluovip20170516091903.bak" />
+    <None Include="AppData\DataBase\xsm_zhiluovip_20170308115435.bak" />
+    <Content Include="bin\Web.config" />
+    <Content Include="assets\fonts\brocolidry.eot" />
+    <Content Include="assets\fonts\brocolidry.ttf" />
+    <Content Include="assets\fonts\brocolidry.woff" />
+    <Content Include="assets\fonts\ecoico.eot" />
+    <Content Include="assets\fonts\ecoico.ttf" />
+    <Content Include="assets\fonts\ecoico.woff" />
+    <Content Include="assets\fonts\entypo.eot" />
+    <Content Include="assets\fonts\entypo.ttf" />
+    <Content Include="assets\fonts\entypo.woff" />
+    <Content Include="assets\fonts\fontawesome.eot" />
+    <Content Include="assets\fonts\fontawesome.ttf" />
+    <Content Include="assets\fonts\fontawesome.woff" />
+    <Content Include="assets\fonts\icomoon.eot" />
+    <Content Include="assets\fonts\icomoon.ttf" />
+    <Content Include="assets\fonts\icomoon.woff" />
+    <Content Include="assets\fonts\steadysets.eot" />
+    <Content Include="assets\fonts\steadysets.ttf" />
+    <Content Include="assets\fonts\steadysets.woff" />
+    <Content Include="assets\server\gae-go\app.yaml" />
+    <Content Include="assets\server\gae-go\app\main.go" />
+    <Content Include="assets\server\gae-python\app.yaml" />
+    <Content Include="assets\server\gae-python\main.py" />
+    <Content Include="assets\server\node\package.json" />
+    <Content Include="assets\server\php\files\.htaccess" />
+    <Content Include="assets\server\php\index.php" />
+    <Content Include="assets\server\php\UploadHandler.php" />
+    <None Include="cert\apiclient_cert.p12" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="images\logo.rar" />
+    <None Include="Member\MemBindCard.aspx.exclude" />
+    <None Include="Properties\PublishProfiles\a.pubxml" />
+    <None Include="Properties\PublishProfiles\配置文件1.pubxml" />
+    <None Include="Report\RptAttendenceRecord.aspx.exclude" />
+    <None Include="Report\RptGoodsBuy.aspx.exclude" />
+    <None Include="Report\RptStaffTask.aspx.exclude" />
+    <None Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Service\AjaxCallback.ashx" />
+    <Content Include="Service\AjaxService.ashx" />
+    <Content Include="Service\MicroWebsiteUpload.ashx" />
+    <Content Include="Service\PDAService.ashx" />
+    <Content Include="Service\PhoneService.ashx" />
+    <Content Include="Service\upload.ashx" />
+    <Content Include="Service\ValidateImage.ashx" />
+    <Content Include="Service\ValidateQRCode.ashx" />
+    <Content Include="Service\WeixinApi.ashx" />
+    <Content Include="Service\WeiXinHandler.ashx" />
+    <Content Include="Service\WeiXinService.ashx" />
+    <Content Include="Service\xhEditorUpload.ashx" />
+    <None Include="Upload\Template\Goods.xls" />
+    <None Include="Upload\Template\GoodsList.xls" />
+    <None Include="Upload\Template\GoodsNumber.xls" />
+    <None Include="Upload\Template\Members.xls" />
+    <None Include="Upload\Template\MembersList.xls" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Chain.BLL\Chain.BLL.csproj">
+      <Project>{f6f8fce9-036d-4ae8-995a-b79b30254683}</Project>
+      <Name>Chain.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chain.Common\Chain.Common.csproj">
+      <Project>{090104c1-9f6a-465f-b786-5c855c712f96}</Project>
+      <Name>Chain.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chain.DBUtility\Chain.DBUtility.csproj">
+      <Project>{62a325f6-ef3b-48db-a864-dd414477cdcd}</Project>
+      <Name>Chain.DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chain.IDAL\Chain.IDAL.csproj">
+      <Project>{0a3605c2-b0e0-4d9f-947c-6358ca447783}</Project>
+      <Name>Chain.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chain.Model\Chain.Model.csproj">
+      <Project>{0fb85452-7506-46a7-9491-0997823482d0}</Project>
+      <Name>Chain.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chain.Tasks\Chain.Tasks.csproj">
+      <Project>{9014c5b6-cd06-4d5e-97ff-b02eec8d2608}</Project>
+      <Name>Chain.Tasks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chain.Wechat\Chain.Wechat.csproj">
+      <Project>{d559b660-d375-463f-a724-fe72c04721f2}</Project>
+      <Name>Chain.Wechat</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>17382</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

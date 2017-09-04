@@ -1,0 +1,80 @@
+/*
+**此样式文件为颜色风格设置
+ */
+
+/*通用版*/
+#head{
+	background-color: #16a2de;
+}
+/* 微官网三级城市联动确定按钮 */
+#province > a{
+	background-color: #16a2de;
+}
+/* 微官网推荐新闻头部左边框颜色 */
+.news-reletive > h3{
+	border-left: 0.05rem solid #16a2de;
+}
+
+/*
+    *微会员
+*/
+
+/* 首页头部背景图 */
+.index
+{
+   
+   /*background: url(../images/member_bg.jpg) 100% 100% no-repeat;*/
+    background-color: #16a2de;
+}
+/* 微会员登陆注册、密码等按钮颜色 */
+.form_btn a{
+	background-color: #16a2de;
+}
+/* 免费注册文字 */
+.login_form form> p a{
+	color: #16a2de;
+}
+/* 获取验证码文字 */
+a#getCode{
+    color: #16a2de;
+    border-left: 1px solid #16a2de;
+}
+/* 选择男女文字 */
+.line_group .f-right a.line_btn.active{
+    background-color: #16a2de;
+}
+/* 账单记录 */
+.mesg-line p.mesg-money{
+    color: #16a2de;
+}
+/* 积分兑换 */
+.integral-num p{
+    color: #e63636;
+}
+.gift-nav li a.active{
+    color: #16a2de;
+	border-left: 2px solid #16a2de;
+}
+.my-can a{
+    background-color: #16a2de;
+}
+.gift-list .gift-txt p,.gift-txt p span{
+    color: #16a2de;
+}
+.gift-fix a{
+    background-color: #16a2de;
+}
+.gift-fix span{
+    color: #16a2de;
+}
+.record-box li p{
+    color: #16a2de;
+}
+/* 城市选择模态框 */
+.ad-detail a{
+    background-color: #16a2de;
+}
+/* 优惠券背景 */
+.coupon-mesg .f-right{
+    background-color: #16a2de;
+}

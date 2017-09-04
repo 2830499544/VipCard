@@ -1,0 +1,25 @@
+/*
+**此样式文件为颜色风格设置
+ */
+
+/*通用版*/
+#head{
+	background-color: #16a2de;
+}
+/* 三级城市联动确定按钮 */
+#province > a{
+	background-color: #16a2de;
+}
+/* 推荐新闻头部左边框颜色 */
+.news-reletive > h3{
+	border-left: 0.05rem solid #16a2de;
+}
+/* 在线咨询发送按钮 */
+.input-in a{
+    background-color: #16a2de;
+}
+/* 产品列表导航背景 */
+.pro-nav-list{
+    background-color:#16a2de;
+}
+

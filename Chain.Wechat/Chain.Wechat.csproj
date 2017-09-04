@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{D559B660-D375-463F-A724-FE72C04721F2}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Chain.Wechat</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System" />
+    <Reference Include="Web.Common">
+      <HintPath>bin\Web.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chain.Wechat\AccessToken.cs" />
+    <Compile Include="Chain.Wechat\BusinessLogic.cs" />
+    <Compile Include="Chain.Wechat\CheckOrder.cs" />
+    <Compile Include="Chain.Wechat\EventRequest.cs" />
+    <Compile Include="Chain.Wechat\HttpRequestHelper.cs" />
+    <Compile Include="Chain.Wechat\ILog.cs" />
+    <Compile Include="Chain.Wechat\ImageRequest.cs" />
+    <Compile Include="Chain.Wechat\ImageResponse.cs" />
+    <Compile Include="Chain.Wechat\IRequest.cs" />
+    <Compile Include="Chain.Wechat\IResponse.cs" />
+    <Compile Include="Chain.Wechat\LinkRequest.cs" />
+    <Compile Include="Chain.Wechat\LocationEventRequest.cs" />
+    <Compile Include="Chain.Wechat\LocationRequest.cs" />
+    <Compile Include="Chain.Wechat\LogManager.cs" />
+    <Compile Include="Chain.Wechat\MenuRequest.cs" />
+    <Compile Include="Chain.Wechat\NewsResponse.cs" />
+    <Compile Include="Chain.Wechat\NewsResponseItem.cs" />
+    <Compile Include="Chain.Wechat\Pay.cs" />
+    <Compile Include="Chain.Wechat\RegisterEntryCodeLog.cs" />
+    <Compile Include="Chain.Wechat\RegisterEntryNumberLog.cs" />
+    <Compile Include="Chain.Wechat\ReqeustManager.cs" />
+    <Compile Include="Chain.Wechat\ScanRequest.cs" />
+    <Compile Include="Chain.Wechat\Sign.cs" />
+    <Compile Include="Chain.Wechat\TextRequest.cs" />
+    <Compile Include="Chain.Wechat\TextResponse.cs" />
+    <Compile Include="Chain.Wechat\TransformEntryCodeLog.cs" />
+    <Compile Include="Chain.Wechat\TransformEntryNumberLog.cs" />
+    <Compile Include="Chain.Wechat\TransformEntryPwdLog.cs" />
+    <Compile Include="Chain.Wechat\VideoRequest.cs" />
+    <Compile Include="Chain.Wechat\VideoResponse.cs" />
+    <Compile Include="Chain.Wechat\VoiceRequest.cs" />
+    <Compile Include="Chain.Wechat\VoiceResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tencent\Cryptography.cs" />
+    <Compile Include="Tencent\Sample.cs" />
+    <Compile Include="Tencent\WXBizMsgCrypt.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Chain.BLL\Chain.BLL.csproj">
+      <Project>{f6f8fce9-036d-4ae8-995a-b79b30254683}</Project>
+      <Name>Chain.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chain.Common\Chain.Common.csproj">
+      <Project>{090104c1-9f6a-465f-b786-5c855c712f96}</Project>
+      <Name>Chain.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chain.Model\Chain.Model.csproj">
+      <Project>{0fb85452-7506-46a7-9491-0997823482d0}</Project>
+      <Name>Chain.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

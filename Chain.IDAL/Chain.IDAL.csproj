@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{0A3605C2-B0E0-4D9F-947C-6358CA447783}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Chain.IDAL</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chain.DAL\Album.cs" />
+    <Compile Include="Chain.DAL\Coupon.cs" />
+    <Compile Include="Chain.DAL\CouponList.cs" />
+    <Compile Include="Chain.DAL\MemAddress.cs" />
+    <Compile Include="Chain.DAL\MemChild.cs" />
+    <Compile Include="Chain.DAL\MemLevel.cs" />
+    <Compile Include="Chain.DAL\MemRecharge.cs" />
+    <Compile Include="Chain.DAL\MemTransferLog.cs" />
+    <Compile Include="Chain.DAL\MerchantSite.cs" />
+    <Compile Include="Chain.DAL\News.cs" />
+    <Compile Include="Chain.DAL\OnlineMessage.cs" />
+    <Compile Include="Chain.DAL\Photo.cs" />
+    <Compile Include="Chain.DAL\ProductCenter.cs" />
+    <Compile Include="Chain.DAL\Proposal.cs" />
+    <Compile Include="Chain.DAL\RechargeRule.cs" />
+    <Compile Include="Chain.DAL\SmsLog.cs" />
+    <Compile Include="Chain.DAL\SubMem.cs" />
+    <Compile Include="Chain.DAL\SysShopMemLevel.cs" />
+    <Compile Include="Chain.DAL\SysUserWork.cs" />
+    <Compile Include="Chain.DAL\WeiXinNews.cs" />
+    <Compile Include="Chain.DAL\WeiXinRule.cs" />
+    <Compile Include="Chain.IDAL\EmailLog.cs" />
+    <Compile Include="Chain.IDAL\GiftClass.cs" />
+    <Compile Include="Chain.IDAL\GiftExchange.cs" />
+    <Compile Include="Chain.IDAL\GiftExchangeDetail.cs" />
+    <Compile Include="Chain.IDAL\Goods.cs" />
+    <Compile Include="Chain.IDAL\GoodsAllot.cs" />
+    <Compile Include="Chain.IDAL\GoodsAllotDetail.cs" />
+    <Compile Include="Chain.IDAL\GoodsClass.cs" />
+    <Compile Include="Chain.IDAL\GoodsClassAuthority.cs" />
+    <Compile Include="Chain.IDAL\GoodsClassDiscount.cs" />
+    <Compile Include="Chain.IDAL\GoodsLog.cs" />
+    <Compile Include="Chain.IDAL\GoodsLogDetail.cs" />
+    <Compile Include="Chain.IDAL\GoodsNumber.cs" />
+    <Compile Include="Chain.IDAL\Mem.cs" />
+    <Compile Include="Chain.IDAL\MemberExplanation.cs" />
+    <Compile Include="Chain.IDAL\MemberSMSRemindLog.cs" />
+    <Compile Include="Chain.IDAL\MemCount.cs" />
+    <Compile Include="Chain.IDAL\MemCountDetail.cs" />
+    <Compile Include="Chain.IDAL\MemCustomField.cs" />
+    <Compile Include="Chain.IDAL\MemDrawMoney.cs" />
+    <Compile Include="Chain.IDAL\MemSign.cs" />
+    <Compile Include="Chain.IDAL\MemStorageTiming.cs" />
+    <Compile Include="Chain.IDAL\Message.cs" />
+    <Compile Include="Chain.IDAL\MicroWebsiteGiftExchange.cs" />
+    <Compile Include="Chain.IDAL\MicroWebsiteGiftExchangeDetail.cs" />
+    <Compile Include="Chain.IDAL\MicroWebsiteGoods.cs" />
+    <Compile Include="Chain.IDAL\MicroWebsiteGoodsClass.cs" />
+    <Compile Include="Chain.IDAL\MicroWebsiteOrderLog.cs" />
+    <Compile Include="Chain.IDAL\MicroWebsiteOrderLogDetail.cs" />
+    <Compile Include="Chain.IDAL\MicroWebsiteSceneStr.cs" />
+    <Compile Include="Chain.IDAL\MoneyChangeLog.cs" />
+    <Compile Include="Chain.IDAL\OrderDetail.cs" />
+    <Compile Include="Chain.IDAL\OrderLog.cs" />
+    <Compile Include="Chain.IDAL\OrderTime.cs" />
+    <Compile Include="Chain.IDAL\PointDraw.cs" />
+    <Compile Include="Chain.IDAL\PointExchange.cs" />
+    <Compile Include="Chain.IDAL\PointGift.cs" />
+    <Compile Include="Chain.IDAL\PointLog.cs" />
+    <Compile Include="Chain.IDAL\PointRate.cs" />
+    <Compile Include="Chain.IDAL\ProductClass.cs" />
+    <Compile Include="Chain.IDAL\Promotions.cs" />
+    <Compile Include="Chain.IDAL\PromotionsShop.cs" />
+    <Compile Include="Chain.IDAL\ReturnPointLog.cs" />
+    <Compile Include="Chain.IDAL\ScreenPopUp.cs" />
+    <Compile Include="Chain.IDAL\SmsTemplate.cs" />
+    <Compile Include="Chain.IDAL\Special.cs" />
+    <Compile Include="Chain.IDAL\Staff.cs" />
+    <Compile Include="Chain.IDAL\StaffClass.cs" />
+    <Compile Include="Chain.IDAL\StaffMoney.cs" />
+    <Compile Include="Chain.IDAL\SymbolShow.cs" />
+    <Compile Include="Chain.IDAL\SysArea.cs" />
+    <Compile Include="Chain.IDAL\SysCustomRemind.cs" />
+    <Compile Include="Chain.IDAL\SysError.cs" />
+    <Compile Include="Chain.IDAL\SysGroup.cs" />
+    <Compile Include="Chain.IDAL\SysGroupAuthority.cs" />
+    <Compile Include="Chain.IDAL\SysLog.cs" />
+    <Compile Include="Chain.IDAL\SysModule.cs" />
+    <Compile Include="Chain.IDAL\SysModuleAction.cs" />
+    <Compile Include="Chain.IDAL\SysNotice.cs" />
+    <Compile Include="Chain.IDAL\SysParameter.cs" />
+    <Compile Include="Chain.IDAL\SysRotate.cs" />
+    <Compile Include="Chain.IDAL\SysRotateCount.cs" />
+    <Compile Include="Chain.IDAL\SysRotatePrizeLog.cs" />
+    <Compile Include="Chain.IDAL\SysSerialNumber.cs" />
+    <Compile Include="Chain.IDAL\SysShop.cs" />
+    <Compile Include="Chain.IDAL\SysShopAuthority.cs" />
+    <Compile Include="Chain.IDAL\SysShopBuyCard.cs" />
+    <Compile Include="Chain.IDAL\SysShopCmsLog.cs" />
+    <Compile Include="Chain.IDAL\SysShopPointLog.cs" />
+    <Compile Include="Chain.IDAL\SysShopPointSettlement.cs" />
+    <Compile Include="Chain.IDAL\SysShopSettlement.cs" />
+    <Compile Include="Chain.IDAL\SysUser.cs" />
+    <Compile Include="Chain.IDAL\TimingCategory.cs" />
+    <Compile Include="Chain.IDAL\TimingProject.cs" />
+    <Compile Include="Chain.IDAL\Timingrules.cs" />
+    <Compile Include="Chain.IDAL\WeiXinGiveMoney.cs" />
+    <Compile Include="Chain.IDAL\WeiXinLog.cs" />
+    <Compile Include="Chain.IDAL\WeiXinMenu.cs" />
+    <Compile Include="Chain.IDAL\WeiXinMoney.cs" />
+    <Compile Include="Chain.IDAL\WeiXinMoneyMem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Chain.DBUtility\Chain.DBUtility.csproj">
+      <Project>{62a325f6-ef3b-48db-a864-dd414477cdcd}</Project>
+      <Name>Chain.DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chain.Model\Chain.Model.csproj">
+      <Project>{0fb85452-7506-46a7-9491-0997823482d0}</Project>
+      <Name>Chain.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{090104C1-9F6A-465F-B786-5C855C712F96}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Chain.Common</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Management" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chain.Common.DEncrypt\DEncrypt.cs" />
+    <Compile Include="Chain.Common.DEncrypt\DESEncrypt.cs" />
+    <Compile Include="Chain.Common.DEncrypt\HashEncode.cs" />
+    <Compile Include="Chain.Common.DEncrypt\RSACryption.cs" />
+    <Compile Include="Chain.Common.Properties\Settings.cs" />
+    <Compile Include="Chain.Common.WebReference\GetBalanceCompletedEventArgs.cs" />
+    <Compile Include="Chain.Common.WebReference\GetBalanceCompletedEventHandler.cs" />
+    <Compile Include="Chain.Common.WebReference\RegisterExCompletedEventArgs.cs" />
+    <Compile Include="Chain.Common.WebReference\RegisterExCompletedEventHandler.cs" />
+    <Compile Include="Chain.Common.WebReference\RegisterZsCompletedEventArgs.cs" />
+    <Compile Include="Chain.Common.WebReference\RegisterZsCompletedEventHandler.cs" />
+    <Compile Include="Chain.Common.WebReference\SendMessageCompletedEventArgs.cs" />
+    <Compile Include="Chain.Common.WebReference\SendMessageCompletedEventHandler.cs" />
+    <Compile Include="Chain.Common.WebReference\SmsService.cs" />
+    <Compile Include="Chain.Common\Computer.cs" />
+    <Compile Include="Chain.Common\ConfigHelper.cs" />
+    <Compile Include="Chain.Common\ImagePlus.cs" />
+    <Compile Include="Chain.Common\INIFile.cs" />
+    <Compile Include="Chain.Common\JsonPlus.cs" />
+    <Compile Include="Chain.Common\Rmb.cs" />
+    <Compile Include="Chain.Common\SMSHelper.cs" />
+    <Compile Include="Chain.Common\StringPlus.cs" />
+    <Compile Include="Chain.Common\TimeParser.cs" />
+    <Compile Include="Chain.Common\UrlOper.cs" />
+    <Compile Include="Chain.Common\ValCodeModel.cs" />
+    <Compile Include="Chain.Common\Validator.cs" />
+    <Compile Include="ConfigFileType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

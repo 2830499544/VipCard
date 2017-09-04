@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.page-swipe{
+	position: relative;
+	width: 100%;
+	max-width: 640px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.swipe {
+ overflow: hidden;
+ visibility: hidden;
+ position: relative;
+}
+.swipe-wrap {
+ overflow: hidden;
+ position: relative;
+}
+.swipe-wrap > figure {
+ float: left;
+ width: 100%;
+ position: relative;
+}
+.swipe-nav ul,.swipe-nav ol{
+  list-style:none;
+  list-style-image:none;
+  margin:0;
+  padding:0
+}
+figure,.swipe-nav{
+  display:block
+}
+.swipe-nav #position li{
+  display:inline-block;
+  width:10px;
+  height:10px;
+  border-radius:10px;
+  background:#fff;
+  margin:0 2px;
+  cursor:pointer
+}
+.swipe-nav #position li.on{
+  background-color: #e63636;
+}
+.swipe-nav{
+  position:absolute;
+  bottom: 10px;
+  left: 50%;
+  text-align: center;
+}
+.swipe-nav a{
+  font-style:normal;
+  color:#555!important
+}
+.swipe-nav #position{
+  text-align:center;
+  list-style:none;
+  margin:0;
+  padding:0
+}
+#slider figure{
+  display:block
+}
+#slider figure div.wrap{
+  max-width:640px;
+  display:block;
+  margin:0 auto;
+  position:relative;
+  width: 100%;
+  overflow: hidden;
+}
+#slider figure div.image{
+  display:block;
+  box-shadow:0 1px 5px rgba(0,0,0,.85),inset 0 0 1px rgba(255,255,255,.35);
+  height:inherit;
+  width: 100%;
+  overflow: hidden;
+}
+
+#slider figure div.image a{
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+#slider div.image a img{
+  max-width: 640px;
+}
+.swipe,.swipe-wrap,#slider figure,#slider figure div.wrap,#slider figure div.image,#slider figure div.image a,#slider figure div.image a img{
+  height: 100%;
+  width: 100%;
+  float: left;
+}
