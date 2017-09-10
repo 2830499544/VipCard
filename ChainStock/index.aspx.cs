@@ -79,7 +79,7 @@ namespace ChainStock
 			}
 			else
 			{
-				base.Response.Write("<script>location.href='login.aspx'</script>");
+				base.Response.Write("<script>location.href='Adminlogin.aspx'</script>");
 			}
 		}
 
@@ -98,20 +98,20 @@ namespace ChainStock
 			strScript.Append("                var rtn = NT120Client.NTFind();\n");
 			strScript.Append("                if (rtn != 0) {\n");
 			strScript.Append("                    alert('系统检测到您的加密锁并未插入,或者加密锁已失效！');\n");
-			strScript.Append("                    location.href = 'login.aspx?type=loginout';\n");
+			strScript.Append("                    location.href = 'Adminlogin.aspx?type=loginout';\n");
 			strScript.Append("                }\n");
 			strScript.Append("                else {\n");
 			strScript.Append("                    var state = NT120Client.NTLogin('1234567');\n");
 			strScript.Append("                    if (state > 0) {\n");
 			strScript.Append("                        alert('当前检测到您的加密锁登录失败,请插入正确的加密锁！');\n");
-			strScript.Append("                        location.href = 'login.aspx?type=loginout';\n");
+			strScript.Append("                        location.href = 'Adminlogin.aspx?type=loginout';\n");
 			strScript.Append("                    }\n");
 			strScript.Append("                    else {\n");
 			strScript.Append("                        doAjax(\"\",\"CheckHardwareID\", { \"Safety\": NT120Client.NTGetHardwareID() }, \"json\",\n");
 			strScript.Append("                function (json) {\n");
 			strScript.Append("                    if (json > 0) {\n");
 			strScript.Append("                        alert('当前检测到您的加密锁认证失败,请插入正确的加密锁！');\n");
-			strScript.Append("                        location.href = 'login.aspx?type=loginout';\n");
+			strScript.Append("                        location.href = 'Adminlogin.aspx?type=loginout';\n");
 			strScript.Append("                    }\n");
 			strScript.Append("                }\n");
 			strScript.Append("                )\n");

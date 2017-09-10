@@ -81,6 +81,30 @@ namespace Chain.IDAL
             return result;
         }
 
+
+        public int Update_Register( string SN,int ShopID )
+        {
+            string strSql = string.Format("Update SysSerialNumber Set IsUse=1,ShopID=@ShopID Where SerialNumber=@SN");
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@ShopID", SqlDbType.Int, 4),
+                new SqlParameter("@SN", SqlDbType.VarChar, 255),
+            };
+            parameters[0].Value = ShopID;
+            parameters[1].Value = SN;
+            int rows = DbHelperSQL.ExecuteSql(strSql.ToString(), parameters);
+            int result;
+            if (rows > 0)
+            {
+                result = 1;
+            }
+            else
+            {
+                result = -3;
+            }
+            return result;
+        }
+
         public int Insert_SN(string SN,int IsLock)
         {
             string strSql = string.Format("Insert SysSerialNumber (SerialNumber,IsLock) Values(@SerialNumber,@IsLock)");
@@ -103,6 +127,19 @@ namespace Chain.IDAL
             }
             return result;
 
+        }
+
+        public bool Exists_SerialNumber(string SerialNumber)
+        {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append("select count(1) from SysSerialNumber");
+            strSql.Append(" where SerialNumber=@SerialNumber");
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@SerialNumber", SqlDbType.Int, 4)
+            };
+            parameters[0].Value = SerialNumber;
+            return DbHelperSQL.Exists(strSql.ToString(), parameters);
         }
     }
 }

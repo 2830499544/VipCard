@@ -165,8 +165,6 @@
                                             </a><a href="#" onclick='<%# string.Format(" Lock(\"{0}\",\"{1}\",\"{2}\")",Eval("ID"),Eval("SerialNumber"),Eval("IsLock")) %>'
                                                 id="hyLock" runat="server">
                                                 <img src="../images/Gift/password.png" alt="锁定" title="锁定" />
-                                            </a><a href="#" id="hyUserDel" runat="server" width="30px" onclick='<%# string.Format("return UserDel(\"{0}\")",Eval("ID")) %>'>
-                                                <img src="../images/Gift/del.png" title="删除" alt="删除" />
                                             </a>
                                         </td>
                                     </tr>

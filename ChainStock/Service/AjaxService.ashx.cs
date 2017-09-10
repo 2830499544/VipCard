@@ -108,7 +108,10 @@ namespace ChainStock.Service
 
 		private Chain.BLL.Message bllMessage = new Chain.BLL.Message();
 
-		private Chain.Model.SysUser UserModel
+        private Chain.BLL.RegisterShop bllRegisterShop = new RegisterShop();
+
+
+        private Chain.Model.SysUser UserModel
 		{
 			get
 			{
@@ -187,14 +190,25 @@ namespace ChainStock.Service
 		}
 
         #region 注册商铺
+        /// <summary>
+        /// 注册商铺
+        /// 参数:
+        /// shopName:企业名称
+        /// shopCode:企业代码
+        /// shopTelephone:联系电话
+        /// shopAddress:详细地址
+        /// userPassword:管理员密码
+        /// SerailNumber:序列号
+        /// 1:(序列号可以使用)2:（序列号已经使用）3:（序列号锁定）4:（序列号锁定）5:(序列号不存在)6:(商铺代码已存在)7:(商铺名称已存在)
+        /// </summary>
         public void RegiserShop()
         {
             int flag = 0;
             try
             {
-                //新增商家
+                
                 int shopType = 3; //商家店铺
-                string shopImageUrl = "../Upload/ShopPhoto/1707270305177182.bmp";//店铺图标(必填)
+                string shopImageUrl = "../images/shop.png";//店铺图标(必填)
                 int shopProvince = 0;//省份
                 int shopCity = 0;//城市
                 int shopCounty = 0;//区县
@@ -206,6 +220,8 @@ namespace ChainStock.Service
                 string shopContactMan = this.Request["shopCode"].ToString();//改为商铺代码
                 string shopTelephone = this.Request["shopTelephone"].ToString();//联系电话
                 string shopAddress = this.Request["shopAddress"].ToString();//详细地址
+                string serailNumber = this.Request["SerailNumber"].ToString();//详细地址
+
                 string shopRemark = "";// 备注
                 string shopTitle = shopName; //小票打印台头
                 string shopFoot = shopName;//小票打印脚注
@@ -214,8 +230,25 @@ namespace ChainStock.Service
                 decimal shopProportion = 0;//销售提成比例
                 decimal RechargeProportion = 0;//充值提成比例
                 decimal totalRate = 0;//返利总比例系数
-                int sysShopId = this.UserModel.UserShopID;
-                int sysUserId = this.UserModel.UserID;
+
+                //检查注册码
+                flag =  bllRegisterShop.SerianNumberInfo(serailNumber);
+                if (flag != 1)
+                {
+                    this.Context.Response.Write(flag);
+                    return;
+                }
+
+                //检查商铺代码
+                bool result = bllRegisterShop.ShopCodeExists(shopContactMan);
+                if (result)
+                {
+                    flag = 6;
+                    this.Context.Response.Write(flag);
+                    return;
+                }
+
+                //新增商家
                 Chain.Model.SysShop modelShop = new Chain.Model.SysShop();
                 modelShop.ShopImageUrl = shopImageUrl;
                 modelShop.ShopProvince = shopProvince;
@@ -245,6 +278,13 @@ namespace ChainStock.Service
                 Chain.BLL.SysShop bllShop = new Chain.BLL.SysShop();
                 modelShop.ShopState = false;//店铺状态 True:锁定 False:不锁定
                 flag = bllShop.Add(modelShop);
+                //商铺名称已存在
+                if ( flag==-1)
+                {
+                    flag = 7;
+                    this.Context.Response.Write(flag);
+                    return;
+                }
                 modelShop.ShopID = flag;
                 if (flag > 0)
                 {
@@ -305,7 +345,7 @@ namespace ChainStock.Service
                             }
                         }
                     }
-                    PubFunction.SaveSysLog(sysUserId, 1, "商家新增", string.Concat(new string[]
+                    PubFunction.SaveSysLog(99999, 1, "商家新增", string.Concat(new string[]
                     {
                         "新增商家,商家名称：[",
                         modelShop.ShopName,
@@ -314,7 +354,7 @@ namespace ChainStock.Service
                         "],联系方式：[",
                         modelShop.ShopTelephone,
                         "]"
-                    }), sysShopId, DateTime.Now, PubFunction.ipAdress);
+                    }), modelShop.ShopID, DateTime.Now, PubFunction.ipAdress);
                 }
 
                 //新增管理员
@@ -328,14 +368,7 @@ namespace ChainStock.Service
                 modelUser.UserPassword = DESEncrypt.Encrypt(this.Request["userPassword"].ToString());//用户密码
                 int intUserID = this.UserModel.UserID;
                 int intUserShopID = this.UserModel.UserShopID;
-                if (this.Request["isChoose"] == "0")
-                {
-                    modelUser.UserLock = true;
-                }
-                else
-                {
-                    modelUser.UserLock = false;
-                }
+                modelUser.UserLock = false;
                 modelUser.UserShopID = modelShop.ShopID;
                 modelUser.UserGroupID = 3;//商铺管理员组
                 modelUser.UserRemark = "";//备注
@@ -355,6 +388,8 @@ namespace ChainStock.Service
                         modelGroup.GroupName,
                         "]"
                     }), this.UserModel.UserShopID, DateTime.Now, PubFunction.ipAdress);
+
+                    bllRegisterShop.Register(serailNumber, modelShop.ShopID);
                 }
 
             }

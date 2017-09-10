@@ -49,7 +49,7 @@
   <ItemGroup>
     <Reference Include="AopSdk, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>F:\源码仓库\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\AopSdk.dll</HintPath>
+      <HintPath>bin\AopSdk.dll</HintPath>
     </Reference>
     <Reference Include="AspNetPager, Version=7.4.2.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -57,10 +57,11 @@
     </Reference>
     <Reference Include="F2FPayDll, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>F:\源码仓库\F2FPay_Demo_DotNet\Projects\Alipay-demo-project\F2FPayDll\bin\Debug\F2FPayDll.dll</HintPath>
+      <HintPath>bin\F2FPayDll.dll</HintPath>
     </Reference>
-    <Reference Include="LitJson">
-      <HintPath>D:\snk\LitJson.dll</HintPath>
+    <Reference Include="LitJson, Version=0.7.0.0, Culture=neutral, PublicKeyToken=fd59c9415f0573f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\LitJson.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
@@ -96,6 +97,10 @@
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="TabStrip, Version=2.0.2523.29272, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenWebKitSharp.1.0.7\lib\net40\TabStrip.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="ThoughtWorks.QRCode">
       <HintPath>E:\alipay\Bin\ThoughtWorks.QRCode.dll</HintPath>
     </Reference>
@@ -136,12 +141,12 @@
       <DependentUpon>TimeList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MerchantLogin.aspx.cs">
-      <DependentUpon>MerchantLogin.aspx</DependentUpon>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MerchantLogin.aspx.designer.cs">
-      <DependentUpon>MerchantLogin.aspx</DependentUpon>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="MicroWebsite\SysRotate.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -371,6 +376,13 @@
     </Compile>
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterOK.aspx.cs">
+      <DependentUpon>RegisterOK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterOK.aspx.designer.cs">
+      <DependentUpon>RegisterOK.aspx</DependentUpon>
     </Compile>
     <Compile Include="Report\RptAllianceTotal.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -916,8 +928,8 @@
       <DependentUpon>LeftMenu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="LoginLogic.cs" />
@@ -1137,6 +1149,7 @@
     <Content Include="css\common.css" />
     <Content Include="css\index.css" />
     <Content Include="css\style.css" />
+    <Content Include="Download\setup.exe" />
     <Content Include="ExtraService\ChooseMember.aspx" />
     <Content Include="ExtraService\CouponList.aspx" />
     <Content Include="ExtraService\CouponManage.aspx" />
@@ -1149,7 +1162,6 @@
     <Content Include="ExtraService\SmsShopReport.aspx" />
     <Content Include="ExtraService\SmsShopReportDetail.aspx" />
     <Content Include="ExtraService\SmsTemplate.aspx" />
-    <Content Include="favicon_zhiluo.ico" />
     <Content Include="FirstPage.aspx" />
     <Content Include="Foot.aspx" />
     <Content Include="Frame.aspx" />
@@ -1301,6 +1313,7 @@
     <Content Include="images\member\selectImg.jpg" />
     <Content Include="images\member\zhiluo.png" />
     <Content Include="images\qushi.png" />
+    <Content Include="images\shop.png" />
     <Content Include="images\swf\uploadify.swf" />
     <Content Include="Inc\artDialogskins\aero.css" />
     <Content Include="Inc\artDialogskins\aero\aero_s.png" />
@@ -1844,7 +1857,7 @@
     <Content Include="index.aspx" />
     <Content Include="index1.aspx" />
     <Content Include="LeftMenu.aspx" />
-    <Content Include="Login.aspx" />
+    <Content Include="AdminLogin.aspx" />
     <Content Include="Main.aspx" />
     <Content Include="Member\AddSubMem.aspx" />
     <Content Include="Member\EditLevel.aspx" />
@@ -1875,7 +1888,7 @@
     <Content Include="MemExpense\ExpenseHistory.aspx" />
     <Content Include="MemExpense\TimeExpense.aspx" />
     <Content Include="MemExpense\TimeList.aspx" />
-    <Content Include="MerchantLogin.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="MicroWebsite\Album.aspx" />
     <Content Include="MicroWebsite\BackgroundSet.aspx" />
     <Content Include="MicroWebsite\ExchangeAudit.aspx" />
@@ -2210,6 +2223,7 @@
     <Content Include="PointManage\RptPointRate.aspx" />
     <Content Include="PointManage\SetGiftLevel.aspx" />
     <Content Include="Register.aspx" />
+    <Content Include="RegisterOK.aspx" />
     <Content Include="Report\RptAllianceTotal.aspx" />
     <Content Include="Report\RptExpense.aspx" />
     <Content Include="Report\RptGoodsExpense.aspx" />
@@ -2406,6 +2420,7 @@
     <Content Include="Scripts\Module\System\Login.js" />
     <Content Include="Scripts\Module\System\LoginForm.js" />
     <Content Include="Scripts\Module\System\MerchantLogin.js" />
+    <Content Include="Scripts\Module\System\RegisterShop.js" />
     <Content Include="Scripts\Module\System\StartPage.js" />
     <Content Include="Scripts\Module\System\Top.js" />
     <Content Include="Scripts\Module\WeiXin\ckeditor\adapters\jquery.js" />
@@ -2700,6 +2715,7 @@
     <Content Include="test.aspx" />
     <Content Include="themes\css\v3\public.css" />
     <Content Include="themes\css\v3\register.css" />
+    <Content Include="themes\css\v3\registershop.css" />
     <Content Include="themes\css\v3\reset.css" />
     <Content Include="themes\images\oauth\csdn.png" />
     <Content Include="themes\images\v3\aaa.png" />
@@ -3035,6 +3051,7 @@
     <None Include="images\logo.rar" />
     <None Include="Member\MemBindCard.aspx.exclude" />
     <None Include="Properties\PublishProfiles\a.pubxml" />
+    <None Include="Properties\PublishProfiles\本地发布.pubxml" />
     <None Include="Properties\PublishProfiles\配置文件1.pubxml" />
     <None Include="Report\RptAttendenceRecord.aspx.exclude" />
     <None Include="Report\RptGoodsBuy.aspx.exclude" />

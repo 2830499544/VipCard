@@ -1,19 +1,17 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="ChainStock.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="ChainStock.MerchantLogin" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
-
-
-
-
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>会员管理系统_会员积分系统</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=8" />
-    <meta name="keywords" content="连锁会员管理系统 专业版" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>嘉映映嘉会员管理系统</title>
+    
+    <meta name="keywords" content="嘉映映嘉会员管理系统" />
     <script src="Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
     <script src="Scripts/jquery-common.js" type="text/javascript"></script>
-    <script src="Scripts/Module/System/Login.js" type="text/javascript"></script>
+    <script src="Scripts/Module/System/MerchantLogin.js" type="text/javascript"></script>
     <script src="Scripts/jquery.artDialog.basic.js" type="text/javascript"></script>
     <script src="Scripts/artDialog.iframeTools.js" type="text/javascript"></script>
     <asp:Literal ID="litObject" runat="server" />
@@ -102,13 +100,17 @@
                 <input id="txtIsType" type="hidden" runat="server" />
                 <input id="txtISCheckKey" type="hidden" runat="server" />
                 <h2>商家登录</h2>
+                <div class="div_merchant">
+                    <span></span>
+                    <input id="txtMerchant" type="text" maxlength="20" runat="server" value="" placeholder="企业代码" class="username" autocomplete="off" />
+                </div>
                 <div class="div_user">
                     <span></span>
                     <input id="txtAccount" type="text" maxlength="20" runat="server" value="" placeholder="用户名" class="username" autocomplete="off" />
                 </div>
                 <div class="div_pw">
                     <span></span>
-                    <input id="txtPassword" name="txtPassword" type="password" maxlength="20" autocomplete="off" value="" class="pw" runat="server" />
+                    <input id="txtPassword" name="txtPassword" type="password" maxlength="20" placeholder="密码" autocomplete="off" value="" class="pw" runat="server" />
                 </div>
                 <div class="div_user"> <input id="txtValCode" type="text" class="yzm" value="" maxlength="4" placeholder="验证码" />
                     <a href="javascript:void(0);" onclick="javascript:Login_ChangeValImg();">
@@ -148,17 +150,7 @@
     </script>
 
     <!-- footer start -->
-    <div id="footer" class="clear">
-        <h1 class="png_bg">JS代码网</h1>
-        <div class="friendLink clear">
-        
-        </div>
-        <p>上海科技有限公司©版权所有 沪ICP备140068888</p>
-        <div class="weixin">
-            <img src="themes/images/v3/weiyi_qr.png" alt="" />
-            <h3>关注长灵科技</h3>
-        </div>
-    </div>
+   
     <script type="text/javascript">
         var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
         document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F5d12e2b4eed3b554ae941c0ac43c330a' type='text/javascript'%3E%3C/script%3E"));
@@ -240,4 +232,5 @@
         });
 </script>
 </body>
+
 </html>

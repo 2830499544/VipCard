@@ -3,7 +3,8 @@
 /*header*/
 #header,#menu{width:100%; min-width:1200px; background:#fff;}
 .header{width:1200px; margin:0 auto; height:100px; line-height:100px; padding-top:15px; position:relative;}
-.header h1{width:200px; height:40px; background:url(../../images/v3/logo.png) 0 0 no-repeat; position:absolute; left:0; top:40px; text-indent:-999em; background-size:contain; }
+.header h1{width:200px; height:53px; 
+background:url(../../images/v3/logo.png) 0 0 no-repeat; position:absolute; left:0; top:40px; text-indent:-999em; background-size:contain; }
 .header ul{position:absolute; right:0; top:44px; width:320px;}
 .header ul li{float:left;}
 .header ul li a{display:block;height:32px; line-height:32px;}

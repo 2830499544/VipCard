@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no" />
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>商家联盟-首页</title>
+
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/common.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">

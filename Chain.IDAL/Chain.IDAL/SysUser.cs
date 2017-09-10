@@ -47,7 +47,7 @@ namespace Chain.IDAL
 			return DbHelperSQL.Exists(strSql.ToString(), parameters);
 		}
 
-		public bool ExiNumber(string usernumber)
+        public bool ExiNumber(string usernumber)
 		{
 			StringBuilder strSql = new StringBuilder();
 			strSql.Append("select count(1) from SysUser");

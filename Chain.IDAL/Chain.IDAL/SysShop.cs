@@ -596,7 +596,20 @@ namespace Chain.IDAL
 			return DbHelperSQL.Exists(strSql.ToString(), parameters);
 		}
 
-		public Chain.Model.SysShop DataRowToModel(DataRow row)
+        public bool Exists_ShopContactMan(string ShopContactMan)
+        {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append("select count(1) from SysShop");
+            strSql.Append(" where ShopContactMan = @ShopContactMan");
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@ShopContactMan", SqlDbType.VarChar, 50),
+            };
+            parameters[0].Value = ShopContactMan;
+            return DbHelperSQL.Exists(strSql.ToString(), parameters);
+        }
+
+        public Chain.Model.SysShop DataRowToModel(DataRow row)
 		{
 			Chain.Model.SysShop model = new Chain.Model.SysShop();
 			if (row != null)

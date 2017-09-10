@@ -5,6 +5,7 @@
 <head>
     <meta charset="utf-8">
     <title>商家联盟系统</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Mobile specific metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="SuggeElson" />
