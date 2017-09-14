@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chain.BLL", "Chain.BLL\Chain.BLL.csproj", "{F6F8FCE9-036D-4AE8-995A-B79B30254683}"
 EndProject
@@ -21,10 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainStock", "ChainStock\Ch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainStockForm", "ChainStockForm\ChainStockForm.csproj", "{9B656A74-DCC7-4000-BADA-898D77ADC32F}"
 EndProject
-Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "Setup", "Setup\Setup.isproj", "{70296BDC-0064-4DD8-A637-9A701D59A0AD}"
-	ProjectSection(ProjectDependencies) = postProject
-		{9B656A74-DCC7-4000-BADA-898D77ADC32F} = {9B656A74-DCC7-4000-BADA-898D77ADC32F}
-	EndProjectSection
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{D5F296F0-AC7D-4F3A-AF67-B9AA0A81A334}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -125,16 +122,11 @@ Global
 		{9B656A74-DCC7-4000-BADA-898D77ADC32F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9B656A74-DCC7-4000-BADA-898D77ADC32F}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
 		{9B656A74-DCC7-4000-BADA-898D77ADC32F}.SingleImage|Any CPU.Build.0 = Release|Any CPU
-		{70296BDC-0064-4DD8-A637-9A701D59A0AD}.CD_ROM|Any CPU.ActiveCfg = CD_ROM
-		{70296BDC-0064-4DD8-A637-9A701D59A0AD}.CD_ROM|Any CPU.Build.0 = CD_ROM
-		{70296BDC-0064-4DD8-A637-9A701D59A0AD}.Debug|Any CPU.ActiveCfg = DVD-5
-		{70296BDC-0064-4DD8-A637-9A701D59A0AD}.Debug|Any CPU.Build.0 = DVD-5
-		{70296BDC-0064-4DD8-A637-9A701D59A0AD}.DVD-5|Any CPU.ActiveCfg = DVD-5
-		{70296BDC-0064-4DD8-A637-9A701D59A0AD}.DVD-5|Any CPU.Build.0 = DVD-5
-		{70296BDC-0064-4DD8-A637-9A701D59A0AD}.Release|Any CPU.ActiveCfg = SingleImage
-		{70296BDC-0064-4DD8-A637-9A701D59A0AD}.Release|Any CPU.Build.0 = SingleImage
-		{70296BDC-0064-4DD8-A637-9A701D59A0AD}.SingleImage|Any CPU.ActiveCfg = SingleImage
-		{70296BDC-0064-4DD8-A637-9A701D59A0AD}.SingleImage|Any CPU.Build.0 = SingleImage
+		{D5F296F0-AC7D-4F3A-AF67-B9AA0A81A334}.CD_ROM|Any CPU.ActiveCfg = Release
+		{D5F296F0-AC7D-4F3A-AF67-B9AA0A81A334}.Debug|Any CPU.ActiveCfg = Debug
+		{D5F296F0-AC7D-4F3A-AF67-B9AA0A81A334}.DVD-5|Any CPU.ActiveCfg = Debug
+		{D5F296F0-AC7D-4F3A-AF67-B9AA0A81A334}.Release|Any CPU.ActiveCfg = Release
+		{D5F296F0-AC7D-4F3A-AF67-B9AA0A81A334}.SingleImage|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
