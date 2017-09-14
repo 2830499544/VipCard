@@ -41,16 +41,37 @@ namespace Chain.BLL
 			return this.dal.Exists(MemID, MemCard, MemMobile, MemCardNumber, MemShopID);
 		}
 
+        /// <summary>
+        /// 联盟商卡判断
+        /// </summary>
+        /// <param name="FatherID"></param>
+        /// <param name="MemCard"></param>
+        /// <param name="MemMobile"></param>
+        /// <param name="MemCardNumber"></param>
+        /// <param name="MemShopID"></param>
+        /// <returns></returns>
+        public int Exists_Alliance(int FatherID, string MemCard, string MemMobile, string MemCardNumber)
+        {
+            return this.dal.Exists_Alliance(FatherID, MemCard, MemMobile, MemCardNumber);
+        }
 
 
-		public DataSet GetItemAll(int MemID)
+
+
+        public DataSet GetItemAll(int MemID)
 		{
 			return this.dal.GetItemAll(MemID);
 		}
 
 		public int Add(Chain.Model.Mem model)
 		{
-			int exists = this.Exists(model.MemID, model.MemCard, model.MemMobile, model.MemCardNumber,model.MemShopID);
+            Chain.Model.SysShop modelShop = new Chain.BLL.SysShop().GetModel(model.MemShopID);
+            int exists;
+            //0是独立商，非0是联盟商
+            if (modelShop.FatherShopID == 0)
+                exists = this.Exists(model.MemID, model.MemCard, model.MemMobile, model.MemCardNumber, model.MemShopID);
+            else
+                exists = Exists_Alliance(modelShop.FatherShopID, model.MemCard, model.MemMobile, model.MemCardNumber);
 			int result;
 			if (exists != 1)
 			{

@@ -4,7 +4,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>商家联盟系统</title>
+    <title>嘉映映嘉会员管理系统</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Mobile specific metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -42,7 +42,7 @@
                 <div class="navbar">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="index.aspx">
-                            <img src="images/logo.png" alt="商家联盟系统" />
+                            <img src="images/logo.png" alt="嘉映映嘉会员管理系统" />
                         </a>
                     </div>
                     <nav class="top-nav" role="navigation">

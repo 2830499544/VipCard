@@ -605,7 +605,10 @@ namespace ChainStock.Service
 				strSql.Append(" and Mem.MemShopID = SysShop.ShopID and Mem.MemLevelID = MemLevel.LevelID and Mem.MemUserID=SysUser.UserID");
 				strSql.Append(" and Mem.MemID>0 AND dbo.SysShopMemLevel.MemLevelID=Mem.MemLevelID");
 				strSql.AppendFormat(" AND dbo.SysShopMemLevel.ShopID='{0}' ", this.UserModel.UserShopID);
-                strSql.AppendFormat(" AND Mem.MemShopID='{0}' ", this.UserModel.UserShopID);
+                //是否是联盟商
+                Chain.Model.SysShop modelShop = new Chain.BLL.SysShop().GetModel(this.UserModel.UserShopID);
+                if (modelShop.FatherShopID==0)
+                    strSql.AppendFormat(" AND Mem.MemShopID='{0}' ", this.UserModel.UserShopID);
 
                 int counts = 0;
 				DataTable dtMem = bllMem.GetListSP(20, 1, out counts, new string[]

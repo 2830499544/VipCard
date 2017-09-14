@@ -74,7 +74,8 @@ namespace Chain.IDAL
 			return DbHelperSQL.Exists(strSql.ToString(), parameters);
 		}
 
-		public bool ExistsMemCard(string MemCard)
+
+        public bool ExistsMemCard(string MemCard)
 		{
 			string strSql = string.Format("select count(1) from Mem where MemCard = '{0}'", MemCard);
 			return DbHelperSQL.Exists(strSql.ToString());
@@ -156,7 +157,68 @@ namespace Chain.IDAL
 			return result;
 		}
 
-		public DataSet GetItemAll(int MemID)
+
+        public int Exists_Alliance(int FatherID, string MemCard, string MemMobile, string MemCardNumber)
+        {
+            StringBuilder Sb = new StringBuilder();
+            Sb.Append("DECLARE @MemID INT;");
+            Sb.Append("DECLARE @MemMobile NVARCHAR(50);");
+            Sb.Append("DECLARE @MemCardNumber NVARCHAR(50);");
+            Sb.Append("DECLARE @MemCard NVARCHAR(50);");
+           // Sb.AppendFormat("SET @MemID='{0}';", MemID);
+            Sb.AppendFormat("SET @MemMobile='{0}';", MemMobile);
+            Sb.AppendFormat("SET @MemCardNumber='{0}';", MemCardNumber);
+            Sb.AppendFormat("SET @MemCard='{0}';", MemCard);
+            StringBuilder sb = new StringBuilder();
+            if (!string.IsNullOrEmpty(MemMobile))
+            {
+                sb.AppendFormat("'{0}',", MemMobile);
+            }
+            if (!string.IsNullOrEmpty(MemCardNumber))
+            {
+                sb.AppendFormat("'{0}',", MemCardNumber);
+            }
+            if (!string.IsNullOrEmpty(MemCard))
+            {
+                sb.AppendFormat("'{0}',", MemCard);
+            }
+            string info = "";
+            if (sb.Length > 0)
+            {
+                info = sb.ToString().Trim(new char[]
+                {
+                    ','
+                });
+            }
+          
+            Sb.AppendFormat(" IF EXISTS(SELECT 1 FROM dbo.Mem left join dbo.SysShop on dbo.Mem.MemShopID=dbo.SysShop.ShopID  WHERE SysShop.FatherShopID={0} and Mem.MemCard IN ({1}) ) ", FatherID,info);
+            Sb.Append(" BEGIN ");
+            Sb.Append("     SELECT -1 ");
+            Sb.Append(" END ");
+            Sb.AppendFormat(" ELSE IF EXISTS(SELECT 1 FROM dbo.Mem left join dbo.SysShop on dbo.Mem.MemShopID=dbo.SysShop.ShopID  WHERE SysShop.FatherShopID={0} and Mem.MemMobile IN ({1}) ) ", FatherID,info);
+            Sb.Append(" BEGIN ");
+            Sb.Append("     SELECT -2 ");
+            Sb.Append(" END ");
+            Sb.AppendFormat(" ELSE IF EXISTS(SELECT 1 FROM dbo.Mem left join dbo.SysShop on dbo.Mem.MemShopID=dbo.SysShop.ShopID  WHERE SysShop.FatherShopID={0} and Mem.MemMobile IN ({1})) ", FatherID,info);
+            Sb.Append(" BEGIN ");
+            Sb.Append("     SELECT -6 ");
+            Sb.Append(" END ");
+
+            DataSet ds = DbHelperSQL.Query(Sb.ToString());
+            DataTable dt = (ds.Tables.Count > 0) ? ds.Tables[0] : new DataTable();
+            int result;
+            if (dt.Rows.Count > 0)
+            {
+                result = (int)dt.Rows[0][0];
+            }
+            else
+            {
+                result = 1;
+            }
+            return result;
+        }
+
+        public DataSet GetItemAll(int MemID)
 		{
 			string sql_mem = " select * from Mem where MemID =" + MemID;
 			return DbHelperSQL.Query(sql_mem);
