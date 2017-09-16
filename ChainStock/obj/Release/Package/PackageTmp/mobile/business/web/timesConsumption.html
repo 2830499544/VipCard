@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="renderer" content="webkit|ie-comp|ie-stand"/>
+    <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no" />
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+	<title>计次消费</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/color.css">
+</head>
+<body>
+	<div class="section index" id="container" style="margin-bottom:1.6rem;">
+		<div id="head" class="section">
+			<div class="section header">
+				<h1>计次消费</h1>
+				<a href="javascript:void(0);" class="back-btn"><img src="images/prev.png"/></a>
+				<!-- <a href="index.html" class="head-icon" id="home"><img src="images/home_f.png"/></a> -->
+			</div>
+		</div>
+		<div id="content" class="section" style="background-color:#f7f7f7;">
+			<div class="section">
+				<div class="section line_box">
+					<div class="line_group">
+						<p class="f-left">订单编号</p>
+						<div class="f-right">
+							<!-- 获取订单号 -->
+							<p></p>
+						</div>
+					</div>
+					<div class="line_group" id="queryMember">
+						<p class="f-left">会员卡号</p>
+						<div class="f-right">
+							<!-- 输入卡号 -->
+							<input type="text" name="memberCard" placeholder="请输入会员卡号">
+						</div>
+					</div>
+					<div class="line_group dis-n" id="memberName">
+						<p class="f-left">会员姓名</p>
+						<div class="f-right">
+							<!-- 根据卡号获取会员姓名 -->
+							<p>未找到</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- <div class="section in-search">
+					<input type="text" placeholder="输入服务名称进行查找" />
+					<a href="##"><img src="images/search.png" alt="搜索" /></a>
+				</div> -->
+
+				<div class="section bg-fff" style="margin-top:0.1rem;">
+				
+					<div class="section f-right gift-list" style="width:100%;">
+						<!-- 服务列表 -->
+						<ul class="section">
+							<li>
+								<div class="f-left gift-txt">
+									<h3>拽猫系列卡通硅胶手机挂绳</h3>
+									<p>剩余次数：<span class="count-num">10</span></p>
+								</div>
+								<!-- 增减控制器 -->
+								<div class="buy-ctrl">
+									<a href="##" class="reduceBtn"><img src="images/reduce.png" /></a>
+									<!-- 这里默认为0 -->
+									<input type="text" value="0" class="giftTxt" />
+									<a href="##" class="plusBtn"><img src="images/plus.png" /></a>
+									<a href="##" class="plusShow"><img src="images/plus1.png" /></a>
+								</div>
+							</li>
+							<li>
+								<div class="f-left gift-txt">
+									<h3>EGK 金属手机指环扣 手机支架</h3>
+									<p>剩余次数：<span class="count-num">10</span></p>
+								</div>
+								<!-- 增减控制器 -->
+								<div class="buy-ctrl">
+									<a href="##" class="reduceBtn"><img src="images/reduce.png" /></a>
+									<input type="text" value="0" class="giftTxt" />
+									<a href="##" class="plusBtn"><img src="images/plus.png" /></a>
+									<a href="##" class="plusShow"><img src="images/plus1.png" /></a>
+								</div>
+							</li>
+							<li>
+								<div class="f-left gift-txt">
+									<h3>拽猫系列卡通硅胶手机挂绳</h3>
+									<p>剩余次数：<span class="count-num">8</span></p>
+								</div>
+								<!-- 增减控制器 -->
+								<div class="buy-ctrl">
+									<a href="##" class="reduceBtn"><img src="images/reduce.png" /></a>
+									<input type="text" value="0" class="giftTxt" />
+									<a href="##" class="plusBtn"><img src="images/plus.png" /></a>
+									<a href="##" class="plusShow"><img src="images/plus1.png" /></a>
+								</div>
+							</li>
+							<li>
+								<div class="f-left gift-txt">
+									<h3>EGK 金属手机指环扣 手机支架EGK</h3>
+									<p>剩余次数：<span class="count-num">20</span></p>
+								</div>
+								<!-- 增减控制器 -->
+								<div class="buy-ctrl">
+									<a href="##" class="reduceBtn"><img src="images/reduce.png" /></a>
+									<input type="text" value="0" class="giftTxt" />
+									<a href="##" class="plusBtn"><img src="images/plus.png" /></a>
+									<a href="##" class="plusShow"><img src="images/plus1.png" /></a>
+								</div>
+							</li>
+							<li>
+								<div class="f-left gift-txt">
+									<h3>拽猫系列卡通硅胶手机挂绳</h3>
+									<p>剩余次数：<span class="count-num">5</span></p>
+								</div>
+								<!-- 增减控制器 -->
+								<div class="buy-ctrl">
+									<a href="##" class="reduceBtn"><img src="images/reduce.png" /></a>
+									<input type="text" value="0" class="giftTxt" />
+									<a href="##" class="plusBtn"><img src="images/plus.png" /></a>
+									<a href="##" class="plusShow"><img src="images/plus1.png" /></a>
+								</div>
+							</li>
+							<a href="##">加载更多...</a>
+						</ul>
+					</div>
+				</div>
+
+				<div class="gift-fix">
+					<h3 style="padding-left:0.2rem;">消费总次：<span class="count-total">0</span></h3>
+					<a href="##" id="nowCount" class="queryCity">立即消费</a>
+					<div class="dis-n city-mode">
+						<div class="city-query">
+							<p style="width: 100%;text-align: center;font-size: 0.3rem;">是否确定立即结算？</p>
+							<div class="section ad-detail">
+								<a href="##" class="count-settlement">立即结算</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 底部浮动导航 -->
+		<div class="foot-nav">
+			<div class="f-left fix-nav fix-home">
+				<a href="index.html"><img src="images/home.png"/></a>
+			</div>
+			<div class="f-left fix-nav fix-ch">
+				<a href="memberCard.html"><p>会员办卡</p></a>
+			</div>
+			<div class="f-left fix-nav fix-ch">
+				<a href="##"><p>收银记账</p><img src="images/icon.png"/></a>
+				<div class="foot-more">
+					<a href="fastConsumption.html">快速消费</a>
+					<a href="goodsConsumption.html">商品消费</a>
+					<a href="timesConsumption.html">计次消费</a>
+				</div>
+			</div>
+			<div class="f-left fix-nav fix-ch">
+				<a href="bossCenter.html"><p>老板中心</p></a>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript" src="scripts/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+</script>
+</body>
+</html>

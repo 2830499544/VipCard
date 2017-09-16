@@ -1,0 +1,45 @@
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.DBUtility\bin\Release\Chain.DBUtility.dll
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.DBUtility\bin\Release\Chain.DBUtility.pdb
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.DBUtility\bin\Release\Chain.Common.dll
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.DBUtility\bin\Release\ChainStock.XmlSerializers.dll
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.DBUtility\bin\Release\Interop.SQLDMO.dll
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.DBUtility\bin\Release\Chain.Common.pdb
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.DBUtility\obj\Release\Chain.DBUtility.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.DBUtility\obj\Release\Chain.DBUtility.dll
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.DBUtility\obj\Release\Chain.DBUtility.pdb
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.DBUtility\bin\Release\Chain.DBUtility.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.DBUtility\bin\Release\Chain.DBUtility.pdb
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.DBUtility\bin\Release\Chain.Common.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.DBUtility\bin\Release\ChainStock.XmlSerializers.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.DBUtility\bin\Release\Interop.SQLDMO.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.DBUtility\bin\Release\Chain.Common.pdb
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.DBUtility\obj\Release\Chain.DBUtility.csprojResolveAssemblyReference.cache
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.DBUtility\obj\Release\Chain.DBUtility.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.DBUtility\obj\Release\Chain.DBUtility.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.DBUtility\bin\Release\Chain.DBUtility.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.DBUtility\bin\Release\Chain.DBUtility.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.DBUtility\bin\Release\Chain.Common.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.DBUtility\bin\Release\ChainStock.XmlSerializers.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.DBUtility\bin\Release\Interop.SQLDMO.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.DBUtility\bin\Release\Chain.Common.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.DBUtility\obj\Release\Chain.DBUtility.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.DBUtility\obj\Release\Chain.DBUtility.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.DBUtility\obj\Release\Chain.DBUtility.pdb
+E:\网源\PSSDSS\1-9-9\Chain.DBUtility\bin\Release\Chain.DBUtility.dll
+E:\网源\PSSDSS\1-9-9\Chain.DBUtility\bin\Release\Chain.DBUtility.pdb
+E:\网源\PSSDSS\1-9-9\Chain.DBUtility\bin\Release\Chain.Common.dll
+E:\网源\PSSDSS\1-9-9\Chain.DBUtility\bin\Release\ChainStock.XmlSerializers.dll
+E:\网源\PSSDSS\1-9-9\Chain.DBUtility\bin\Release\Interop.SQLDMO.dll
+E:\网源\PSSDSS\1-9-9\Chain.DBUtility\bin\Release\Chain.Common.pdb
+E:\网源\PSSDSS\1-9-9\Chain.DBUtility\obj\Release\Chain.DBUtility.csprojResolveAssemblyReference.cache
+E:\网源\PSSDSS\1-9-9\Chain.DBUtility\obj\Release\Chain.DBUtility.dll
+E:\网源\PSSDSS\1-9-9\Chain.DBUtility\obj\Release\Chain.DBUtility.pdb
+E:\Work\迈达包装\SourceCode\Chain.DBUtility\bin\Release\Chain.DBUtility.dll
+E:\Work\迈达包装\SourceCode\Chain.DBUtility\bin\Release\Chain.DBUtility.pdb
+E:\Work\迈达包装\SourceCode\Chain.DBUtility\bin\Release\Chain.Common.dll
+E:\Work\迈达包装\SourceCode\Chain.DBUtility\bin\Release\ChainStock.XmlSerializers.dll
+E:\Work\迈达包装\SourceCode\Chain.DBUtility\bin\Release\Interop.SQLDMO.dll
+E:\Work\迈达包装\SourceCode\Chain.DBUtility\bin\Release\Chain.Common.pdb
+E:\Work\迈达包装\SourceCode\Chain.DBUtility\obj\Release\Chain.DBUtility.csprojResolveAssemblyReference.cache
+E:\Work\迈达包装\SourceCode\Chain.DBUtility\obj\Release\Chain.DBUtility.dll
+E:\Work\迈达包装\SourceCode\Chain.DBUtility\obj\Release\Chain.DBUtility.pdb

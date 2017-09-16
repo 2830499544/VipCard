@@ -1,0 +1,329 @@
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\ChainStock.dll.config
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\ChainStock.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\ChainStock.pdb
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\AopSdk.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\AspNetPager.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\Chain.BLL.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\Chain.Common.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\Chain.DBUtility.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\Chain.IDAL.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\Chain.Model.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\Chain.Tasks.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\Chain.Wechat.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\F2FPayDll.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\LitJson.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\Newtonsoft.Json.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\NickLee.Common.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\NPOI.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\QRCode.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\ThoughtWorks.QRCode.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\Web.Common.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\Interop.SQLDMO.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\Ionic.Zip.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\zxing.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\CompactFormatterPlus.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\ISerial.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\Chain.BLL.pdb
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\Chain.Common.pdb
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\Chain.DBUtility.pdb
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\Chain.IDAL.pdb
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\Chain.Model.pdb
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\Chain.Tasks.pdb
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\Chain.Wechat.pdb
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\AopSdk.pdb
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\bin\F2FPayDll.pdb
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\obj\Debug\ChainStock.csprojResolveAssemblyReference.cache
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\obj\Debug\ChainStock.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\ChainStock\obj\Debug\ChainStock.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\ChainStock.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\ChainStock.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\AspNetPager.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.BLL.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Common.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.DBUtility.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.IDAL.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Model.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Tasks.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Wechat.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Newtonsoft.Json.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\NickLee.Common.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\NPOI.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\QRCode.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Web.Common.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Interop.SQLDMO.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Ionic.Zip.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\zxing.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\CompactFormatterPlus.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\ISerial.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.BLL.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Common.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.DBUtility.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.IDAL.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Model.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Tasks.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Wechat.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\obj\Debug\ChainStock.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\obj\Debug\ChainStock.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\ChainStock\obj\Debug\ChainStock.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\ChainStock.dll.config
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\ChainStock.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\ChainStock.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\AopSdk.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\AspNetPager.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.BLL.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Common.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.DBUtility.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.IDAL.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Model.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Tasks.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Wechat.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\F2FPayDll.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\LitJson.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\NickLee.Common.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\NPOI.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\QRCode.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\ThoughtWorks.QRCode.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Web.Common.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Interop.SQLDMO.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Ionic.Zip.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\zxing.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\CompactFormatterPlus.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\ISerial.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.BLL.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Common.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.DBUtility.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.IDAL.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Model.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Tasks.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Wechat.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\AopSdk.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\bin\F2FPayDll.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\obj\Debug\ChainStock.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\obj\Debug\ChainStock.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\ChainStock\obj\Debug\ChainStock.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\ChainStock.dll.config
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\ChainStock.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\ChainStock.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\AopSdk.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\AspNetPager.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.BLL.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Common.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.DBUtility.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.IDAL.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Model.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Tasks.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Wechat.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\F2FPayDll.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\LitJson.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\NickLee.Common.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\NPOI.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\QRCode.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\ThoughtWorks.QRCode.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Web.Common.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Interop.SQLDMO.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Ionic.Zip.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\zxing.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\CompactFormatterPlus.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\ISerial.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.BLL.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Common.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.DBUtility.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.IDAL.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Model.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Tasks.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Wechat.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\AopSdk.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\F2FPayDll.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\obj\Debug\ChainStock.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\obj\Debug\ChainStock.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\obj\Debug\ChainStock.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\ChainStock.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\ChainStock.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\AspNetPager.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.BLL.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Common.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.DBUtility.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.IDAL.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Model.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Tasks.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Wechat.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Newtonsoft.Json.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\NickLee.Common.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\NPOI.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\QRCode.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Web.Common.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Interop.SQLDMO.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Ionic.Zip.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\zxing.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\CompactFormatterPlus.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\ISerial.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.BLL.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Common.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.DBUtility.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.IDAL.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Model.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Tasks.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Wechat.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\AopSdk.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\F2FPayDll.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\obj\Debug\ChainStock.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\obj\Debug\ChainStock.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\obj\Debug\ChainStock.pdb
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\ChainStock.dll
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\ChainStock.pdb
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\AspNetPager.dll
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.BLL.dll
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Common.dll
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.DBUtility.dll
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.IDAL.dll
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Model.dll
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Tasks.dll
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Wechat.dll
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Newtonsoft.Json.dll
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\NickLee.Common.dll
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\NPOI.dll
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\QRCode.dll
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Web.Common.dll
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Interop.SQLDMO.dll
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Ionic.Zip.dll
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\zxing.dll
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\CompactFormatterPlus.dll
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\ISerial.dll
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.BLL.pdb
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Common.pdb
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.DBUtility.pdb
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.IDAL.pdb
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Model.pdb
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Tasks.pdb
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\Chain.Wechat.pdb
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\AopSdk.pdb
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\bin\F2FPayDll.pdb
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\obj\Debug\ChainStock.csprojResolveAssemblyReference.cache
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\obj\Debug\ChainStock.dll
+F:\12\会员源码\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\ChainStock\obj\Debug\ChainStock.pdb
+E:\网源\PSSDSS\1-9-9\ChainStock\obj\Debug\ChainStock.csprojResolveAssemblyReference.cache
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\ChainStock.dll.config
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\ChainStock.dll
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\ChainStock.pdb
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\AspNetPager.dll
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\Chain.BLL.dll
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\Chain.Common.dll
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\Chain.DBUtility.dll
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\Chain.IDAL.dll
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\Chain.Model.dll
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\Chain.Tasks.dll
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\Chain.Wechat.dll
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\Newtonsoft.Json.dll
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\NickLee.Common.dll
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\NPOI.dll
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\QRCode.dll
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\Web.Common.dll
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\Interop.SQLDMO.dll
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\Ionic.Zip.dll
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\zxing.dll
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\CompactFormatterPlus.dll
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\ISerial.dll
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\Chain.BLL.pdb
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\Chain.Common.pdb
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\Chain.DBUtility.pdb
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\Chain.IDAL.pdb
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\Chain.Model.pdb
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\Chain.Tasks.pdb
+E:\网源\PSSDSS\1-9-9\ChainStock\bin\Chain.Wechat.pdb
+E:\网源\PSSDSS\1-9-9\ChainStock\obj\Debug\ChainStock.dll
+E:\网源\PSSDSS\1-9-9\ChainStock\obj\Debug\ChainStock.pdb
+E:\Work\迈达包装\SourceCode\ChainStock\bin\ChainStock.dll.config
+E:\Work\迈达包装\SourceCode\ChainStock\bin\ChainStock.dll
+E:\Work\迈达包装\SourceCode\ChainStock\bin\ChainStock.pdb
+E:\Work\迈达包装\SourceCode\ChainStock\bin\AspNetPager.dll
+E:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.BLL.dll
+E:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.Common.dll
+E:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.DBUtility.dll
+E:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.IDAL.dll
+E:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.Model.dll
+E:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.Tasks.dll
+E:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.Wechat.dll
+E:\Work\迈达包装\SourceCode\ChainStock\bin\Newtonsoft.Json.dll
+E:\Work\迈达包装\SourceCode\ChainStock\bin\NickLee.Common.dll
+E:\Work\迈达包装\SourceCode\ChainStock\bin\NPOI.dll
+E:\Work\迈达包装\SourceCode\ChainStock\bin\QRCode.dll
+E:\Work\迈达包装\SourceCode\ChainStock\bin\Web.Common.dll
+E:\Work\迈达包装\SourceCode\ChainStock\bin\Interop.SQLDMO.dll
+E:\Work\迈达包装\SourceCode\ChainStock\bin\Ionic.Zip.dll
+E:\Work\迈达包装\SourceCode\ChainStock\bin\zxing.dll
+E:\Work\迈达包装\SourceCode\ChainStock\bin\CompactFormatterPlus.dll
+E:\Work\迈达包装\SourceCode\ChainStock\bin\ISerial.dll
+E:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.BLL.pdb
+E:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.Common.pdb
+E:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.DBUtility.pdb
+E:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.IDAL.pdb
+E:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.Model.pdb
+E:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.Tasks.pdb
+E:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.Wechat.pdb
+E:\Work\迈达包装\SourceCode\ChainStock\obj\Debug\ChainStock.csprojResolveAssemblyReference.cache
+E:\Work\迈达包装\SourceCode\ChainStock\obj\Debug\ChainStock.dll
+E:\Work\迈达包装\SourceCode\ChainStock\obj\Debug\ChainStock.pdb
+F:\Work\迈达包装\SourceCode\ChainStock\bin\ChainStock.dll.config
+F:\Work\迈达包装\SourceCode\ChainStock\bin\ChainStock.dll
+F:\Work\迈达包装\SourceCode\ChainStock\bin\ChainStock.pdb
+F:\Work\迈达包装\SourceCode\ChainStock\bin\AspNetPager.dll
+F:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.BLL.dll
+F:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.Common.dll
+F:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.DBUtility.dll
+F:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.IDAL.dll
+F:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.Model.dll
+F:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.Tasks.dll
+F:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.Wechat.dll
+F:\Work\迈达包装\SourceCode\ChainStock\bin\Newtonsoft.Json.dll
+F:\Work\迈达包装\SourceCode\ChainStock\bin\NickLee.Common.dll
+F:\Work\迈达包装\SourceCode\ChainStock\bin\NPOI.dll
+F:\Work\迈达包装\SourceCode\ChainStock\bin\QRCode.dll
+F:\Work\迈达包装\SourceCode\ChainStock\bin\Web.Common.dll
+F:\Work\迈达包装\SourceCode\ChainStock\bin\Interop.SQLDMO.dll
+F:\Work\迈达包装\SourceCode\ChainStock\bin\Ionic.Zip.dll
+F:\Work\迈达包装\SourceCode\ChainStock\bin\zxing.dll
+F:\Work\迈达包装\SourceCode\ChainStock\bin\CompactFormatterPlus.dll
+F:\Work\迈达包装\SourceCode\ChainStock\bin\ISerial.dll
+F:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.BLL.pdb
+F:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.Common.pdb
+F:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.DBUtility.pdb
+F:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.IDAL.pdb
+F:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.Model.pdb
+F:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.Tasks.pdb
+F:\Work\迈达包装\SourceCode\ChainStock\bin\Chain.Wechat.pdb
+F:\Work\迈达包装\SourceCode\ChainStock\obj\Debug\ChainStock.csprojResolveAssemblyReference.cache
+F:\Work\迈达包装\SourceCode\ChainStock\obj\Debug\ChainStock.dll
+F:\Work\迈达包装\SourceCode\ChainStock\obj\Debug\ChainStock.pdb
+F:\Work\MDBZ\SourceCode\ChainStock\bin\ChainStock.dll.config
+F:\Work\MDBZ\SourceCode\ChainStock\bin\ChainStock.dll
+F:\Work\MDBZ\SourceCode\ChainStock\bin\ChainStock.pdb
+F:\Work\MDBZ\SourceCode\ChainStock\bin\AspNetPager.dll
+F:\Work\MDBZ\SourceCode\ChainStock\bin\Chain.BLL.dll
+F:\Work\MDBZ\SourceCode\ChainStock\bin\Chain.Common.dll
+F:\Work\MDBZ\SourceCode\ChainStock\bin\Chain.DBUtility.dll
+F:\Work\MDBZ\SourceCode\ChainStock\bin\Chain.IDAL.dll
+F:\Work\MDBZ\SourceCode\ChainStock\bin\Chain.Model.dll
+F:\Work\MDBZ\SourceCode\ChainStock\bin\Chain.Tasks.dll
+F:\Work\MDBZ\SourceCode\ChainStock\bin\Chain.Wechat.dll
+F:\Work\MDBZ\SourceCode\ChainStock\bin\Newtonsoft.Json.dll
+F:\Work\MDBZ\SourceCode\ChainStock\bin\NickLee.Common.dll
+F:\Work\MDBZ\SourceCode\ChainStock\bin\NPOI.dll
+F:\Work\MDBZ\SourceCode\ChainStock\bin\QRCode.dll
+F:\Work\MDBZ\SourceCode\ChainStock\bin\Web.Common.dll
+F:\Work\MDBZ\SourceCode\ChainStock\bin\Interop.SQLDMO.dll
+F:\Work\MDBZ\SourceCode\ChainStock\bin\Ionic.Zip.dll
+F:\Work\MDBZ\SourceCode\ChainStock\bin\zxing.dll
+F:\Work\MDBZ\SourceCode\ChainStock\bin\CompactFormatterPlus.dll
+F:\Work\MDBZ\SourceCode\ChainStock\bin\ISerial.dll
+F:\Work\MDBZ\SourceCode\ChainStock\bin\Chain.BLL.pdb
+F:\Work\MDBZ\SourceCode\ChainStock\bin\Chain.Common.pdb
+F:\Work\MDBZ\SourceCode\ChainStock\bin\Chain.DBUtility.pdb
+F:\Work\MDBZ\SourceCode\ChainStock\bin\Chain.IDAL.pdb
+F:\Work\MDBZ\SourceCode\ChainStock\bin\Chain.Model.pdb
+F:\Work\MDBZ\SourceCode\ChainStock\bin\Chain.Tasks.pdb
+F:\Work\MDBZ\SourceCode\ChainStock\bin\Chain.Wechat.pdb
+F:\Work\MDBZ\SourceCode\ChainStock\obj\Debug\ChainStock.csprojResolveAssemblyReference.cache
+F:\Work\MDBZ\SourceCode\ChainStock\obj\Debug\ChainStock.dll
+F:\Work\MDBZ\SourceCode\ChainStock\obj\Debug\ChainStock.pdb

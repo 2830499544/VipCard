@@ -1,0 +1,56 @@
+F:\测试源码\sm_zhiluovip\破解\Chain.Model\bin\Debug\Chain.Model.dll
+F:\测试源码\sm_zhiluovip\破解\Chain.Model\bin\Debug\Chain.Model.pdb
+F:\测试源码\sm_zhiluovip\破解\Chain.Model\obj\Debug\Chain.Model.dll
+F:\测试源码\sm_zhiluovip\破解\Chain.Model\obj\Debug\Chain.Model.pdb
+E:\good\商家联盟系统\Chain.Model\bin\Debug\Chain.Model.dll
+E:\good\商家联盟系统\Chain.Model\bin\Debug\Chain.Model.pdb
+E:\good\商家联盟系统\Chain.Model\obj\Debug\Chain.Model.dll
+E:\good\商家联盟系统\Chain.Model\obj\Debug\Chain.Model.pdb
+E:\site\商家联盟系统\Chain.Model\bin\Debug\Chain.Model.dll
+E:\site\商家联盟系统\Chain.Model\bin\Debug\Chain.Model.pdb
+E:\site\商家联盟系统\Chain.Model\obj\Debug\Chain.Model.dll
+E:\site\商家联盟系统\Chain.Model\obj\Debug\Chain.Model.pdb
+C:\Users\Administrator\Documents\Tencent Files\1033877652\FileRecv\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Model\bin\Debug\Chain.Model.dll
+C:\Users\Administrator\Documents\Tencent Files\1033877652\FileRecv\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Model\bin\Debug\Chain.Model.pdb
+C:\Users\Administrator\Documents\Tencent Files\1033877652\FileRecv\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Model\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Tencent Files\1033877652\FileRecv\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Model\obj\Debug\Chain.Model.dll
+C:\Users\Administrator\Documents\Tencent Files\1033877652\FileRecv\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Model\obj\Debug\Chain.Model.pdb
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Model\bin\Debug\Chain.Model.dll
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Model\bin\Debug\Chain.Model.pdb
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Model\obj\Debug\Chain.Model.dll
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Model\obj\Debug\Chain.Model.pdb
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Model\obj\Debug\Chain.Model.csprojResolveAssemblyReference.cache
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Model\bin\Debug\Chain.Model.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Model\bin\Debug\Chain.Model.pdb
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Model\obj\Debug\Chain.Model.csprojResolveAssemblyReference.cache
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Model\obj\Debug\Chain.Model.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Model\obj\Debug\Chain.Model.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.Model\bin\Debug\Chain.Model.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.Model\bin\Debug\Chain.Model.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.Model\obj\Debug\Chain.Model.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.Model\obj\Debug\Chain.Model.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.Model\obj\Debug\Chain.Model.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\Chain.Model\bin\Debug\Chain.Model.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\Chain.Model\bin\Debug\Chain.Model.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\Chain.Model\obj\Debug\Chain.Model.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\Chain.Model\obj\Debug\Chain.Model.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\Chain.Model\obj\Debug\Chain.Model.pdb
+E:\网源\PSSDSS\1-9-9\Chain.Model\bin\Debug\Chain.Model.dll
+E:\网源\PSSDSS\1-9-9\Chain.Model\bin\Debug\Chain.Model.pdb
+E:\网源\PSSDSS\1-9-9\Chain.Model\obj\Debug\Chain.Model.dll
+E:\网源\PSSDSS\1-9-9\Chain.Model\obj\Debug\Chain.Model.pdb
+E:\Work\迈达包装\SourceCode\Chain.Model\bin\Debug\Chain.Model.dll
+E:\Work\迈达包装\SourceCode\Chain.Model\bin\Debug\Chain.Model.pdb
+E:\Work\迈达包装\SourceCode\Chain.Model\obj\Debug\Chain.Model.dll
+E:\Work\迈达包装\SourceCode\Chain.Model\obj\Debug\Chain.Model.pdb
+F:\Work\迈达包装\SourceCode\Chain.Model\bin\Debug\Chain.Model.dll
+F:\Work\迈达包装\SourceCode\Chain.Model\bin\Debug\Chain.Model.pdb
+F:\Work\迈达包装\SourceCode\Chain.Model\obj\Debug\Chain.Model.csprojResolveAssemblyReference.cache
+F:\Work\迈达包装\SourceCode\Chain.Model\obj\Debug\Chain.Model.dll
+F:\Work\迈达包装\SourceCode\Chain.Model\obj\Debug\Chain.Model.pdb
+E:\Work\迈达包装\SourceCode\Chain.Model\obj\Debug\Chain.Model.csprojResolveAssemblyReference.cache
+F:\Work\MDBZ\SourceCode\Chain.Model\bin\Debug\Chain.Model.dll
+F:\Work\MDBZ\SourceCode\Chain.Model\bin\Debug\Chain.Model.pdb
+F:\Work\MDBZ\SourceCode\Chain.Model\obj\Debug\Chain.Model.csprojResolveAssemblyReference.cache
+F:\Work\MDBZ\SourceCode\Chain.Model\obj\Debug\Chain.Model.dll
+F:\Work\MDBZ\SourceCode\Chain.Model\obj\Debug\Chain.Model.pdb

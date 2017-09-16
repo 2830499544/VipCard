@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>在线拍照</title>    
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <link href="../Scripts/PhotoOnline/myCss.css" rel="stylesheet" type="text/css" />
+    <script src="../Scripts/PhotoOnline/JsAndAs.js" type="text/javascript"></script>
+    <script src="../Scripts/PhotoOnline/swfobject.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery-common.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.artDialog.basic.js" type="text/javascript"></script>
+    <script src="../Scripts/artDialog.iframeTools.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.onunload = function setRemove() {
+            var origin = artDialog.open.origin;
+            var aValue = getCookie("PhotoName");
+            var img = origin.document.getElementById('imgMemPhoto');
+            var imgpaht = origin.document.getElementById('txtMemPhoto');
+           
+            if (aValue == null) {
+                imgpaht.value = "";
+                img.src = "../images/member/nophoto.gif";
+            }
+            else {
+                imgpaht.value = "../Upload/MemPhoto/" + aValue;
+                img.src = "../Upload/MemPhoto/" + aValue;
+            }
+            delCookie("PhotoName");
+            var f = document.getElementById("My_Cam");
+            if (f) {
+                try { f.removeNode(true); } catch (e) { }
+            }
+        }; 
+    </script>
+</head>
+<body>
+    <div id="Container">
+        <object id="My_Cam" name="always" align="middle" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+            codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0"
+            height="283" viewastext="会员拍照" width="616">
+            <param name="allowScriptAccess" value="always" />
+            <param name="movie" value="PhotoOnline.swf" />
+            <param name="quality" value="high" />
+            <param name="bgcolor" value="#ffffff" />
+            <embed align="middle" allowscriptaccess="always" bgcolor="#ffffff" height="283"
+                name="My_Cam" pluginspage="http://www.macromedia.com/go/getflashplayer" quality="high"
+                src="PhotoOnline.swf" type="application/x-shockwave-flash" width="616"></embed>
+        </object>
+           
+    </div>
+    </body>
+</html>

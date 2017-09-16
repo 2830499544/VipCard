@@ -1,0 +1,49 @@
+﻿body
+{
+	text-align: center;
+	background-color: Gray;
+}
+#Container
+{
+	margin: 10px auto;
+	width: 616px;
+	text-align: left;
+}
+.FramesWindow
+{
+	width: 300px;
+	position: relative;
+	height: 100px;
+	background: Gray;
+	overflow: hidden;
+	float: left;
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+.FramesList
+{
+	width: 3000px;
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+}
+.Item
+{
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	float: left;
+	width: 100px;
+	height: 75px;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+	overflow: hidden;
+}
+.Item p
+{ *position:absolute;top:50%;left:50%;}
+.Item p a img
+{ *position:relative;top:-50%;left:-50%;border:0px;}

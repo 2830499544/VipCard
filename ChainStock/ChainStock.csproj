@@ -977,10 +977,6 @@
     <Compile Include="SystemManage\WeiXinRuleList.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="test.aspx.cs">
-      <DependentUpon>test.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Compile Include="Top.aspx.cs">
       <DependentUpon>Top.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2712,7 +2708,6 @@
     <Content Include="SystemManage\WeiXinRule.aspx" />
     <Content Include="SystemManage\WeiXinRuleList.aspx" />
     <Content Include="Task.xml" />
-    <Content Include="test.aspx" />
     <Content Include="themes\css\v3\public.css" />
     <Content Include="themes\css\v3\register.css" />
     <Content Include="themes\css\v3\registershop.css" />

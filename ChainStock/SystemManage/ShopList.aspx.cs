@@ -145,7 +145,30 @@ namespace ChainStock.SystemManage
 
 		public bool isopen = PubFunction.curParameter.bolIsSettlement;
 
-		protected void Page_Load(object sender, EventArgs e)
+        private LoginLogic login;
+
+        private Chain.Model.SysUser UserModel
+        {
+            get
+            {
+                if (this.login == null)
+                {
+                    this.login = LoginLogic.LoginStatus();
+                }
+                Chain.Model.SysUser result;
+                if (this.login.IsLoggedOn && this.login.LoginUser != null)
+                {
+                    result = this.login.LoginUser;
+                }
+                else
+                {
+                    result = null;
+                }
+                return result;
+            }
+        }
+
+        protected void Page_Load(object sender, EventArgs e)
 		{
 			if (!base.IsPostBack)
 			{
@@ -158,7 +181,12 @@ namespace ChainStock.SystemManage
 				this.txtIsSettlement.Value = (PubFunction.curParameter.bolIsSettlement ? "1" : "0");
 				this.union.Value = PubFunction.curParameter.UsingUnion.ToString();
 				this.txtShopType.Value = "3";
-				this.NewMethod();
+                //
+                Chain.Model.SysShop modelShop = new Chain.BLL.SysShop().GetModel(this.UserModel.UserShopID);
+                this.txtShopContactMan.Value = modelShop.ShopContactMan;
+                
+
+                this.NewMethod();
 				PubFunction.BindProvinceSelect(this.sltProvince);
 				Chain.BLL.SysShop bllShop = new Chain.BLL.SysShop();
 				int count = bllShop.GetRecordCount("IsMain=1");

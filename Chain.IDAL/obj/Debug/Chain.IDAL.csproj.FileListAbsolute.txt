@@ -1,0 +1,155 @@
+F:\测试源码\sm_zhiluovip\破解\Chain.IDAL\bin\Debug\Chain.IDAL.dll
+F:\测试源码\sm_zhiluovip\破解\Chain.IDAL\bin\Debug\Chain.IDAL.pdb
+F:\测试源码\sm_zhiluovip\破解\Chain.IDAL\bin\Debug\Chain.DBUtility.dll
+F:\测试源码\sm_zhiluovip\破解\Chain.IDAL\bin\Debug\Chain.Model.dll
+F:\测试源码\sm_zhiluovip\破解\Chain.IDAL\bin\Debug\Interop.SQLDMO.dll
+F:\测试源码\sm_zhiluovip\破解\Chain.IDAL\bin\Debug\Chain.Common.dll
+F:\测试源码\sm_zhiluovip\破解\Chain.IDAL\bin\Debug\Chain.DBUtility.pdb
+F:\测试源码\sm_zhiluovip\破解\Chain.IDAL\bin\Debug\Chain.Model.pdb
+F:\测试源码\sm_zhiluovip\破解\Chain.IDAL\bin\Debug\Chain.Common.pdb
+F:\测试源码\sm_zhiluovip\破解\Chain.IDAL\obj\Debug\Chain.IDAL.dll
+F:\测试源码\sm_zhiluovip\破解\Chain.IDAL\obj\Debug\Chain.IDAL.pdb
+E:\good\商家联盟系统\Chain.IDAL\bin\Debug\Chain.IDAL.dll
+E:\good\商家联盟系统\Chain.IDAL\bin\Debug\Chain.IDAL.pdb
+E:\good\商家联盟系统\Chain.IDAL\bin\Debug\Chain.DBUtility.dll
+E:\good\商家联盟系统\Chain.IDAL\bin\Debug\Chain.Model.dll
+E:\good\商家联盟系统\Chain.IDAL\bin\Debug\Interop.SQLDMO.dll
+E:\good\商家联盟系统\Chain.IDAL\bin\Debug\Chain.Common.dll
+E:\good\商家联盟系统\Chain.IDAL\bin\Debug\Chain.DBUtility.pdb
+E:\good\商家联盟系统\Chain.IDAL\bin\Debug\Chain.Model.pdb
+E:\good\商家联盟系统\Chain.IDAL\bin\Debug\Chain.Common.pdb
+E:\good\商家联盟系统\Chain.IDAL\obj\Debug\Chain.IDAL.csprojResolveAssemblyReference.cache
+E:\good\商家联盟系统\Chain.IDAL\obj\Debug\Chain.IDAL.dll
+E:\good\商家联盟系统\Chain.IDAL\obj\Debug\Chain.IDAL.pdb
+E:\site\商家联盟系统\Chain.IDAL\bin\Debug\Chain.IDAL.dll
+E:\site\商家联盟系统\Chain.IDAL\bin\Debug\Chain.IDAL.pdb
+E:\site\商家联盟系统\Chain.IDAL\bin\Debug\Chain.DBUtility.dll
+E:\site\商家联盟系统\Chain.IDAL\bin\Debug\Chain.Model.dll
+E:\site\商家联盟系统\Chain.IDAL\bin\Debug\Interop.SQLDMO.dll
+E:\site\商家联盟系统\Chain.IDAL\bin\Debug\Chain.Common.dll
+E:\site\商家联盟系统\Chain.IDAL\bin\Debug\Chain.DBUtility.pdb
+E:\site\商家联盟系统\Chain.IDAL\bin\Debug\Chain.Model.pdb
+E:\site\商家联盟系统\Chain.IDAL\bin\Debug\Chain.Common.pdb
+E:\site\商家联盟系统\Chain.IDAL\obj\Debug\Chain.IDAL.csprojResolveAssemblyReference.cache
+E:\site\商家联盟系统\Chain.IDAL\obj\Debug\Chain.IDAL.dll
+E:\site\商家联盟系统\Chain.IDAL\obj\Debug\Chain.IDAL.pdb
+C:\Users\Administrator\Documents\Tencent Files\1033877652\FileRecv\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Chain.IDAL.dll
+C:\Users\Administrator\Documents\Tencent Files\1033877652\FileRecv\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Chain.IDAL.pdb
+C:\Users\Administrator\Documents\Tencent Files\1033877652\FileRecv\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Chain.DBUtility.dll
+C:\Users\Administrator\Documents\Tencent Files\1033877652\FileRecv\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Chain.Model.dll
+C:\Users\Administrator\Documents\Tencent Files\1033877652\FileRecv\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Chain.Common.dll
+C:\Users\Administrator\Documents\Tencent Files\1033877652\FileRecv\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Interop.SQLDMO.dll
+C:\Users\Administrator\Documents\Tencent Files\1033877652\FileRecv\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Chain.DBUtility.pdb
+C:\Users\Administrator\Documents\Tencent Files\1033877652\FileRecv\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Chain.Model.pdb
+C:\Users\Administrator\Documents\Tencent Files\1033877652\FileRecv\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Chain.Common.pdb
+C:\Users\Administrator\Documents\Tencent Files\1033877652\FileRecv\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Tencent Files\1033877652\FileRecv\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\obj\Debug\Chain.IDAL.dll
+C:\Users\Administrator\Documents\Tencent Files\1033877652\FileRecv\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\obj\Debug\Chain.IDAL.pdb
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Chain.IDAL.dll
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Chain.IDAL.pdb
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Chain.Model.dll
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Chain.Model.pdb
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\obj\Debug\Chain.IDAL.dll
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\obj\Debug\Chain.IDAL.pdb
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Chain.DBUtility.dll
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Interop.SQLDMO.dll
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Chain.Common.dll
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Chain.DBUtility.pdb
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Chain.Common.pdb
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\obj\Debug\Chain.IDAL.csprojResolveAssemblyReference.cache
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Chain.IDAL.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Chain.IDAL.pdb
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Chain.DBUtility.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Chain.Model.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Interop.SQLDMO.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Chain.Common.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Chain.DBUtility.pdb
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Chain.Model.pdb
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\bin\Debug\Chain.Common.pdb
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\obj\Debug\Chain.IDAL.csprojResolveAssemblyReference.cache
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\obj\Debug\Chain.IDAL.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.IDAL\obj\Debug\Chain.IDAL.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Chain.IDAL.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Chain.IDAL.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Chain.DBUtility.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Chain.Model.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Interop.SQLDMO.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Chain.Common.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Chain.DBUtility.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Chain.Model.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Chain.Common.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.IDAL\obj\Debug\Chain.IDAL.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.IDAL\obj\Debug\Chain.IDAL.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.IDAL\obj\Debug\Chain.IDAL.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Chain.IDAL.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Chain.IDAL.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Chain.DBUtility.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Chain.Model.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Interop.SQLDMO.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Chain.Common.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Chain.DBUtility.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Chain.Model.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Chain.Common.pdb
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\Chain.IDAL\obj\Debug\Chain.IDAL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\Chain.IDAL\obj\Debug\Chain.IDAL.dll
+C:\Users\Administrator\Desktop\新界面商家联盟系统2 (1)(1)\Chain.IDAL\obj\Debug\Chain.IDAL.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Chain.IDAL.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Chain.IDAL.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Chain.DBUtility.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Chain.Model.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Interop.SQLDMO.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Chain.Common.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Chain.DBUtility.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Chain.Model.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\Chain.IDAL\bin\Debug\Chain.Common.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\Chain.IDAL\obj\Debug\Chain.IDAL.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\Chain.IDAL\obj\Debug\Chain.IDAL.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\Chain.IDAL\obj\Debug\Chain.IDAL.pdb
+E:\网源\PSSDSS\1-9-9\Chain.IDAL\bin\Debug\Chain.IDAL.dll
+E:\网源\PSSDSS\1-9-9\Chain.IDAL\bin\Debug\Chain.IDAL.pdb
+E:\网源\PSSDSS\1-9-9\Chain.IDAL\bin\Debug\Chain.DBUtility.dll
+E:\网源\PSSDSS\1-9-9\Chain.IDAL\bin\Debug\Chain.Model.dll
+E:\网源\PSSDSS\1-9-9\Chain.IDAL\bin\Debug\Interop.SQLDMO.dll
+E:\网源\PSSDSS\1-9-9\Chain.IDAL\bin\Debug\Chain.Common.dll
+E:\网源\PSSDSS\1-9-9\Chain.IDAL\bin\Debug\Chain.DBUtility.pdb
+E:\网源\PSSDSS\1-9-9\Chain.IDAL\bin\Debug\Chain.Model.pdb
+E:\网源\PSSDSS\1-9-9\Chain.IDAL\bin\Debug\Chain.Common.pdb
+E:\网源\PSSDSS\1-9-9\Chain.IDAL\obj\Debug\Chain.IDAL.csprojResolveAssemblyReference.cache
+E:\网源\PSSDSS\1-9-9\Chain.IDAL\obj\Debug\Chain.IDAL.dll
+E:\网源\PSSDSS\1-9-9\Chain.IDAL\obj\Debug\Chain.IDAL.pdb
+E:\Work\迈达包装\SourceCode\Chain.IDAL\bin\Debug\Chain.IDAL.dll
+E:\Work\迈达包装\SourceCode\Chain.IDAL\bin\Debug\Chain.IDAL.pdb
+E:\Work\迈达包装\SourceCode\Chain.IDAL\bin\Debug\Chain.DBUtility.dll
+E:\Work\迈达包装\SourceCode\Chain.IDAL\bin\Debug\Chain.Model.dll
+E:\Work\迈达包装\SourceCode\Chain.IDAL\bin\Debug\Interop.SQLDMO.dll
+E:\Work\迈达包装\SourceCode\Chain.IDAL\bin\Debug\Chain.Common.dll
+E:\Work\迈达包装\SourceCode\Chain.IDAL\bin\Debug\Chain.DBUtility.pdb
+E:\Work\迈达包装\SourceCode\Chain.IDAL\bin\Debug\Chain.Model.pdb
+E:\Work\迈达包装\SourceCode\Chain.IDAL\bin\Debug\Chain.Common.pdb
+E:\Work\迈达包装\SourceCode\Chain.IDAL\obj\Debug\Chain.IDAL.csprojResolveAssemblyReference.cache
+E:\Work\迈达包装\SourceCode\Chain.IDAL\obj\Debug\Chain.IDAL.dll
+E:\Work\迈达包装\SourceCode\Chain.IDAL\obj\Debug\Chain.IDAL.pdb
+F:\Work\迈达包装\SourceCode\Chain.IDAL\bin\Debug\Chain.IDAL.dll
+F:\Work\迈达包装\SourceCode\Chain.IDAL\bin\Debug\Chain.IDAL.pdb
+F:\Work\迈达包装\SourceCode\Chain.IDAL\bin\Debug\Chain.DBUtility.dll
+F:\Work\迈达包装\SourceCode\Chain.IDAL\bin\Debug\Chain.Model.dll
+F:\Work\迈达包装\SourceCode\Chain.IDAL\bin\Debug\Interop.SQLDMO.dll
+F:\Work\迈达包装\SourceCode\Chain.IDAL\bin\Debug\Chain.Common.dll
+F:\Work\迈达包装\SourceCode\Chain.IDAL\bin\Debug\Chain.DBUtility.pdb
+F:\Work\迈达包装\SourceCode\Chain.IDAL\bin\Debug\Chain.Model.pdb
+F:\Work\迈达包装\SourceCode\Chain.IDAL\bin\Debug\Chain.Common.pdb
+F:\Work\迈达包装\SourceCode\Chain.IDAL\obj\Debug\Chain.IDAL.csprojResolveAssemblyReference.cache
+F:\Work\迈达包装\SourceCode\Chain.IDAL\obj\Debug\Chain.IDAL.dll
+F:\Work\迈达包装\SourceCode\Chain.IDAL\obj\Debug\Chain.IDAL.pdb
+F:\Work\MDBZ\SourceCode\Chain.IDAL\bin\Debug\Chain.IDAL.dll
+F:\Work\MDBZ\SourceCode\Chain.IDAL\bin\Debug\Chain.IDAL.pdb
+F:\Work\MDBZ\SourceCode\Chain.IDAL\bin\Debug\Chain.DBUtility.dll
+F:\Work\MDBZ\SourceCode\Chain.IDAL\bin\Debug\Chain.Model.dll
+F:\Work\MDBZ\SourceCode\Chain.IDAL\bin\Debug\Interop.SQLDMO.dll
+F:\Work\MDBZ\SourceCode\Chain.IDAL\bin\Debug\Chain.Common.dll
+F:\Work\MDBZ\SourceCode\Chain.IDAL\bin\Debug\Chain.DBUtility.pdb
+F:\Work\MDBZ\SourceCode\Chain.IDAL\bin\Debug\Chain.Model.pdb
+F:\Work\MDBZ\SourceCode\Chain.IDAL\bin\Debug\Chain.Common.pdb
+F:\Work\MDBZ\SourceCode\Chain.IDAL\obj\Debug\Chain.IDAL.csprojResolveAssemblyReference.cache
+F:\Work\MDBZ\SourceCode\Chain.IDAL\obj\Debug\Chain.IDAL.dll
+F:\Work\MDBZ\SourceCode\Chain.IDAL\obj\Debug\Chain.IDAL.pdb

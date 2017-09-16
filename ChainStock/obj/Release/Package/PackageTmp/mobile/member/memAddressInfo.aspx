@@ -1,0 +1,137 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="memAddressInfo.aspx.cs" Inherits="ChainStock.mobile.member.memAddressInfo" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="renderer" content="webkit|ie-comp|ie-stand"/>
+    <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no" />
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+	<title>微会员-添加新地址</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/color.css">
+
+</head>
+<body>
+	<div class="section index" id="container">
+		<div id="head" class="section">
+			<div class="section header">
+				<h1>添加新地址</h1>
+				<a href="javascript:void(0);" class="back-btn"><img src="images/prev.png"/></a>
+				<a href="#" class="addMemAdddress" id="sureBtn">保存</a>
+			</div>
+		</div>
+		<div id="content" class="section">
+			<div class="section line_box">
+				<!-- 获取会员信息并显示，可编辑 -->
+				<div class="line_group">
+					<p class="f-left">收货人</p>
+					<div class="f-right">
+						<input type="text" placeholder="输入会员姓名"  id="memname" value=""  runat="server"/>
+					</div>
+				</div>
+				
+				
+				<div class="line_group">
+					<p class="f-left">联系电话</p>
+					<div class="f-right">
+						<input type="text" placeholder="输入电话号码"  id="mobile" value=""  runat="server"/>
+					</div>
+				</div>
+				
+				
+				<div class="line_group">
+					<p class="f-left">联系地址</p>
+					<div class="f-right">
+						<!-- 会员填写的地址显示在这里 -->
+						<p class="show-address dis-n"></p>
+						
+						<a href="javascript:void(0);" class="line_choice queryCity" id="queryCity">
+							<p runat="server" id="address">请选择</p>
+							<span><img src="images/right_d.png" /></span>
+						</a>
+						<!-- 城市选择，地址填写 -->
+						<div class="dis-n city-mode">
+							<div class="city-query">
+                                <h3>所在地区：</h3>
+								<select id="sltProvince" runat="server">
+									<option value="请选择" runat="server">请选择</option>
+								</select>
+								<select id="sltCity" runat="server">
+									<option value="请选择" runat="server">请选择</option>
+								</select>
+								<select id="sltCounty" runat="server">
+									<option value="请选择" runat="server">请选择</option>
+								</select>
+                                	<select id="sltVillage" runat="server">
+									<option value="请选择" runat="server">请选择</option>
+								</select>
+								<div class="section ad-detail">
+									<input type="text" placeholder="请填写详细地址" id="detailAddress" runat="server" />
+									<a href="##" class="ad-sure" id="ad-sure">确定</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+                	
+<div class="line_group">
+					<p class="f-left">设为默认地址</p>
+					<div class="f-right">
+						<a href="javascript:void(0);" class="line_btn active" id="yes" runat="server">是</a>
+						<a href="javascript:void(0);" class="line_btn" id="no" runat="server">否</a>
+					</div>
+				</div>
+				
+             
+		</div>
+		<!-- 底部浮动导航 -->
+		<div class="foot-nav">
+			<!-- 返回主页 -->
+			<div class="f-left fix-nav fix-home">
+				<a href="index.aspx"><img src="images/home.png"/></a>
+			</div>
+			<div class="f-left fix-nav fix-ch">
+				<a href="##"><p>我的会员</p><img src="images/icon.png"/></a>
+				<div class="foot-more">
+					<a href="binding.aspx">会员卡绑定</a>
+					<a href="myMember.aspx">我的会员卡</a>
+					<a href="modifyPassword.aspx">修改密码</a>
+				</div>
+			</div>
+			<div class="f-left fix-nav fix-ch">
+				<a href="##"><p>会员服务</p><img src="images/icon.png"/></a>
+				<div class="foot-more">
+					<a href="pointExchangeExchange.aspx">积分兑换</a>
+					<a href="bill.aspx">消费记录</a>
+				</div>
+			</div>
+			<div class="f-left fix-nav fix-ch">
+				<a href="rechargeOnline.aspx"><p>在线充值</p></a>
+			</div>
+		</div>
+	</div>
+
+     <input type="hidden" id="txtMemID" runat="server" />
+           <input type="hidden" id="txtAddressID" runat="server" />
+<script type="text/javascript" src="scripts/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="scripts/uploadPreview.min.js"></script>
+<script>
+    window.onload = function () {
+        new uploadPreview({ UpBtn: "upImg", DivShow: "imgDiv", ImgShow: "imgShow" });
+    }
+</script>
+<script type="text/javascript" src="scripts/script.js"></script>
+<script>
+
+
+    $("#sltProvince").bind("change", Province);
+    $("#sltCity").bind("change", City);
+    $("#sltCounty").bind("change", County);
+</script>
+</body>
+</html>

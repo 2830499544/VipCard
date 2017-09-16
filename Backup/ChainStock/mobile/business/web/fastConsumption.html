@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="renderer" content="webkit|ie-comp|ie-stand"/>
+    <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no" />
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+	<title>快速消费</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/color.css">
+</head>
+<body>
+	<div class="section index" id="container">
+		<div id="head" class="section">
+			<div class="section header">
+				<h1>快速消费</h1>
+				<a href="javascript:void(0);" class="back-btn"><img src="images/prev.png"/></a>
+				<!-- <a href="index.html" class="head-icon" id="home"><img src="images/home_f.png"/></a> -->
+			</div>
+		</div>
+		<div id="content" class="section">
+			<div class="section line_box">
+				<div class="line_group">
+					<p class="f-left">订单编号</p>
+					<div class="f-right">
+						<!-- 获取订单号 -->
+						<p></p>
+					</div>
+				</div>
+				<div class="line_group">
+					<p class="f-left">散客消费</p>
+					<div class="f-right">
+						<a href="javascript:void(0);" class="line_btn active">否</a>
+						<a href="javascript:void(0);" class="line_btn" id="fitCon">是</a>
+					</div>
+				</div>
+				<div class="line_group" id="queryMember">
+					<p class="f-left">会员卡号</p>
+					<div class="f-right">
+						<!-- 输入卡号 -->
+						<input type="text" name="memberCard" placeholder="请输入会员卡号">
+					</div>
+				</div>
+				<div class="line_group dis-n" id="memberName">
+					<p class="f-left">会员姓名</p>
+					<div class="f-right">
+						<!-- 根据卡号获取会员姓名 -->
+						<p>未找到</p>
+					</div>
+				</div>
+				<div class="line_group" id="consumptionWay">
+					<p class="f-left">消费方式</p>
+					<div class="f-right">
+						<a href="javascript:void(0);" class="line_btn active">余额</a>
+						<a href="javascript:void(0);" class="line_btn xianjin">现金</a>
+					</div>
+				</div>
+				<div class="line_group">
+					<p class="f-left">消费金额（元）</p>
+					<div class="f-right">
+						<input type="text" placeholder="￥0.00" name="conMoney" />
+					</div>
+				</div>
+				<div class="line_group">
+					<p class="f-left">折后金额（元）</p>
+					<div class="f-right">
+						<p></p>
+					</div>
+				</div>
+				<div class="line_group">
+					<p class="f-left">可得积分</p>
+					<div class="f-right">
+						<p></p>
+					</div>
+				</div>
+				<div class="section form_btn" style="padding:0 0.2rem;margin-top:0.3rem;">
+					<a href="##" id="sureConsumption">确认消费</a>
+				</div>
+			</div>
+		</div>
+		<!-- 底部浮动导航 -->
+		<div class="foot-nav">
+			<div class="f-left fix-nav fix-home">
+				<a href="index.html"><img src="images/home.png"/></a>
+			</div>
+			<div class="f-left fix-nav fix-ch">
+				<a href="memberCard.html"><p>会员办卡</p></a>
+			</div>
+			<div class="f-left fix-nav fix-ch">
+				<a href="##"><p>收银记账</p><img src="images/icon.png"/></a>
+				<div class="foot-more">
+					<a href="fastConsumption.html">快速消费</a>
+					<a href="goodsConsumption.html">商品消费</a>
+					<a href="timesConsumption.html">计次消费</a>
+				</div>
+			</div>
+			<div class="f-left fix-nav fix-ch">
+				<a href="bossCenter.html"><p>老板中心</p></a>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript" src="scripts/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+</script>
+</body>
+</html>

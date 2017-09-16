@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="lianmeng" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\user\\Documents\\Tencent\ Files\\32753203\\FileRecv\\新界面商家联盟系统2\ \(1\)\(1\)\\ChainStock\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\user\\Documents\\Tencent\ Files\\32753203\\FileRecv\\新界面商家联盟系统2\ \(1\)\(1\)\\ChainStock\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+</parameters>

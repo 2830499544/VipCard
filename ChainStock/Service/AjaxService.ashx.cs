@@ -221,6 +221,7 @@ namespace ChainStock.Service
                 string shopTelephone = this.Request["shopTelephone"].ToString();//联系电话
                 string shopAddress = this.Request["shopAddress"].ToString();//详细地址
                 string serailNumber = this.Request["SerailNumber"].ToString();//详细地址
+                string selectVer = this.Request["SelectVer"].ToString();//店铺版本,0:单店版,1:多店版
 
                 string shopRemark = "";// 备注
                 string shopTitle = shopName; //小票打印台头
@@ -267,12 +268,25 @@ namespace ChainStock.Service
                 modelShop.SettlementInterval = settlementInterval;
                 modelShop.ShopProportion = shopProportion;
                 modelShop.RechargeProportion = RechargeProportion;
-                modelShop.ShopType = shopType;
+               
                 modelShop.TotalRate = totalRate;
                 modelShop.IsRecharge = isRecharge;
                 modelShop.RechargeMaxMoney = rechargeMaxMoney;
-                modelShop.IsAllianceProgram =false;//是否为联盟商
-                modelShop.FatherShopID = 0;//联盟商编号
+                //单店版
+                if (selectVer == "0")
+                {
+                    modelShop.IsAllianceProgram = false;//是否为联盟商
+                    modelShop.FatherShopID = 0;//联盟商编号
+                    shopType = 3;
+                }
+                //多店版
+                else
+                {
+                    modelShop.IsAllianceProgram = true;//是否为联盟商
+                    modelShop.FatherShopID = 1;//联盟商编号
+                    shopType = 2;
+                }
+                modelShop.ShopType = shopType;
                 modelShop.SmsType = 1;//短信不足发送应按：(1)不准发送  (2)短信透支（短信量变负数）  
                 modelShop.PointType = 1;// Convert.ToInt32(this.Request["PointType"]);
                 Chain.BLL.SysShop bllShop = new Chain.BLL.SysShop();
@@ -366,11 +380,14 @@ namespace ChainStock.Service
                 modelUser.UserTelephone = "";//用户电话
                 modelUser.UserNumber = shopContactMan + "_Admin";//用户编号
                 modelUser.UserPassword = DESEncrypt.Encrypt(this.Request["userPassword"].ToString());//用户密码
-                int intUserID = this.UserModel.UserID;
-                int intUserShopID = this.UserModel.UserShopID;
+                //int intUserID = this.UserModel.UserID;
+                //int intUserShopID = this.UserModel.UserShopID;
                 modelUser.UserLock = false;
                 modelUser.UserShopID = modelShop.ShopID;
-                modelUser.UserGroupID = 3;//商铺管理员组
+                if (selectVer=="0")
+                    modelUser.UserGroupID = 3;//单店商铺管理员组
+                else
+                    modelUser.UserGroupID = 2;//多店商铺管理员组
                 modelUser.UserRemark = "";//备注
                 modelUser.UserCreateTime = DateTime.Now;
                 flag = bllUser.Add(modelUser);
@@ -378,7 +395,7 @@ namespace ChainStock.Service
                 {
                     //Chain.Model.SysShop modelShop = new Chain.BLL.SysShop().GetModel(modelUser.UserShopID);
                     Chain.Model.SysGroup modelGroup = new Chain.BLL.SysGroup().GetModel(modelUser.UserGroupID);
-                    PubFunction.SaveSysLog(intUserID, 1, "用户新增", string.Concat(new string[]
+                    PubFunction.SaveSysLog(99999, 1, "用户新增", string.Concat(new string[]
                     {
                         "新增用户,用户名称：[",
                         modelUser.UserName,
@@ -387,7 +404,7 @@ namespace ChainStock.Service
                         "],所属权限组：[",
                         modelGroup.GroupName,
                         "]"
-                    }), this.UserModel.UserShopID, DateTime.Now, PubFunction.ipAdress);
+                    }), 99999, DateTime.Now, PubFunction.ipAdress);
 
                     bllRegisterShop.Register(serailNumber, modelShop.ShopID);
                 }
@@ -9266,9 +9283,13 @@ namespace ChainStock.Service
 				modelUser.UserTelephone = this.Request["userTel"].ToString();
 				modelUser.UserNumber = this.Request["userNumber"].ToString();
 				modelUser.UserPassword = DESEncrypt.Encrypt(this.Request["userPassword"].ToString());
-				int intUserID = this.UserModel.UserID;
+                int intUserID = this.UserModel.UserID;
 				int intUserShopID = this.UserModel.UserShopID;
-				if (this.Request["isChoose"] == "0")
+                Chain.Model.SysShop modelShop = new Chain.BLL.SysShop().GetModel(UserModel.UserShopID);
+                //判断是否是联盟店，如果是联盟店则组织帐号
+                if (modelShop.IsAllianceProgram)
+                    modelUser.UserAccount = string.Format("{0}_{1}",modelShop.ShopContactMan, modelUser.UserAccount);
+                if (this.Request["isChoose"] == "0")
 				{
 					modelUser.UserLock = true;
 				}
@@ -9283,14 +9304,14 @@ namespace ChainStock.Service
 				flag = bllUser.Add(modelUser);
 				if (flag > 0)
 				{
-					Chain.Model.SysShop modelShop = new Chain.BLL.SysShop().GetModel(modelUser.UserShopID);
+					Chain.Model.SysShop modelShop1 = new Chain.BLL.SysShop().GetModel(modelUser.UserShopID);
 					Chain.Model.SysGroup modelGroup = new Chain.BLL.SysGroup().GetModel(modelUser.UserGroupID);
 					PubFunction.SaveSysLog(intUserID, 1, "用户新增", string.Concat(new string[]
 					{
 						"新增用户,用户名称：[",
 						modelUser.UserName,
 						"],用户所属商家：[",
-						modelShop.ShopName,
+                        modelShop1.ShopName,
 						"],所属权限组：[",
 						modelGroup.GroupName,
 						"]"

@@ -1,0 +1,16 @@
+E:\网源\PSSDSS\1-9-9\ChainStockForm\bin\Release\VipCard.exe.config
+E:\网源\PSSDSS\1-9-9\ChainStockForm\bin\Release\VipCard.exe
+E:\网源\PSSDSS\1-9-9\ChainStockForm\bin\Release\VipCard.pdb
+E:\网源\PSSDSS\1-9-9\ChainStockForm\obj\Release\ChainStockForm.MainForm.resources
+E:\网源\PSSDSS\1-9-9\ChainStockForm\obj\Release\ChainStockForm.Properties.Resources.resources
+E:\网源\PSSDSS\1-9-9\ChainStockForm\obj\Release\ChainStockForm.csproj.GenerateResource.Cache
+E:\网源\PSSDSS\1-9-9\ChainStockForm\obj\Release\VipCard.exe
+E:\网源\PSSDSS\1-9-9\ChainStockForm\obj\Release\VipCard.pdb
+E:\Work\迈达包装\SourceCode\ChainStockForm\bin\Release\VipCard.exe.config
+E:\Work\迈达包装\SourceCode\ChainStockForm\bin\Release\VipCard.exe
+E:\Work\迈达包装\SourceCode\ChainStockForm\bin\Release\VipCard.pdb
+E:\Work\迈达包装\SourceCode\ChainStockForm\obj\Release\ChainStockForm.MainForm.resources
+E:\Work\迈达包装\SourceCode\ChainStockForm\obj\Release\ChainStockForm.Properties.Resources.resources
+E:\Work\迈达包装\SourceCode\ChainStockForm\obj\Release\ChainStockForm.csproj.GenerateResource.Cache
+E:\Work\迈达包装\SourceCode\ChainStockForm\obj\Release\VipCard.exe
+E:\Work\迈达包装\SourceCode\ChainStockForm\obj\Release\VipCard.pdb

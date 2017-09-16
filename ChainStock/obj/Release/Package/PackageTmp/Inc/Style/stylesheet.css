@@ -1,0 +1,134 @@
+*
+{
+    padding-bottom: 0px;
+    margin: 0px auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+}
+BODY
+{
+    text-align: center;
+    background-color: #72ddff;
+}
+IMG
+{
+    border-bottom: medium none;
+    border-left: medium none;
+    border-top: medium none;
+    border-right: medium none;
+}
+#warp
+{
+    text-align: left;
+    margin: 50px auto 0px;
+    width: 985px;
+    font-family: Helvetica;
+}
+#header_top
+{
+    width: 985px;
+    background: url(images/top.png) no-repeat;
+    height: 30px;
+}
+#header
+{
+    text-align: center;
+    width: 985px;
+    
+    background-color:#F5F5F5;
+}
+#header H2
+{
+    padding-top: 10px;
+}
+#header H5
+{
+    padding-bottom: 15px;
+    margin-top: 5px;
+    color: #acacac;
+}
+#content
+{
+    width: 985px;
+   
+    background-color: White;
+}
+#text
+{
+    margin: 60px 0px 40px 60px;
+    width: 330px;
+    display: inline;
+    float: left;
+}
+#text P
+{
+    line-height: 20px;
+    margin-top: 30px;
+    color: #292929;
+    font-size: 14px;
+}
+#text UL
+{
+    list-style-position: inside;
+    list-style-type: none;
+    margin-top: 30px;
+   
+    font-size: 15px;
+    font-weight: bold;
+}
+#text LI
+{
+    padding-bottom: 5px;
+    
+    padding-top: 5px;
+}
+#text A
+{
+    color: #292929;
+    text-decoration: none;
+}
+#text A:hover
+{
+    text-decoration: none;
+}
+#book
+{
+    margin: 60px 60px 40px 0px;
+    width: 472px;
+    float: right;
+    height: 332px;
+}
+#footer
+{
+    width: 985px;
+   
+    background-color:#F5F5F5;
+}
+#footer_bottom
+{
+    width: 985px;
+   
+    height: 28px;
+}
+#twitter
+{
+    margin: 10px 0px 0px 60px;
+    float: left;
+}
+#twitter_text
+{
+    margin-top: 40px;
+    width: 400px;
+    float: left;
+    color: #878787;
+    margin-left: 10px;
+    font-size: 12px;
+}
+#twitter_text A
+{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+

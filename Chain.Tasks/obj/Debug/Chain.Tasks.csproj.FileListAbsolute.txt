@@ -1,0 +1,56 @@
+F:\测试源码\sm_zhiluovip\破解\Chain.Tasks\bin\Debug\Chain.Tasks.dll
+F:\测试源码\sm_zhiluovip\破解\Chain.Tasks\bin\Debug\Chain.Tasks.pdb
+F:\测试源码\sm_zhiluovip\破解\Chain.Tasks\obj\Debug\Chain.Tasks.dll
+F:\测试源码\sm_zhiluovip\破解\Chain.Tasks\obj\Debug\Chain.Tasks.pdb
+E:\good\商家联盟系统\Chain.Tasks\bin\Debug\Chain.Tasks.dll
+E:\good\商家联盟系统\Chain.Tasks\bin\Debug\Chain.Tasks.pdb
+E:\good\商家联盟系统\Chain.Tasks\obj\Debug\Chain.Tasks.dll
+E:\good\商家联盟系统\Chain.Tasks\obj\Debug\Chain.Tasks.pdb
+E:\site\商家联盟系统\Chain.Tasks\bin\Debug\Chain.Tasks.dll
+E:\site\商家联盟系统\Chain.Tasks\bin\Debug\Chain.Tasks.pdb
+E:\site\商家联盟系统\Chain.Tasks\obj\Debug\Chain.Tasks.dll
+E:\site\商家联盟系统\Chain.Tasks\obj\Debug\Chain.Tasks.pdb
+C:\Users\Administrator\Documents\Tencent Files\1033877652\FileRecv\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Tasks\bin\Debug\Chain.Tasks.dll
+C:\Users\Administrator\Documents\Tencent Files\1033877652\FileRecv\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Tasks\bin\Debug\Chain.Tasks.pdb
+C:\Users\Administrator\Documents\Tencent Files\1033877652\FileRecv\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Tasks\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Tencent Files\1033877652\FileRecv\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Tasks\obj\Debug\Chain.Tasks.dll
+C:\Users\Administrator\Documents\Tencent Files\1033877652\FileRecv\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Tasks\obj\Debug\Chain.Tasks.pdb
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Tasks\bin\Debug\Chain.Tasks.dll
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Tasks\bin\Debug\Chain.Tasks.pdb
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Tasks\obj\Debug\Chain.Tasks.dll
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Tasks\obj\Debug\Chain.Tasks.pdb
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Tasks\obj\Debug\Chain.Tasks.csprojResolveAssemblyReference.cache
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Tasks\bin\Debug\Chain.Tasks.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Tasks\bin\Debug\Chain.Tasks.pdb
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Tasks\obj\Debug\Chain.Tasks.csprojResolveAssemblyReference.cache
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Tasks\obj\Debug\Chain.Tasks.dll
+F:\Project\淘宝\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Tasks\obj\Debug\Chain.Tasks.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.Tasks\bin\Debug\Chain.Tasks.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.Tasks\bin\Debug\Chain.Tasks.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.Tasks\obj\Debug\Chain.Tasks.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.Tasks\obj\Debug\Chain.Tasks.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统2 (1)(1)\Chain.Tasks\obj\Debug\Chain.Tasks.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\Chain.Tasks\bin\Debug\Chain.Tasks.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\Chain.Tasks\bin\Debug\Chain.Tasks.pdb
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\Chain.Tasks\obj\Debug\Chain.Tasks.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\Chain.Tasks\obj\Debug\Chain.Tasks.dll
+C:\Users\user\Documents\Tencent Files\32753203\FileRecv\新界面商家联盟系统170806\新界面商家联盟系统170806\新界面商家联盟系统2 (1)(1)\Chain.Tasks\obj\Debug\Chain.Tasks.pdb
+E:\网源\PSSDSS\1-9-9\Chain.Tasks\bin\Debug\Chain.Tasks.dll
+E:\网源\PSSDSS\1-9-9\Chain.Tasks\bin\Debug\Chain.Tasks.pdb
+E:\网源\PSSDSS\1-9-9\Chain.Tasks\obj\Debug\Chain.Tasks.dll
+E:\网源\PSSDSS\1-9-9\Chain.Tasks\obj\Debug\Chain.Tasks.pdb
+E:\Work\迈达包装\SourceCode\Chain.Tasks\bin\Debug\Chain.Tasks.dll
+E:\Work\迈达包装\SourceCode\Chain.Tasks\bin\Debug\Chain.Tasks.pdb
+E:\Work\迈达包装\SourceCode\Chain.Tasks\obj\Debug\Chain.Tasks.dll
+E:\Work\迈达包装\SourceCode\Chain.Tasks\obj\Debug\Chain.Tasks.pdb
+F:\Work\迈达包装\SourceCode\Chain.Tasks\bin\Debug\Chain.Tasks.dll
+F:\Work\迈达包装\SourceCode\Chain.Tasks\bin\Debug\Chain.Tasks.pdb
+F:\Work\迈达包装\SourceCode\Chain.Tasks\obj\Debug\Chain.Tasks.csprojResolveAssemblyReference.cache
+F:\Work\迈达包装\SourceCode\Chain.Tasks\obj\Debug\Chain.Tasks.dll
+F:\Work\迈达包装\SourceCode\Chain.Tasks\obj\Debug\Chain.Tasks.pdb
+E:\Work\迈达包装\SourceCode\Chain.Tasks\obj\Debug\Chain.Tasks.csprojResolveAssemblyReference.cache
+F:\Work\MDBZ\SourceCode\Chain.Tasks\bin\Debug\Chain.Tasks.dll
+F:\Work\MDBZ\SourceCode\Chain.Tasks\bin\Debug\Chain.Tasks.pdb
+F:\Work\MDBZ\SourceCode\Chain.Tasks\obj\Debug\Chain.Tasks.csprojResolveAssemblyReference.cache
+F:\Work\MDBZ\SourceCode\Chain.Tasks\obj\Debug\Chain.Tasks.dll
+F:\Work\MDBZ\SourceCode\Chain.Tasks\obj\Debug\Chain.Tasks.pdb

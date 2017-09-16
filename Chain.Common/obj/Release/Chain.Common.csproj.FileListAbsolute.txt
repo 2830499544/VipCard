@@ -1,0 +1,15 @@
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Common\bin\Release\Chain.Common.dll
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Common\bin\Release\Chain.Common.pdb
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Common\obj\Release\Chain.Common.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Common\obj\Release\Chain.Common.dll
+C:\Users\Administrator\Desktop\tb3656\商家联盟系统\商家联盟系统2 (1)\商家联盟系统2 (1)\Chain.Common\obj\Release\Chain.Common.pdb
+E:\网源\PSSDSS\1-9-9\Chain.Common\bin\Release\Chain.Common.dll
+E:\网源\PSSDSS\1-9-9\Chain.Common\bin\Release\Chain.Common.pdb
+E:\网源\PSSDSS\1-9-9\Chain.Common\obj\Release\Chain.Common.dll
+E:\网源\PSSDSS\1-9-9\Chain.Common\obj\Release\Chain.Common.pdb
+E:\网源\PSSDSS\1-9-9\Chain.Common\obj\Release\Chain.Common.csprojResolveAssemblyReference.cache
+E:\Work\迈达包装\SourceCode\Chain.Common\bin\Release\Chain.Common.dll
+E:\Work\迈达包装\SourceCode\Chain.Common\bin\Release\Chain.Common.pdb
+E:\Work\迈达包装\SourceCode\Chain.Common\obj\Release\Chain.Common.csprojResolveAssemblyReference.cache
+E:\Work\迈达包装\SourceCode\Chain.Common\obj\Release\Chain.Common.dll
+E:\Work\迈达包装\SourceCode\Chain.Common\obj\Release\Chain.Common.pdb

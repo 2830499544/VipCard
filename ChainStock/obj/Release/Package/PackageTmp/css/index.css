@@ -1,0 +1,381 @@
+﻿/*
+**框架内首页样式
+ */
+@charset "utf-8";
+.section{
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+}
+body,html{
+	background-color: #f7f7f7;
+	min-width: 1000px;
+	font-size: 100px;
+}
+#container{
+	font-size: 0;
+}
+::-webkit-scrollbar{
+	width:0px
+}
+#aside{
+	width: 280px;
+	height: 100%;
+	background-color: #273238;
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+#content{
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.header{
+	height: 60px;
+	background-color: #34afff;
+	padding-right: 40px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 999;
+}
+.logo{
+	width: 280px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	background-color: #1b2428;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9999;
+}
+.logo a{
+	width: 100%;
+	height: 100%;
+}
+.aside-nav{
+	margin-top: 100px;
+}
+.aside-nav > li{
+	border-bottom: 1px solid #3d474c;
+}
+.main-nav{
+	height: 60px;
+	line-height: 60px;
+	padding: 0 20px;
+	cursor: pointer;
+	-moz-transition: 0.2s ease;
+	-o-transition: 0.2s ease;
+	-webkit-transition: 0.2s ease;
+	-ms-transition: 0.2s ease;
+	transition: 0.2s ease;
+}
+.main-nav i{
+	float: left;
+	margin-right: 10px;
+	width: 22px;
+	text-align: center;
+	display: inline-block;
+}
+.main-nav p{
+	font-size: 18px;
+	color: #fff;
+	float: left;
+}
+.main-nav span{
+	float: right;
+}
+.min-nav{
+	display: none;
+}
+.min-nav a{
+	width: 100%;
+	line-height: 50px;
+	color: #fff;
+	font-size: 16px;
+	padding-left: 52px;
+	background-color: #1b2428;
+	-moz-transition: 0.2s ease;
+	-o-transition: 0.2s ease;
+	-webkit-transition: 0.2s ease;
+	-ms-transition: 0.2s ease;
+	transition: 0.2s ease;
+}
+.min-nav a:hover,.min-nav a.active{
+	background-color: #34afff;
+}
+.head-nav{
+	position: relative;
+}
+.head-nav li{
+	margin-right: 30px;
+	line-height: 60px;
+}
+.head-nav li a{
+	font-size: 12px;
+	color: #fff;
+}
+.head-nav li a i{
+	margin-right: 5px;
+	display: inline-block;
+}
+.head-nav li a i img{
+	margin-top: -3px;
+}
+.head-nav li a span{
+	margin-left: 5px;
+	color: #fff;
+	padding: 0 10px;
+	height: 16px;
+	border-radius: 8px;
+	background-color: #ffc600;
+	line-height: 16px;
+}
+.head-admin{
+	line-height: 60px;
+}
+.head-admin a{
+	float: left;
+}
+.admin-img{
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background-color: #fff;
+	padding: 2px;
+	text-align: center;
+	line-height: 44px;
+	position: relative;
+	overflow: hidden;
+	margin-right: 10px;
+	margin-top: 8px;
+}
+.admin-img a{
+	width: 100%;
+	position: relative;
+	height: 100%;
+	border-radius: 50%;
+}
+.admin-img img{
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+a.admin-name{
+	font-size: 12px;
+	color: #fff;
+}
+a.admin-name span{
+	margin-left: 5px;
+}
+
+
+.iframe-box{
+	margin-top: 60px;
+	height: 100%;
+}
+.head-line{
+	height: 40px;
+	line-height: 40px;
+	background-color: #fff;
+	border-bottom: 1px solid #e6e6e6;
+	margin-bottom: 0.2rem;
+	padding-left: 20px;
+}
+.admin-mesg{
+	padding: 0.1rem 0.25rem;
+	background-color: #fff;
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+}
+.head-line a{
+	font-size: 12px;
+	color: #808080;
+}
+.head-line a i{
+	margin-right: 5px;
+	display: inline-block;
+}
+.head-line a i img{
+	margin-top: -3px;
+}
+.admin-pic{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: relative;
+	background-color: #fff;
+	border: 1px dashed #e6e6e6;
+	line-height: 100px;
+	padding: 5px;
+	margin-right: 10px;
+}
+.admin-pic p{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+}
+.admin-pic p img{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.admin-txt p{
+	font-size: 14px;
+	margin-right: 20px;
+	line-height: 26px;
+}
+.admin-data{
+	padding: 0.2rem;
+}
+.new-member{
+	background-color: #ffa000;
+}
+.account-data{
+	width: 32%;
+	padding-bottom: 0.3rem;
+	margin-bottom: 0.2rem;
+}
+.account-head{
+	width: 100%;
+	position: relative;
+	padding-top: 0.3rem;
+}
+.account-head h3{
+	width: 1.6rem;
+	line-height: 0.34rem;
+	font-size: 0.18rem;
+	border-radius: 0.17rem;
+	background: rgba(255,255,255,0.8);
+	position: relative;
+	left: 50%;
+	margin-left: -0.8rem;
+}
+.account-head h3 span{
+	margin-right: 0.05rem;
+}
+.account-head h3 span img{
+	margin-top: -0.03rem;
+	width: 0.18rem;
+}
+.new-member h3{
+	color: #ffa000;
+}
+.account-head p{
+	position: absolute;
+	top: 0.32rem;
+	right: 0.1rem;
+	font-size: 0.22rem;
+	color: #fff;
+}
+.account-head p span{
+	width: 0.13rem;
+}
+.add-account{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	padding: 0 0.3rem;
+	margin-top: 0.3rem;
+}
+.add-account .f-left{
+	width: 50%;
+}
+.add-account p{
+	font-size: 0.14rem;
+	width: 100%;
+}
+.add-account span{
+	font-size: 0.36rem;
+	width: 100%;
+}
+.recharge-money{
+	background-color: #089eeb;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.recharge-money h3{
+	color: #089eeb;
+}
+.in-money{
+	background-color: #ff5555;
+}
+.in-money h3{
+	color: #ff5555;
+}
+.growth-trend{
+	width: 66%;
+	margin-right: 2%;
+	border: 0.01rem solid #e6e6e6;
+}
+.growth-trend h3{
+	font-size: 0.18rem;
+	line-height: 0.55rem;
+	padding-left: 0.22rem;
+}
+.growth-img{
+	padding: 0.3rem 0.2rem;
+	height: 2.9rem;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.system-notice{
+	width: 32%;
+	border: 1px solid #e6e6e6;
+	height: 3.45rem;
+}
+.system-notice h3{
+	padding-left: 0.2rem;
+	font-size: 0.18rem;
+	line-height: 0.54rem;
+	border-bottom: 1px solid #e6e6e6;
+}
+.system-notice li{
+	width: 100%;
+	padding: 0 0.2rem;
+	line-height: 0.5rem;
+	position: relative;
+	border-bottom: 0.01rem solid #e6e6e6;
+}
+.system-notice li i{
+	position: absolute;
+	width: 0.04rem;
+	height: 0.5rem;
+	top: 0;
+	left: 0;
+	display: block;
+	background-color: #34afff;
+	display: none;
+}
+.system-notice li a{
+	font-size: 0.12rem;
+	color: #808080;
+	float: left;
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.system-notice li span{
+	float: right;
+	font-size: 0.12rem;
+	color: #808080;
+}
+.system-notice li:hover{
+	background-color: #fafafa;
+}
+.system-notice li:hover i{
+	display: inline-block;
+}
+.system-notice a.the-more{
+	line-height: 0.32rem;
+	float: right;
+	color: #34afff;
+	font-size: 0.12rem;
+	margin-right: 0.2rem;
+}

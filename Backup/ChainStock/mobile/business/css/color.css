@@ -1,0 +1,20 @@
+/*
+**此样式文件为颜色风格设置
+ */
+
+/*通用版*/
+#head{
+	background-color: #16a2de;
+}
+/* 微官网三级城市联动确定按钮 */
+#province > a{
+	background-color: #16a2de;
+}
+/* 微官网推荐新闻头部左边框颜色 */
+.news-reletive > h3{
+	border-left: 0.05rem solid #16a2de;
+}
+/* 微会员登陆注册、密码等按钮颜色 */
+.form_btn a{
+	background-color: #16a2de;
+}

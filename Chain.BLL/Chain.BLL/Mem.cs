@@ -56,8 +56,6 @@ namespace Chain.BLL
         }
 
 
-
-
         public DataSet GetItemAll(int MemID)
 		{
 			return this.dal.GetItemAll(MemID);
@@ -96,8 +94,14 @@ namespace Chain.BLL
 
 		public int Update(Chain.Model.Mem model)
 		{
-			int exists = this.Exists(model.MemID, model.MemCard, model.MemMobile, model.MemCardNumber, model.MemShopID);
-			int result;
+            Chain.Model.SysShop modelShop = new Chain.BLL.SysShop().GetModel(model.MemShopID);
+            int exists = 0;
+            //0是独立商，非0是联盟商
+            if (modelShop.FatherShopID == 0)
+                exists = this.Exists(model.MemID, model.MemCard, model.MemMobile, model.MemCardNumber, model.MemShopID);
+            else
+                exists = Exists_Alliance(modelShop.FatherShopID, model.MemCard, model.MemMobile, model.MemCardNumber);
+            int result;
 			if (exists != 1)
 			{
 				result = exists;

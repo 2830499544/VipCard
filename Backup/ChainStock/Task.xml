@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TaskConfig>
+  <ScheduleTasks>
+    <Thread seconds="60">
+      <task name="Emails" type="SendQueuedMessagesTask, ChainStock" enabled="true" stopOnError="false" maxTries="8"></task>
+    </Thread>
+    <Thread seconds="3600">
+      <task name="BackupDatabase" type="AutoBackupDatabaseTask, ChainStock" enabled="true" stopOnError="false"></task>
+    </Thread>
+    <Thread seconds="18000">
+      <task name="AutoSendSMSByMemBirthday" type="AutoSendSMSByMemBirthday, ChainStock" enabled="true" stopOnError="false"></task>
+      <task name="AutoSendSMSByMemPast" type="AutoSendSMSByMemPast, ChainStock" enabled="true" stopOnError="false"></task>
+    </Thread>
+  </ScheduleTasks>
+</TaskConfig>
